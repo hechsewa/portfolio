@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "ewa-hechsman-portfolio",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Ewa Hechsman is a Visual and Graphic Designer from Poland, Cracow. She's worked with companies like Archdesk, Synthetify, Swerus Chris, Powrót z U, Ekogmina, and many more.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Ewa Hechsman <ewa.hechsman@gmail.com>",
   "dependencies": {
     "gatsby": "^3.2.1",
     "gatsby-plugin-gatsby-cloud": "^2.2.0",
