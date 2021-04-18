@@ -10,6 +10,7 @@ html {
   font: sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 body {
   margin: 0;
@@ -19,6 +20,7 @@ body {
   margin-right: 10vw;
   font-family: 'Spartan', sans-serif;
   font-weight: 300;
+  overflow-x: hidden;
   /*gatsby defaults*/
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
