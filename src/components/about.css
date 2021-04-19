@@ -1,17 +1,17 @@
 .about-main {
-  margin-top: -20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   column-gap: 80px;
   margin-bottom: 100px;
+  margin-top:150px;
 }
 
 .about-pic {
   max-width: 400px;
   max-height: 550px;
   position: relative;
-  margin-top: 150px;
+  margin-bottom: 100px;
 }
 
 .about-pic img {
@@ -20,6 +20,7 @@
 
 .about-txt {
   max-width: 600px;
+  margin-top: -50px;
 }
 
 .about-txt p {

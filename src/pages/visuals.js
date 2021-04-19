@@ -27,7 +27,7 @@ const Visuals = () => {
   return (
   <Layout theme={theme} setTheme={toggleTheme}>
     <SEO title="Visuals | Ewa Hechsman Portfolio" />
-    <h1>Visuals</h1>
+    <h1 className='visuals-h1'>Visuals</h1>
     <div className='visuals-gallery'>
       <Visual src={arlogo} alt={'AR logo'} theme={theme} orient={'horizontal'}/>
       <Visual src={spacex} alt={'SpaceX poster'} theme={theme} orient={'vertical'}/>
@@ -36,7 +36,6 @@ const Visuals = () => {
       <Visual src={arlogo} alt={'AR logo'} theme={theme} orient={'horizontal'}/>
       <Visual src={arlogo} alt={'AR logo'} theme={theme} orient={'horizontal'}/>
     </div>
-    <Link to="/">Go back to the homepage</Link>
   </Layout>
 )};
 

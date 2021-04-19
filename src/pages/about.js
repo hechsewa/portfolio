@@ -57,11 +57,11 @@ const About = () => {
         </div>
         <div className='contact-info'>
           <div className='sm-icons'>
-            <a href='/'><img src={theme==='dark'? ic_tw_drk : ic_tw} alt={'Twitter icon'} /></a>
-            <a href='/'><img src={theme==='dark'? ic_ln_drk : ic_ln} alt={'LinkedIn icon'} /></a>
-            <a href='/'><img src={theme==='dark'? ic_ig_drk : ic_ig} alt={'Instagram icon'} /></a>
-            <a href='/'><img src={theme==='dark'? ic_drib_drk : ic_drib} alt={'Dribbble icon'} /></a>
-            <a href='/'><img src={theme==='dark'? ic_be_drk : ic_be} alt={'Behance icon'} /></a>
+            <a href='https://twitter.com/ewsdesigns' target='_blank'><img src={theme==='dark'? ic_tw_drk : ic_tw} alt={'Twitter icon'} /></a>
+            <a href='https://www.linkedin.com/in/ewahechsman/' target='_blank'><img src={theme==='dark'? ic_ln_drk : ic_ln} alt={'LinkedIn icon'} /></a>
+            <a href='https://www.instagram.com/ewsdesigns/' target='_blank'><img src={theme==='dark'? ic_ig_drk : ic_ig} alt={'Instagram icon'} /></a>
+            <a href='https://dribbble.com/ewsdesigns' target='_blank'><img src={theme==='dark'? ic_drib_drk : ic_drib} alt={'Dribbble icon'} /></a>
+            <a href='https://www.behance.net/ewahechsman' target='_blank'><img src={theme==='dark'? ic_be_drk : ic_be} alt={'Behance icon'} /></a>
           </div>
           <p>ewa.hechsman@gmail.com | +48 517 977 867</p>
         </div>
