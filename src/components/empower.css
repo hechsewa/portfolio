@@ -1,3 +1,52 @@
 .project-page {
   margin-top: 150px;
 }
+
+.project-page p {
+  line-height: 150%;
+}
+
+.project_sec {
+  margin-top: 80px;
+}
+
+.project_img {
+  max-width: 530px;
+}
+
+.project_img img {
+  width: 100%;
+  height: auto;
+}
+
+.project_img_big {
+ max-width: 800px;
+}
+
+.project_img_big img {
+  width: 100%;
+  height: auto;
+}
+
+.project-page h3 {
+  font-size: 25px;
+}
+
+.empower_wordmark_in {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  row-gap: 40px;
+}
+
+.empower_wordmark_in p {
+  max-width: 500px;
+}
+
+.project_in {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  row-gap: 40px;
+  margin-bottom: 40px;
+}

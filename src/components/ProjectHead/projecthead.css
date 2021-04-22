@@ -2,6 +2,10 @@
   font-size: 35px;
 }
 
+.project-head-logo img {
+  height: 20px;
+}
+
 .project-desc {
   line-height: 200%;
   margin-bottom: 50px;
@@ -46,7 +50,7 @@
 }
 
 .project-col {
-  max-width: 300px;
+  max-width: 280px;
 }
 
 .project-prob-sol {
