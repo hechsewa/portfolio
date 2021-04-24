@@ -15,7 +15,7 @@
 }
 
 .about-pic img {
-  height: 100%;
+  width: 95%;
 }
 
 .about-txt {
@@ -38,9 +38,9 @@
 .about-frame {
   position: absolute;
   top: 10px;
-  left: 10px;
-  width: 400px;
-  height: 550px;
+  left: 2px;
+  width: 98%;
+  height: 100%;
   border: 1px solid #0b0b0b;
   z-index: -1;
 }
@@ -61,11 +61,11 @@
   text-transform: uppercase;
   font-weight: 500;
   transition: all 150ms ease-in-out;
+  margin-bottom: 30px;
 }
 
 .resume-btns {
   margin-top: 50px;
-  margin-bottom: 30px;
 }
 
 .resume-btns.darkmode button {

@@ -37,13 +37,13 @@ const Synthetify = () => {
       ux={true}
       ill={false}
       brand={true}
-      desc={'Synthetify is an upcoming cryptocurrencies and DeFi start up. Their project consists of a responsive web app for exchanging and staking DeFi tokens and a simple landing page. I also helped out with branding and marketing -- prepared a logo design, social media graphics and presentations for hackatons and investors.'}
+      desc={'Synthetify is an upcoming cryptocurrencies and DeFi start up. Their project consists of a responsive web app for exchanging and staking DeFi tokens. I also helped out with branding and marketing -- prepared a logo design, a landing page, social media graphics and presentations for hackatons and investors.'}
       date={'march 2020--..'}
       role={'UI/UX designer, logo designer, graphic designer'}
       deliverables={'landing page, web app, logo, social media graphics, whitepaper, motion effect video, pitch deck presentation'}
       tools={'Figma, Affinity Designer, Affinity Photo, Adobe After Effects'}
-      problem={'Having fully responsive web application for crypto market, that allowed numerical operations even on the smartphone'}
-      solution={' '} />
+      problem={'Allowing people to exchange and stake tokens in their browser. Having fully responsive web application for crypto market, that allowed numerical operations even on the smartphone'}
+      solution={'A dashboard design for the web app allows the app to be easily displayed on multiple devices, in every orientation. The blocks building the dashboard can be easily transformed and limited.'} />
     </div>
   </Layout>
 )};
