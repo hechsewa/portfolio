@@ -7,8 +7,8 @@ import useDarkMode from '../components/useDarkMode.js'
 import '../components/synthetify.css'
 import ProjectHead from '../components/ProjectHead/projecthead.js'
 /* images */
-import synth_black from '../images/projects/logos/synthetify_black.svg'
-import synth_white from '../images/projects/logos/synthetify_white.svg'
+import logout_black from '../images/projects/logos/logout_black.png'
+import logout_white from '../images/projects/logos/logout_white.png'
 
 
 const Logout = () => {
@@ -32,7 +32,7 @@ const Logout = () => {
     <ProjectHead 
       theme={theme}
       title={'Log Out Comic book @ Powrót z U'}
-      logo={theme==='dark'?synth_black : synth_white}
+      logo={theme==='dark'?logout_black : logout_white}
       logoalt={'Powrót z U logo'}
       ux={false}
       ill={true}
