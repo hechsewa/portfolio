@@ -1,0 +1,10 @@
+.logout_wordmark_in {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  row-gap: 40px;
+}
+
+.logout_wordmark_in p {
+  max-width: 500px;
+}
