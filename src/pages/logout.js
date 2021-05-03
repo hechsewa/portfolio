@@ -86,6 +86,9 @@ const Logout = () => {
           <div className='project_img'><img src={mock2} alt={'Mockup on a book lying'} /></div>
         </div>
       </div>
+      <div className={theme==='dark'? 'go-back dark' : 'go-back'}>
+        <a href="/"><p>{"<"} Go back to projects</p></a>
+      </div>
   </Layout>
 )};
 

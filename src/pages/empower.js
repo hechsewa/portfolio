@@ -86,6 +86,9 @@ const Empower = () => {
           <div className='project_img'><img src={mockmobile} alt={'designs mocked up on mobile'} /></div>
         </div>
       </div>
+      <div className={theme==='dark'? 'go-back dark' : 'go-back'}>
+        <a href="/"><p>{"<"} Go back to projects</p></a>
+      </div>
     </div>
   </Layout>
 )};

@@ -7,6 +7,10 @@ const ProjectTab = (props) => {
     <div className={props.theme==='dark' ? 'project-tab' : 'project-tab darkmode'}>
       <div className='project-tab-front'>
         <img src={props.img} alt="project cover"/>
+        <div className='mobile-link'>
+          <p>{props.title}</p>
+          <div className='mobile-btn'><a href={props.linker}><p>Learn more</p></a></div>
+          </div>
       </div>
       <div className='project-tab-back'>
         <h1>{props.title}</h1>

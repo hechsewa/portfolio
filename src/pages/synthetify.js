@@ -107,6 +107,9 @@ const Synthetify = () => {
       <p>The motion video below was created for a Hackaton competion and presented main functionalities of the web app, alongside app screens.</p>
       <iframe title="synthetify hackaton video" src="https://player.vimeo.com/video/544335238" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
     </div>
+    <div className={theme==='dark'? 'go-back dark' : 'go-back'}>
+        <a href="/"><p>{"<"} Go back to projects</p></a>
+    </div>
   </Layout>
 )};
 

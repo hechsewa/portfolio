@@ -1,5 +1,6 @@
 .head-img img {
-  height: 500px;
+  max-width: 100%;
+  height: auto;
   margin-left: -20px;
   z-index: 100;
 }
@@ -11,7 +12,7 @@
 
 .head-img {
   position: relative;
-  height: 500px;
+  width: 500px;
 }
 
 .head-img-logo {
@@ -80,6 +81,7 @@
   display: flex;
   column-gap: 15px;
   margin-bottom: -50px;
+  flex-wrap: wrap;
 }
 
 h1.outline {
@@ -97,7 +99,7 @@ h1.marker {
 }
 
 .head-desc {
-  width: 400px;
+  max-width: 400px;
 }
 
 .head-desc p {
@@ -122,4 +124,14 @@ h1.marker {
   row-gap: 50px;
   margin-top: 100px;
   margin-bottom: 100px;
+}
+
+@media screen and (max-width: 975px) {
+  .head-img {
+    display: none;
+  }
+
+  h1.outline {
+    margin-bottom: -40px;
+  }
 }

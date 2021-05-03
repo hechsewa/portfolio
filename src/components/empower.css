@@ -50,3 +50,21 @@
   row-gap: 40px;
   margin-bottom: 40px;
 }
+
+
+.go-back a {
+  text-decoration: none;
+}
+
+.go-back a p {
+  color: #fefefe;
+  font-weight: 800;
+}
+
+.go-back.dark a p {
+  color: #0b0b0b;
+}
+
+.go-back:hover a p {
+  color: #F1AC2B;
+}

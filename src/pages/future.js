@@ -86,6 +86,9 @@ const Future = () => {
         <p>During designing the UI we focused on element that we thought captured the essence of futurism. We used hair-thin wave structures, semi-3D models with a glow, light specs, transparency and blue/purple gradients. The design is still in the development phase and haven't been implemented yet. We're looking forward to seeing it come to live with 3D models.</p>
       </div>
     </div>
+    <div className={theme==='dark'? 'go-back dark' : 'go-back'}>
+        <a href="/"><p>{"<"} Go back to projects</p></a>
+      </div>
   </Layout>
 )};
 
