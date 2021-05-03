@@ -20,6 +20,7 @@ import synth_sm from '../images/projects/synthetify/synth_sm_graphics.jpg'
 import synth_mock_1 from '../images/projects/synthetify/synth_mock_1.jpg'
 import synth_mock_2 from '../images/projects/synthetify/synth_mock_2.jpg'
 import synth_mock_3 from '../images/projects/synthetify/synth_mock_3.jpg'
+import synth_system from '../images/projects/synthetify/synth_system.png'
 
 
 const Synthetify = () => {
@@ -80,7 +81,7 @@ const Synthetify = () => {
       <h3>UI/UX designs</h3>
       <p>The web app is an actual Synthetify's product. The design needed to be highly functional and intuitive, that's why we decided to keep the design fairly simple. The main objective was to keep the dark mode as default look.</p>
       <h4>Design system</h4>
-      <div className='project_img_big'><img src={synth_logo} alt={'Design system for Synthetify'}/></div>
+      <div className='project_img_big'><img src={synth_system} alt={'Design system for Synthetify'}/></div>
       <h4>Dashboard web app</h4>
       <p>Web app is maily targeted for desktop. Below, I presented two main tabs from a web app: Staging tab with token actions (mint, deposit, withdraw) and Account tab, with your account details. The other screen presents modal windows that appear on each action, allowing the user to type in transation details.</p>
       <div className='project_in'>

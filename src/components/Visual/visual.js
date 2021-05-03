@@ -8,7 +8,6 @@ const Visual = (props) => {
 
   function onVisClick() {
     setFullmode(!fullmode);
-    console.log(fullmode);
   }
 
   return (
