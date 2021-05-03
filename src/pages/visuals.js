@@ -1,9 +1,8 @@
 import * as React from "react"
 import {useEffect} from 'react'
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import useDarkMode from "../components/useDarkMode.js"
 import '../components/visuals.css'
 import Visual from '../components/Visual/visual.js'
@@ -47,7 +46,7 @@ const Visuals = () => {
 
   return (
   <Layout theme={theme} setTheme={toggleTheme}>
-    <SEO title="Visuals | Ewa Hechsman Portfolio" />
+    <Seo title="Visuals | Ewa Hechsman Portfolio" />
     <h1 className='visuals-h1'>Visuals</h1>
     <div className='visuals-gallery'>
       <Visual src={aurona} alt={'Aurona extension screens'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>

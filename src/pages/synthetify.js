@@ -103,9 +103,9 @@ const Synthetify = () => {
     <div className='project_sec'>
       <h3>Videos</h3>
       <p>I prepared a logo animation that could be used in videos, as a loder or on social media.</p>
-      <iframe src="https://player.vimeo.com/video/544333885" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <iframe title="synthetify logo animation" src="https://player.vimeo.com/video/544333885" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
       <p>The motion video below was created for a Hackaton competion and presented main functionalities of the web app, alongside app screens.</p>
-      <iframe src="https://player.vimeo.com/video/544335238" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <iframe title="synthetify hackaton video" src="https://player.vimeo.com/video/544335238" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
     </div>
   </Layout>
 )};

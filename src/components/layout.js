@@ -6,11 +6,9 @@
  */
 
 import * as React from "react"
-import { useState, useEffect } from 'react';
 import PropTypes from "prop-types"
 import "./layout.css"
 import Navbar from './Navbar/Navbar.js'
-import useDarkMode from './useDarkMode.js'
 import Footer from './Footer/Footer.js'
 
 const Layout = ({ children, theme, setTheme }) => {

@@ -14,11 +14,11 @@ const Footer = () => {
         <p>© Ewa Hechsman, 2021 | ewahechsman@gmail.com</p>
       </div>
       <div className='foot-left'>
-        <a href='https://twitter.com/ewsdesigns' target='_blank'><img src={ic_tw} alt={'Twitter icon'} /></a>
-        <a href='https://www.linkedin.com/in/ewahechsman/' target='_blank'><img src={ic_ln} alt={'LinkedIn icon'} /></a>
-        <a href='https://www.instagram.com/ewsdesigns/' target='_blank'><img src={ic_ig} alt={'Instagram icon'} /></a>
-        <a href='https://dribbble.com/ewsdesigns' target='_blank'><img src={ic_drib} alt={'Dribbble icon'} /></a>
-        <a href='https://www.behance.net/ewahechsman' target='_blank'><img src={ic_be} alt={'Behance icon'} /></a>
+        <a href='https://twitter.com/ewsdesigns' target='_blank' rel='noreferrer' ><img src={ic_tw} alt={'Twitter icon'} /></a>
+        <a href='https://www.linkedin.com/in/ewahechsman/' target='_blank' rel='noreferrer'><img src={ic_ln} alt={'LinkedIn icon'} /></a>
+        <a href='https://www.instagram.com/ewsdesigns/' target='_blank' rel='noreferrer'><img src={ic_ig} alt={'Instagram icon'} /></a>
+        <a href='https://dribbble.com/ewsdesigns' target='_blank' rel='noreferrer'><img src={ic_drib} alt={'Dribbble icon'} /></a>
+        <a href='https://www.behance.net/ewahechsman' target='_blank' rel='noreferrer'><img src={ic_be} alt={'Behance icon'} /></a>
       </div>
     </footer>
 )};

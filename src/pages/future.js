@@ -75,7 +75,7 @@ const Future = () => {
           <div className='project_img'><img src={screen1} alt={'Futuristic design screen with the diamond-like 3D structure'} /></div>
           <div className='project_img'><img src={screen2} alt={'Futuristic design screen with a teardop-like shape and zoomed in screens'} /></div>
         </div>
-        <iframe src="https://player.vimeo.com/video/541821751" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        <iframe title="futuristic video transition" src="https://player.vimeo.com/video/541821751" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div className='future_mocks project_sec'>
         <h3>Mockups</h3>

@@ -1,6 +1,5 @@
 import * as React from "react"
 import {useEffect} from 'react'
-import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -35,7 +34,7 @@ return (
         <div className='head-img-logo'><p>branding + logo design</p></div>
         <div className='head-img-ux'><p>ui/ux design</p></div>
         <div className='head-img-sm'><p>social media graphics</p></div>
-        <img src={theme==='dark' ? lineartdark : lineartlight}/>
+        <img alt="lineart drawing of skills: illustration, ui/ux and social media" src={theme==='dark' ? lineartdark : lineartlight}/>
       </div>
       <div className='head-text'>
         <div className='head-hello'>

@@ -1,5 +1,4 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import './projecttab.css'
 
 const ProjectTab = (props) => {
@@ -7,7 +6,7 @@ const ProjectTab = (props) => {
   return (
     <div className={props.theme==='dark' ? 'project-tab' : 'project-tab darkmode'}>
       <div className='project-tab-front'>
-        <img src={props.img}/>
+        <img src={props.img} alt="project cover"/>
       </div>
       <div className='project-tab-back'>
         <h1>{props.title}</h1>
