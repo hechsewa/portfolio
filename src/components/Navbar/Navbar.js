@@ -26,15 +26,15 @@ const Navbar = (props) => {
       itmobile.className="nav-item-mobile";
     });
     switch (loc) {
-      case '/':
+      case '/portfolio/':
         document.getElementById('projects').className += " active";
         document.getElementById('projects-mobile').className += " active";
         return;
-      case '/visuals':
+      case '/portfolio/visuals':
         document.getElementById('visuals').className += " active";
         document.getElementById('visuals-mobile').className += " active";
         return;
-      case '/about':
+      case '/portfolio/about':
         document.getElementById('about').className += " active";
         document.getElementById('about-mobile').className += " active";
         return;
