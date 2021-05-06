@@ -1,0 +1,2 @@
+(self.webpackChunkewa_hechsman_portfolio=self.webpackChunkewa_hechsman_portfolio||[]).push([[272],{6825:function(e,t,n){"use strict";n.r(t);var a=n(7294),l=n(6828),o=n(3751);t.default=function(){return a.createElement(l.Z,null,a.createElement(o.Z,{title:"Project | Ewa Hechsman Portfolio"}),a.createElement("h1",null,"404: Not Found"),a.createElement("p",null,"You just hit a route that doesn't exist... the sadness."))}}}]);
+//# sourceMappingURL=component---src-pages-project-js-e37c949fdbed083ad67d.js.map
