@@ -66,11 +66,11 @@ const Navbar = (props) => {
     <>
       <nav className={props.theme==='dark'? '' : 'darkmode'}>
         <ul>
-          <li className='nav-logo'><a href="/"><img src={props.theme === 'dark' ? logolight : logodark} alt="ewa hechsman logo"/></a></li>
+          <li className='nav-logo'><a href="/portfolio/"><img src={props.theme === 'dark' ? logolight : logodark} alt="ewa hechsman logo"/></a></li>
           <div className='nav-right'>
-            <li id='projects' className='nav-item active'><a className={props.theme==='dark'? '' : 'darkmode'} href="/">Projects</a></li>
-            <li id='visuals' className='nav-item'><a className={props.theme==='dark'? '' : 'darkmode'} href="/visuals">Visuals</a></li>
-            <li id='about' className='nav-item'><a className={props.theme==='dark'? '' : 'darkmode'}href="/about">About</a></li>
+            <li id='projects' className='nav-item active'><a className={props.theme==='dark'? '' : 'darkmode'} href="/portfolio/">Projects</a></li>
+            <li id='visuals' className='nav-item'><a className={props.theme==='dark'? '' : 'darkmode'} href="/portfolio/visuals">Visuals</a></li>
+            <li id='about' className='nav-item'><a className={props.theme==='dark'? '' : 'darkmode'}href="/portfolio/about">About</a></li>
             <li className='nav-item nav-btn'><button type='button' onClick={props.setTheme}><img alt="change contrast icon" src={props.theme === 'dark' ? modelight : modedark}/></button></li>
           </div>
           <div className='nav-icon'>
@@ -82,9 +82,9 @@ const Navbar = (props) => {
             <img id='closeic' src={props.theme==='dark'? close_dark : close_light} alt='close icon' onClick={changeNav} />
           </div>
           <div className='nav-links-mobile'>
-            <a id='projects-mobile' className='nav-item-mobile active' href="/">Projects</a>
-            <a id='visuals-mobile' className='nav-item-mobile' href="/visuals">Visuals</a>
-            <a id='about-mobile' className='nav-item-mobile' href="/about">About</a>
+            <a id='projects-mobile' className='nav-item-mobile active' href="/portfolio/">Projects</a>
+            <a id='visuals-mobile' className='nav-item-mobile' href="/portfolio/visuals">Visuals</a>
+            <a id='about-mobile' className='nav-item-mobile' href="/portfolio/about">About</a>
           </div>
         </div>
       </nav>

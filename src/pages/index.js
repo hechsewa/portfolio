@@ -56,7 +56,7 @@ return (
           ux={true}
           brand={true}
           ill={false}
-          linker={'/empower'}
+          linker={'/portfolio/empower'}
         />
         <ProjectTab 
           theme={theme}
@@ -65,7 +65,7 @@ return (
           ux={true}
           brand={true}
           ill={false}
-          linker={'/synthetify'}
+          linker={'/portfolio/synthetify'}
         />
         <ProjectTab 
           theme={theme}
@@ -74,7 +74,7 @@ return (
           ux={true}
           brand={false}
           ill={false}
-          linker={'/future'}
+          linker={'/portfolio/future'}
         />
         <ProjectTab 
           theme={theme}
@@ -83,7 +83,7 @@ return (
           ux={false}
           brand={true}
           ill={true}
-          linker={'/logout'}
+          linker={'/portfolio/logout'}
         />
       </div>
     </div>
