@@ -48,6 +48,7 @@ const Visuals = () => {
   <Layout theme={theme} setTheme={toggleTheme}>
     <Seo title="Visuals | Ewa Hechsman Portfolio" />
     <h1 className='visuals-h1'>Visuals</h1>
+    <h2 className='visuals-h2'>Digital sketchbook</h2>
     <div className='visuals-gallery'>
       <Visual src={aurona} alt={'Aurona extension screens'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={archdesk1} alt={'Archdesk illustration article banners'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>

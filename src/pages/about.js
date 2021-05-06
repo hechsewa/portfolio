@@ -52,8 +52,8 @@ const About = () => {
           I live a simple life in Cracow, Poland. I enjoy musical theater, bullet journaling, good coffee and baking shows.
           </p>
         <div className={theme==='dark'?'resume-btns':'resume-btns darkmode'}>
-          <button>resume eng</button>
-          <button>resume pl</button>
+          <a target='_blank' rel='noreferrer' href='https://drive.google.com/file/d/1hOSoDZiPMs5jfZEzX4rdiwfKFkNBvKx3/view?usp=sharing'><button>resume eng</button></a>
+          <a target='_blank' rel='noreferrer' href='https://drive.google.com/file/d/1ykg-frEW5FgYuJf-9XLzZGvYZb0U0Txc/view?usp=sharing'><button>resume pl</button></a>
         </div>
         <div className='contact-info'>
           <div className='sm-icons'>
