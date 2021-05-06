@@ -30,11 +30,11 @@ const Navbar = (props) => {
         document.getElementById('projects').className += " active";
         document.getElementById('projects-mobile').className += " active";
         return;
-      case '/portfolio/visuals':
+      case '/portfolio/visuals/':
         document.getElementById('visuals').className += " active";
         document.getElementById('visuals-mobile').className += " active";
         return;
-      case '/portfolio/about':
+      case '/portfolio/about/':
         document.getElementById('about').className += " active";
         document.getElementById('about-mobile').className += " active";
         return;
