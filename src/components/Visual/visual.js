@@ -12,11 +12,12 @@ const Visual = (props) => {
 
   return (
     <>
-    <div onClick={onVisClick} className={props.orient==='horizontal' ? 'visual-div visual-div-hor' : 'visual-div visual-div-vert'} role="button">
+    <div onClick={onVisClick} className={props.orient==='horizontal' ? props.tags+' visual-div visual-div-hor' : props.tags+' visual-div visual-div-vert'} role="button">
       <img src={props.src} alt={props.alt} />
     </div>
     <div className={fullmode ? props.class+' vis' : props.class} onClick={onVisClick} role="button">
       <img src={props.src} alt={props.alt} />
+      <p>{props.alt}</p>
     </div>
     </>
 )};

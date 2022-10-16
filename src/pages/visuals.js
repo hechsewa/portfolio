@@ -27,9 +27,14 @@ import radio1 from '../images/visuals/radio1.jpg'
 import radio2 from '../images/visuals/radio2.jpg'
 import radio3 from '../images/visuals/radio3.jpg'
 import recepturka from '../images/visuals/recepturka.jpg'
-import uxweb from '../images/visuals/uxweb.jpg'
 import women from '../images/visuals/women.jpg'
 import dailylogo from '../images/visuals/dailylogo.webp'
+import coffeestation from '../images/visuals/coffeestation-mockup.png'
+import bday from '../images/visuals/bday-card.gif'
+import snowman from '../images/visuals/snowman.gif'
+import ugoda from '../images/visuals/policzugode.png'
+import codereduced from '../images/visuals/codereduced.png'
+import invariant from '../images/visuals/invariant.png'
 
 const Visuals = () => {
   const [theme, toggleTheme] = useDarkMode();
@@ -44,35 +49,74 @@ const Visuals = () => {
     console.log(theme);
   });
 
+  function onChipClick(e) {
+    var allVisuals = document.getElementsByClassName("visual-div");
+    //disable all other chips
+    var allChips = document.getElementsByClassName("visual-chip");
+    for (var i = 0; i < allChips.length; i++) {
+    var isClicked = allChips.item(i).id === e.target.id;
+      if (allChips.item(i).classList.contains("active") & !isClicked) 
+        allChips.item(i).classList.remove("active");
+    }
+    //assign active to clicked chip
+    var chipClasses = document.getElementById(e.target.id).classList;
+    if (chipClasses.contains("active")) {
+      chipClasses.remove("active");
+    } else {
+      chipClasses.add("active");
+    }
+    var isActive = chipClasses.contains("active");
+    for (var j = 0; j < allVisuals.length; j++) {
+      var isTag =allVisuals.item(j).classList.contains(e.target.id);
+      if (!isTag & isActive) {
+        allVisuals.item(j).classList += " invis";
+      } else {
+        allVisuals.item(j).classList.remove("invis");
+      }
+    }
+  }
+
   return (
   <Layout theme={theme} setTheme={toggleTheme}>
     <Seo title="Visuals | Ewa Hechsman Portfolio" />
     <h1 className='visuals-h1'>Visuals</h1>
     <h2 className='visuals-h2'>Digital sketchbook</h2>
+    <div className={theme==='dark'?'visuals-chips':'visuals-chips darkmode'}>
+      <button className="visual-chip" id="ui" onClick={onChipClick}>UI Design</button>
+      <button className="visual-chip" id="brand" onClick={onChipClick}>Branding</button>
+      <button className="visual-chip" id="sm" onClick={onChipClick}>SM graphics</button>
+      <button className="visual-chip" id="anim" onClick={onChipClick}>Animation</button>
+      <button className="visual-chip" id="ill" onClick={onChipClick}>Illustration</button>
+    </div>
     <div className='visuals-gallery'>
-      <Visual src={aurona} alt={'Aurona extension screens'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
-      <Visual src={archdesk1} alt={'Archdesk illustration article banners'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
-      <Visual src={archdesk2} alt={'Archdesk social media posts'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
-      <Visual src={dailylogo} alt={'Best logos from Daily Logo Challenge'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
-      <Visual src={poster1} alt={'Poster for Krakow concert'} theme={theme} orient={'vertical'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
-      <Visual src={fotowolt1} alt={'Photovoltaic social media graphic'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
-      <Visual src={fotowolt2} alt={'Social media graphics for Ekogmina'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
-      <Visual src={poster2} alt={'Posters for local orchestra'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
-      <Visual src={recepturka} alt={'Packaging design for granola Recepturka'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
-      <Visual src={archdeskapp} alt={'Archdesk mobile app redesign'} theme={theme} orient={'vertical'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
-      <Visual src={archdeskems} alt={'Archdesk landing page with case study'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
-      <Visual src={arlogo} alt={'Logo for ARPortal'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
-      <Visual src={crunch} alt={'Crunch logo and packaging design for #50dayslogochallenge'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
-      <Visual src={goodlood1} alt={'Good lood totebag design'} theme={theme} orient={'vertical'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
-      <Visual src={jellyfish} alt={'Jellyfish icecream logo design'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
-      <Visual src={juwenalia} alt={'Juwenalia 2019 T-shirt design'} theme={theme} orient={'vertical'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
-      <Visual src={radio1} alt={'Radio1.7 promotional social media graphics'} theme={theme} orient={'vertical'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
-      <Visual src={radio2} alt={'Radio1.7 social media posts'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
-      <Visual src={radio3} alt={'Radio1.7 promotional graphics for broadcasts'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
-      <Visual src={women} alt={'Drawing for womens day at Archdesk'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
-      <Visual src={cats} alt={'Drawing for cats day at Archdesk'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
-      <Visual src={spacex} alt={'SpaceX poster'} theme={theme} orient={'vertical'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
-      <Visual src={uxweb} alt={'Website landing page design about UX'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={coffeestation} tags={'ui'} alt={'Coffee station mockup mobile app mid-fidelity design'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={aurona} tags={'ui'} alt={'Aurona extension screens'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={archdesk1} tags={'sm'} alt={'Archdesk illustration article banners'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={archdesk2} tags={'sm'} alt={'Archdesk social media posts'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={ugoda} tags={'ui'} alt={'UI landing page design with a agreement calculator'} theme={theme} orient={'vertical'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={dailylogo} tags={'brand'} alt={'Best logos from Daily Logo Challenge'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={poster1} tags={'ill'} alt={'Poster for Krakow concert'} theme={theme} orient={'vertical'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={fotowolt1} tags={'sm'} alt={'Photovoltaic social media graphic'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={fotowolt2} tags={'sm'} alt={'Social media graphics for Ekogmina'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={poster2} tags={'ill'} alt={'Posters for local orchestra'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={recepturka} tags={'brand'} alt={'Packaging design for granola Recepturka'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={archdeskapp} tags={'ui'} alt={'Archdesk mobile app redesign'} theme={theme} orient={'vertical'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={archdeskems} tags={'ui'} alt={'Archdesk landing page with case study'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={arlogo} tags={'brand'} alt={'Logo for ARPortal'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={crunch} tags={'brand'} alt={'Crunch logo and packaging design for #50dayslogochallenge'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={goodlood1} tags={'ill'} alt={'Good lood totebag design'} theme={theme} orient={'vertical'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={jellyfish} tags={'brand'} alt={'Jellyfish icecream logo design'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={juwenalia} tags={'ill'} alt={'Juwenalia 2019 T-shirt design'} theme={theme} orient={'vertical'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={radio1} tags={'sm'} alt={'Radio1.7 promotional social media graphics'} theme={theme} orient={'vertical'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={radio2} tags={'sm'} alt={'Radio1.7 social media posts'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={radio3} tags={'sm'} alt={'Radio1.7 promotional graphics for broadcasts'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={women} tags={'ill'} alt={'Drawing for womens day at Archdesk'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={cats} tags={'ill'} alt={'Drawing for cats day at Archdesk'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={spacex} tags={'ill'} alt={'SpaceX poster'} theme={theme} orient={'vertical'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={bday} tags={'anim'} alt={'Birthday card frame by frame animation for Archdesk'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={snowman} tags={'anim'} alt={'Christmas card snowman frame by frame animation for Archdesk'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={codereduced} tags={'brand'} alt={'Logo & branding for CodeReduced'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={invariant} tags={'ui'} alt={'UI design for cryptocurrency exchange webapp Invariant'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
     </div>
   </Layout>
 )};

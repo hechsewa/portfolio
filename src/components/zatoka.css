@@ -1,0 +1,30 @@
+.project_sec h3 {
+  font-size: 25px;
+}
+
+.project_sec p {
+  line-height: 180%;
+}
+
+.project_sec {
+  margin-top: 80px;
+}
+
+.project_img_big {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.project_img_big img, .project_img_big video {
+  width: 80vw;
+  object-fit: contain;
+}
+
+.project_in {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.project_in img {
+  width: 40vw;
+}

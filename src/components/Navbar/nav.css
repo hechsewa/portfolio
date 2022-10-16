@@ -27,7 +27,7 @@ nav ul li {
 
 .nav-right {
   float: right;
-  margin-right: 25vw;
+  margin-right: 20vw;
 }
 
 .nav-icon {
@@ -39,11 +39,10 @@ nav ul li a {
   color: #0b0b0b;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
   letter-spacing: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 nav ul li a.darkmode {
@@ -51,7 +50,7 @@ nav ul li a.darkmode {
 }
 
 .nav-logo img {
-  height: 25px;
+  height: 40px;
   width: auto;
 }
 
@@ -59,7 +58,6 @@ nav ul li a.darkmode {
   background: none;
   border: none;
   margin-top:-6px;
-  padding-left: 30px;
 }
 
 .nav-item {

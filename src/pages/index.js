@@ -11,7 +11,7 @@ import ProjectTab from '../components/ProjectTab/projecttab.js'
 import women from '../images/women.png'
 import synth from '../images/synth.png'
 import logout from '../images/logout.png'
-import future from '../images/future.png'
+import zatoka from '../images/zatoka.png'
 
 const IndexPage = () =>{
   const [theme, toggleTheme] = useDarkMode();
@@ -32,23 +32,32 @@ return (
     <div className='head-main'>
       <div className='head-img'>
         <div className='head-img-logo'><p>branding + logo design</p></div>
-        <div className='head-img-ux'><p>ui/ux design</p></div>
-        <div className='head-img-sm'><p>social media graphics</p></div>
-        <img alt="lineart drawing of skills: illustration, ui/ux and social media" src={theme==='dark' ? lineartdark : lineartlight}/>
+        <div className='head-img-ux'><p>ui design</p></div>
+        <div className='head-img-sm'><p>graphic design</p></div>
+        <img alt="lineart drawing of skills: illustration, ui and social media" src={theme==='dark' ? lineartdark : lineartlight}/>
       </div>
       <div className='head-text'>
         <div className='head-hello'>
-          <h1 className={theme==='dark' ? 'outline' : 'outline darkmode'}>Hi, I'm</h1>
-          <h1 className='marker'>Ewa</h1>
+          <h1>UI & Graphic</h1>
+          <h1 className='marker'>Designer</h1>
         </div>
         <div className='head-desc'>
-          <p>an aspiring Visual Designer with a programming background. I believe that great design is a gateway to information and connecting with users. </p>
+          <p>I'm Ewa, Digital Designer with a programming background. I believe that great design is a gateway to information and connecting with users. </p>
         </div>
       </div>
     </div>
     <div className='projects'>
       <h2>Selected <mark>Projects</mark></h2>
       <div className='projects-gallery'>
+        <ProjectTab 
+          theme={theme}
+          img={zatoka}
+          title={'Food Truck Branding for Zatoka Smaków'}
+          ux={false}
+          brand={true}
+          ill={true}
+          linker={'/zatoka'}
+        />
         <ProjectTab 
           theme={theme}
           img={women}
@@ -66,15 +75,6 @@ return (
           brand={true}
           ill={false}
           linker={'/portfolio/synthetify'}
-        />
-        <ProjectTab 
-          theme={theme}
-          img={future}
-          title={'Futuristic LP'}
-          ux={true}
-          brand={false}
-          ill={false}
-          linker={'/portfolio/future'}
         />
         <ProjectTab 
           theme={theme}

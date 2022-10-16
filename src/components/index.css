@@ -80,8 +80,15 @@
 .head-hello {
   display: flex;
   column-gap: 15px;
+  max-width: 500px;
   margin-bottom: -50px;
   flex-wrap: wrap;
+}
+
+.head-hello h1 {
+  font-size: 40px;
+  line-height: 150%;
+  margin-bottom: 50px;
 }
 
 h1.outline {
@@ -96,6 +103,7 @@ h1.outline.darkmode {
 
 h1.marker {
   color: #F1AC2B;
+
 }
 
 .head-desc {
@@ -103,7 +111,7 @@ h1.marker {
 }
 
 .head-desc p {
-  line-height: 200%;
+  line-height: 180%;
 }
 
 /*selected projects*/
@@ -131,7 +139,11 @@ h1.marker {
     display: none;
   }
 
-  h1.outline {
+  .head-hello h1 {
     margin-bottom: -40px;
+  }
+
+  .head-hello .marker {
+    margin-bottom: 50px;
   }
 }

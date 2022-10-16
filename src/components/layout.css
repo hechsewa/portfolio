@@ -19,7 +19,7 @@ body {
   margin-left: 10vw;
   margin-right: 10vw;
   font-family: 'Spartan', sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   overflow-x: hidden;
   /*gatsby defaults*/
   -webkit-font-smoothing: antialiased;
@@ -34,13 +34,15 @@ body {
 }
 
 p {
-  font-weight: 300;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 180%;
+  opacity: 80%;
 }
 
 h1 {
   font-weight: 700;
-  font-size: 63px;
+  font-size: 45px;
 }
 
 h2 {
