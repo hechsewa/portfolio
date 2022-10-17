@@ -56,7 +56,7 @@ return (
           ux={false}
           brand={true}
           ill={true}
-          linker={'/zatoka'}
+          linker={'/portfolio/zatoka'}
         />
         <ProjectTab 
           theme={theme}
