@@ -29,13 +29,22 @@
   display: none;
 }
 
-/*project columns*/
-.project-columns {
+.project-head-wrapper {
   display: flex;
   column-gap: 50px;
   row-gap: 15px;
-  justify-items: start;
+  justify-items: end;
+  align-items: end;
   flex-wrap: wrap;
+}
+
+/*project columns*/
+.project-head-columns {
+  /*display: flex;
+  column-gap: 50px;
+  row-gap: 15px;
+  justify-items: start;
+  flex-wrap: wrap;*/
 }
 
 .project-col h2 {
@@ -82,8 +91,4 @@ p {
 /*darkmode*/
 .project-head.darkmode .project-chips p.vis {
   outline: 1px solid #fefefe;
-}
-
-.dark-logo {
-  filter: invert(1);
 }

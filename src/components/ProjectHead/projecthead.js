@@ -8,16 +8,17 @@ const ProjectHead = (props) => {
       <div className='project-head-logo'>
         <img className={props.theme==='dark'?'dark-logo':'light-logo'} src={props.logo} alt={props.logoalt}/>
       </div>
+      <div className="project-head-wrapper">
       <div className='project-head-text'>
         <h1>{props.title}</h1>
         <div className='project-chips'>
-          <p className={props.ux ? 'vis' : 'invis'}>UI</p>
+          <p className={props.ux ? 'vis' : 'invis'}>UI design</p>
           <p className={props.brand ? 'vis' : 'invis'}>branding</p>
           <p className={props.ill ? 'vis' : 'invis'}>illustration</p>
         </div>
         <p className='project-desc'>{props.desc}</p>
       </div>
-      <div className='project-columns'>
+      <div className='project-head-columns'>
         <div className='project-col'>
           <h2>Date:</h2>
           <p>{props.date}</p>
@@ -34,6 +35,7 @@ const ProjectHead = (props) => {
           <h2>Tools used:</h2>
           <p>{props.tools}</p>
         </div>
+      </div>
       </div>
     </div>
 )};

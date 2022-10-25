@@ -7,7 +7,8 @@ import useDarkMode from '../components/useDarkMode.js'
 import '../components/zatoka.css'
 import ProjectHead from '../components/ProjectHead/projecthead.js'
 /* images */
-import zatoka_white from '../images/projects/logos/zatoka_white.svg'
+import zatoka_white from '../images/projects/logos/zatoka_white.png'
+import zatoka_dark from '../images/projects/logos/zatoka_dark.png'
 import zatoka_logos from '../images/projects/zatoka/slide_logo.png'
 import zatoka_brandbook from '../images/projects/zatoka/brandbook.png'
 import slide1 from '../images/projects/zatoka/slide_2_b.png'
@@ -47,7 +48,7 @@ const Zatoka = () => {
     <ProjectHead 
       theme={theme}
       title={'Food Truck Branding for Zatoka Smaków'}
-      logo={theme==='dark'?zatoka_white : zatoka_white}
+      logo={theme==='dark'?zatoka_dark : zatoka_white}
       logoalt={'Zatoka Smaków logo'}
       ux={false}
       ill={true}
@@ -99,7 +100,7 @@ const Zatoka = () => {
       <div className='project_img_big'><img src={slide_truck_2} alt={'Food Truck Design Front and Back'}/></div>
     </div>
     <div className={theme==='dark'? 'go-back dark' : 'go-back'}>
-        <a href="/"><p>{"<"} Go back to projects</p></a>
+        <a href="/portfolio"><p>{"<"} Go back to projects</p></a>
     </div>
   </Layout>
 )};

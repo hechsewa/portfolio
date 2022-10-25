@@ -10,7 +10,7 @@ import '../components/index.css'
 import ProjectTab from '../components/ProjectTab/projecttab.js'
 import women from '../images/women.png'
 import synth from '../images/synth.png'
-import logout from '../images/logout.png'
+import inhub from '../images/inhub.png'
 import zatoka from '../images/zatoka.png'
 
 const IndexPage = () =>{
@@ -52,11 +52,20 @@ return (
         <ProjectTab 
           theme={theme}
           img={zatoka}
-          title={'Food Truck Branding for Zatoka Smaków'}
+          title={'Food Truck Branding'}
           ux={false}
           brand={true}
           ill={true}
           linker={'/portfolio/zatoka'}
+        />
+        <ProjectTab 
+          theme={theme}
+          img={inhub}
+          title={'Inhub Innovations'}
+          ux={true}
+          brand={false}
+          ill={false}
+          linker={'/portfolio/inhub'}
         />
         <ProjectTab 
           theme={theme}
@@ -75,15 +84,6 @@ return (
           brand={true}
           ill={false}
           linker={'/portfolio/synthetify'}
-        />
-        <ProjectTab 
-          theme={theme}
-          img={logout}
-          title={'Log Out Project'}
-          ux={false}
-          brand={true}
-          ill={true}
-          linker={'/portfolio/logout'}
         />
       </div>
     </div>

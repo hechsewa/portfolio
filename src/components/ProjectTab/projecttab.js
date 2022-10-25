@@ -15,7 +15,7 @@ const ProjectTab = (props) => {
       <div className='project-tab-back'>
         <h1>{props.title}</h1>
         <div className='chips'>
-          <p className={props.ux ? 'vis' : 'invis'}>UI</p>
+          <p className={props.ux ? 'vis' : 'invis'}>UI design</p>
           <p className={props.brand ? 'vis' : 'invis'}>branding</p>
           <p className={props.ill ? 'vis' : 'invis'}>illustration</p>
         </div>

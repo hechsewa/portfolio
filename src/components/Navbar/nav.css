@@ -141,4 +141,8 @@ nav ul li a.darkmode {
   .nav-links-mobile a.active {
     color: white;
   }
+
+  .nav-logo img {
+    width: 280px;
+  }
 }
