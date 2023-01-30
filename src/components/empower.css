@@ -1,5 +1,5 @@
 .project-page {
-  margin-top: 150px;
+  margin-top: 80px;
 }
 
 .project-page p {
@@ -20,7 +20,7 @@
 }
 
 .project_img_big {
- max-width: 800px;
+ max-width: 100%;
 }
 
 .project_img_big img {

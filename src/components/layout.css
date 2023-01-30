@@ -1,8 +1,10 @@
 :root {
   --white: #fefefe;
   --black: #0b0b0b;
+  --lightblack: hsl(0, 0%, 25%);
   --mustard: #F1AC2B;
   --gray: #737373;
+  --lightbase: #f2f4f8;
 }
 html {
   -ms-text-size-adjust: 100%;
@@ -15,12 +17,12 @@ html {
 body {
   margin: 0;
   background-color: var(--white);
-  color: var(--black);
-  margin-left: 10vw;
-  margin-right: 10vw;
-  font-family: 'Spartan', sans-serif;
-  font-weight: 500;
-  overflow-x: hidden;
+  color: var(--lightblack);
+  margin-left: 15vw;
+  margin-right: 15vw;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  /*overflow-x: hidden;*/
   /*gatsby defaults*/
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -38,26 +40,92 @@ p {
   font-size: 16px;
   line-height: 180%;
   opacity: 0.8;
+  /*color: var(--lightblack);*/
 }
 
 h1 {
   font-weight: 700;
   font-size: 45px;
+  font-family: 'DM Serif Display';
+  color: var(--black);
 }
 
 h2 {
   font-weight: 700;
   font-size: 42px;
+  font-family: 'DM Serif Display';
+  color: var(--black);
 }
 
 h3 { /*subpage header*/
   font-weight: 700;
   font-size: 42px;
+  font-family: 'DM Serif Display';
+  color: var(--black);
+}
+
+h4 {
+  font-size: 24px;
+  margin-bottom: 0px;
+  margin-top: 80px;
+  color: var(--black);
+}
+
+b {
+  font-weight: 800;
+  color: var(--black);
+}
+
+body.darkmode b {
+  color: #ffffff;
+  opacity: 1 !important;
+}
+
+li::marker {
+  content: '→  ';
+  font-weight: 900;
+  color: var(--mustard);
+  font-size: 1.2em;
+}
+
+body.darkmode h1, body.darkmode h2, body.darkmode h3, body.darkmode h4 {
+  color: var(--white);
+}
+
+body.darkmode .project_sec_alt {
+  background-color: hsl(0, 0%, 10%);
 }
 
 body.darkmode {
   background-color: var(--black);
   color: var(--white);
+}
+
+button {
+  background: none;
+  border: 1px solid #0b0b0b;
+  padding: 8px 16px 8px 16px;
+  margin-right: 20px;
+  font-size: 14px;
+  color: #0b0b0b;
+  font-family: 'Inter', sans-serif;
+  text-transform:none;
+  font-weight: 600;
+  transition: all 150ms ease-in-out;
+  margin-bottom: 30px;
+}
+
+body.darkmode button {
+  color: white;
+  border-color: white;
+}
+
+button:hover {
+  color: white;
+  background-color: #F1AC2B;
+  border: 1px solid #F1AC2B;
+  transition: all 150ms ease-in-out;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 480px) {

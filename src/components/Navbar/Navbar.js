@@ -3,8 +3,8 @@ import {useEffect, useState} from 'react'
 import './nav.css'
 import modedark from '../../images/mode-dark.svg'
 import modelight from '../../images/mode-light.svg'
-import logolight from '../../images/logo-light.svg'
-import logodark from '../../images/logo-dark.svg'
+import logolight from '../../images/logo-dark-hor.svg'
+import logodark from '../../images/logo-light-hor.svg'
 import menu_dark from '../../images/menu-dark.svg'
 import menu_light from '../../images/menu_light.svg'
 import close_dark from '../../images/close_dark.svg'
@@ -66,7 +66,9 @@ const Navbar = (props) => {
     <>
       <nav className={props.theme==='dark'? '' : 'darkmode'}>
         <ul>
-          <li className='nav-logo'><a href="/portfolio/"><img src={props.theme === 'dark' ? logolight : logodark} alt="ewa hechsman logo"/></a></li>
+          <li className='nav-logo'>
+            <a href="/portfolio/">
+              <img src={props.theme === 'dark' ? logolight : logodark} alt="ewa hechsman logo"/></a></li>
           <div className='nav-right'>
             <li id='projects' className='nav-item active'><a className={props.theme==='dark'? '' : 'darkmode'} href="/portfolio/">Projects</a></li>
             <li id='visuals' className='nav-item'><a className={props.theme==='dark'? '' : 'darkmode'} href="/portfolio/visuals">Visuals</a></li>

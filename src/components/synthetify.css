@@ -1,6 +1,3 @@
-.project_sec h3 {
-  font-size: 25px;
-}
 
 .project_sec p {
   line-height: 150%;
@@ -18,4 +15,8 @@
 .project_in {
   margin-top: 35px;
   margin-bottom: 35px;
+}
+
+.project_sec h4 {
+  font-family: 'DM Serif Display';
 }

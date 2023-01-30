@@ -1,9 +1,9 @@
 nav {
   height: 50px;
-  padding-top: 30px;
+  padding-top: 20px;
   top: 0;
-  margin-left: -10vw;
-  padding-left: 10vw;
+  margin-left: -16vw;
+  /*padding-left: 10vw;*/
   background-color: #fefefe;
   position: fixed;
   z-index: 100;
@@ -19,15 +19,24 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0 15vw;
 }
 
 nav ul li {
   float: left;
 }
 
+nav ul li::marker {
+  content: none;
+}
+
 .nav-right {
   float: right;
-  margin-right: 20vw;
+  width: 52%;
+
 }
 
 .nav-icon {
@@ -39,25 +48,32 @@ nav ul li a {
   color: #0b0b0b;
   text-align: center;
   text-decoration: none;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   padding-left: 15px;
   padding-right: 15px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 nav ul li a.darkmode {
   color: #fefefe;
 }
 
+.nav-logo {
+  width: 50%;
+}
+
 .nav-logo img {
-  height: 40px;
+  height: 18px;
   width: auto;
+  float: left;
+  margin-top: -28px;
 }
 
 .nav-btn button {
   background: none;
   border: none;
   margin-top:-6px;
+  margin-left: 10px;
 }
 
 .nav-item {

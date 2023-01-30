@@ -16,6 +16,7 @@ import inhub_mocks from '../images/projects/inhub/inhub-mocks.png'
 import inhub_ux from '../images/projects/inhub/inhub-ux.png'
 import inhub_prototyp from '../images/projects/inhub/inhub-prototyp.png'
 import figma_video from '../images/projects/inhub/inhub-video.webm'
+import head_inhub from '../images/projects/inhub/project-head-inhub.png'
 
 
 const Inhub = () => {
@@ -42,6 +43,7 @@ const Inhub = () => {
       title={'UI Landing Pages for Inhub Innovations'}
       logo={theme==='dark'?inhub_logo_dark : inhub_logo_light}
       logoalt={'Inhub Innovations logo'}
+      headimg={head_inhub}
       ux={true}
       ill={false}
       brand={false}
@@ -52,7 +54,7 @@ const Inhub = () => {
       tools={'Figma, Affinity Designer'}
        />
     </div>
-    <div className='project_sec'>
+    <div className='project_sec project_sec_alt'>
         <h3>UX designs</h3>
         <p>UI designs were based on wireframes created by the UX designer. The collaboration with UX designer was close - we had meetings to discuss layouts, designs and potential UI styles. UX designer was present at each stage of the project, giving directions and feedbacks.</p>
         <div className='project_img_big'><img src={inhub_ux} alt={'Inhub UX wireframes'}/></div> 
@@ -79,7 +81,7 @@ const Inhub = () => {
         <div className='project_img_big'><img src={inhub_kariera} alt={'Inhub UI career'}/></div> 
         <div className='project_img_big'><img src={inhub_mocks} alt={'Inhub UI mockups'}/></div> 
     </div>
-    <div className='project_sec'>
+    <div className='project_sec project_sec_alt'>
         <h3>Prototypes</h3>
         <p>All of the UI designs were then prototyped and showed to Inhub members and the UX designer. Together we identified elements of the designs that did not work in the context and applied new solutions.</p>
         <div className='project_img_big'><img src={inhub_prototyp} alt={'Inhub UX Prototypes'}/></div> 
@@ -90,7 +92,7 @@ const Inhub = () => {
         </video> 
         </div>
         <div className='project_img_big'>
-        <iframe src="https://player.vimeo.com/video/762354808?h=61c9044826&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="720" height="480" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Inhub Innovations Prototype Click-thru"></iframe>
+        <iframe src="https://player.vimeo.com/video/762354808?h=61c9044826&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="100%" height="500vw" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Inhub Innovations Prototype Click-thru"></iframe>
         </div>
     </div>
     <div className={theme==='dark'? 'go-back dark' : 'go-back'}>

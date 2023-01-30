@@ -5,12 +5,15 @@ const ProjectHead = (props) => {
   
   return (
     <div className={props.theme==='dark'?'project-head':'project-head darkmode'}>
+      <div className='project-head-img'>
+        <img src={props.headimg} alt='Project Header Image' />
+      </div>
       <div className='project-head-logo'>
         <img className={props.theme==='dark'?'dark-logo':'light-logo'} src={props.logo} alt={props.logoalt}/>
       </div>
+      <h1>{props.title}</h1>
       <div className="project-head-wrapper">
       <div className='project-head-text'>
-        <h1>{props.title}</h1>
         <div className='project-chips'>
           <p className={props.ux ? 'vis' : 'invis'}>UI design</p>
           <p className={props.brand ? 'vis' : 'invis'}>branding</p>

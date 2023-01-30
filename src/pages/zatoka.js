@@ -24,6 +24,7 @@ import slide_truck_a from '../images/projects/zatoka/slide_11.png'
 import slide_truck_b from '../images/projects/zatoka/slide_12.png'
 import slide_truck_2 from '../images/projects/zatoka/slide_14.png'
 import figma_video from '../images/projects/zatoka/zatoka-men.webm'
+import zatoka_headimg from '../images/projects/zatoka/project-head-zatoka.png'
 
 
 const Zatoka = () => {
@@ -49,6 +50,7 @@ const Zatoka = () => {
       theme={theme}
       title={'Food Truck Branding for Zatoka Smaków'}
       logo={theme==='dark'?zatoka_dark : zatoka_white}
+      headimg={zatoka_headimg}
       logoalt={'Zatoka Smaków logo'}
       ux={false}
       ill={true}
@@ -60,28 +62,53 @@ const Zatoka = () => {
       tools={'Figma, Affinity Designer, Adobe Photoshop'}
        />
     </div>
-    <div className='project_sec'>
+    <div className='project_sec project_sec_alt'>
         <h3>Logo design</h3>
-        <p>Created a consistent logo design with a brand book. Prepared a brand guide for future use of logo on merch and other resources.</p>
+        <p>The main premise of the logo was that it should be light, fun and connected to summer chill.
+          The brand describes itself as easy-going, relaxing, delicious, so the logo portrays an <b>ice cream cone pictured as a sun setting by the lake.</b>
+          <br/><br/>
+          The logo was to be displayed in many forms, both digital in print, so different logo formats were prepared for each use-case. The base logotype
+          included an icon, wordmark and a subline, that explained what the food truck offers. For use as stickers, for merch, there was an icon version prepared in many colored options for light and dark backgrounds.
+          <br/><br/>
+          Alongside the logo pack, there was a brand book, and a brand guide in from of a PDF, that explained the use of a logo on merch, as well as minimum distance to other elements,
+          exclusion zone, and much more.
+        </p>
         <div className='project_img_big'><img src={zatoka_logos} alt={'Zatoka Smaków Logos'}/></div>
         <div className='project_img_big'><img src={zatoka_brandbook} alt={'Zatoka Smaków Brandbook'}/></div>
     </div>
     <div className='project_sec'>
         <h3>Merch & Assets</h3>
-        <p>Additionaly, the project consisted of creating a set of mockups and printable files for various brand merch, posters, menu and rollups. </p>
+        <p>Additionaly, the project consisted of creating a set of mockups and printable files for various brand merch, posters, menu and rollups.
+          The first thing to be created was a <b>Loyalty Card</b> that allowed customers to collect stamps with each purchase, which then could be
+          traded for prizes. For 8 stamps, the customer could get a bevarage of their choice from the menu. For 10 stamps, there was a pop-it toy guaranteed, as the main
+          target group was children and the toy was popular at the time, and connected to bubble waffles.
+        </p>
         <div className='project_img_big'><img src={slide1} alt={'Branded Business Cards'}/></div>
         <div className='project_img_big'><img src={slide2} alt={'Branded Business Cards'}/></div>
         <div className='project_img_big'><img src={slide3} alt={'Branded Business Cards'}/></div>
         <div className='project_img_big'><img src={slide4} alt={'Branded Business Cards'}/></div>
         <div className='project_img_big'><img src={slide5} alt={'Branded Business Cards'}/></div>
+        <h4>Leaflets & Rollups</h4>
+        <p>The plan for this fun and children-targeted design was to be illustrative and use bold, summer colors. However with the progressing months we noticed people were more drawn 
+          to the competitors, mostly due to visually attractive and realistic product pictures. We then decided to introduce realistic product pictures to the design. It <b>helped the
+          customers visuallise the products way better and attracted more people when displayed on rollups</b>. It was a step in the right direction.
+        </p>
         <div className='project_img_big'><img src={slide6} alt={'Branded Business Cards'}/></div>
-        <div className='project_img_big'><img src={slide7} alt={'Branded Business Cards'}/></div>
         <div className='project_img_big'><img src={slide8} alt={'Branded Business Cards'}/></div>
+
+        <h4>Make your own Bubble Waffle Poster</h4>
+        <p>Initially, the bubble waffle options were written down as a text in a menu. However, that solution did not attract customers and many people dismissed the information
+          about DIY waffles. To solve this problem, we created a colorful poster with <b>all the flavors and options on display.</b> The flavors were portrayed with photos, ie. strawberry flavour
+          was potrayed with a real strawberry picture. That way the customer could associate the flavor easily and think of natural ingridients.
+        </p>
+        <div className='project_img_big'><img src={slide7} alt={'Branded Business Cards'}/></div>
         
     </div>
-    <div className='project_sec'>
+    <div className='project_sec project_sec_alt'>
         <h3>Interactive Figma Menu</h3>
-        <p>Interactive menu design prepared in Figma that could be accessed through a QR code and opened on any mobile device in a browser. Scrollable one pager with recent menu items, prices and SM links.</p>
+        <p>Interactive menu design prepared in Figma that could be accessed through a QR code and opened on any mobile device in a browser.
+          Scrollable one pager with recent menu items, prices and SM links allowed people to browse through the menu comfortably from their phone. They didn't 
+          have to squeeze through the crowd to take a look at the menu that was placed on the food truck.</p>
         <div className='project_img_big'>
         <video autoplay muted loop id="video">
           <source src={figma_video} type="video/webm"/>

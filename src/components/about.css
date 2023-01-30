@@ -1,7 +1,8 @@
 .about-main {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: left;
   column-gap: 80px;
   margin-bottom: 100px;
   margin-top:150px;
@@ -10,6 +11,9 @@
 .about-pic {
   max-width: 400px;
   max-height: 550px;
+  width: 50%;
+  height: 100%;
+  min-width: 250px;
   position: relative;
   margin-bottom: 100px;
 }
@@ -19,7 +23,7 @@
 }
 
 .about-txt {
-  max-width: 600px;
+  width: 100%;
   margin-top: -50px;
 }
 
@@ -53,13 +57,13 @@
 .resume-btns button {
   background: none;
   border: 1px solid #0b0b0b;
-  padding: 8px 15px 5px 15px;
+  padding: 8px 16px 8px 16px;
   margin-right: 20px;
   font-size: 14px;
   color: #0b0b0b;
-  font-family: 'Spartan', sans-serif;
+  font-family: 'Inter', sans-serif;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   transition: all 150ms ease-in-out;
   margin-bottom: 30px;
 }
@@ -74,9 +78,11 @@
 }
 
 .about-main button:hover {
-  color: #F1AC2B;
+  color: white;
+  background-color: #F1AC2B;
   border: 1px solid #F1AC2B;
   transition: all 150ms ease-in-out;
+  cursor: pointer;
 }
 
 /*sm icons*/
@@ -94,3 +100,9 @@
 .sm-icons img:hover {
   opacity: 0.3;
 }
+
+@media only screen and (max-width: 800px) {
+  .about-main {
+    flex-wrap: wrap;
+  }
+} 

@@ -1,0 +1,56 @@
+.testimonial-tab {
+  background-color: white;
+  width: 100%;
+  height: auto;
+  padding: 16px 32px 32px 32px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-tab.darkmode {
+  background-color: var(--black);
+}
+
+.testimonial-text {
+  height: 100%;
+}
+
+.testimonial-text p {
+  line-height: 160%;
+  font-size: 14px;
+  width: 100%;
+  text-align: left;
+}
+
+.person-avatar img {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.testimonial-person {
+  display: flex;
+  column-gap: 16px;
+  height: 64px;
+  margin-top: 4px;
+}
+.person-info {
+  max-height: 48px;
+  width: 100%;
+
+}
+.person-info h3 {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
+}
+
+.person-info p {
+  font-size: 14px;
+  line-height: 120%;
+  margin-top: 4px;
+  color: var(--mustard);
+  text-align: left;
+}

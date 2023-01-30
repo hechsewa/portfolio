@@ -21,12 +21,12 @@ import fotowolt2 from '../images/visuals/fotowolt2.jpg'
 import goodlood1 from '../images/visuals/goodlood1.jpg'
 import jellyfish from '../images/visuals/jellyfish.jpg'
 import juwenalia from '../images/visuals/juwenalia.jpg'
-import poster1 from '../images/visuals/poster1.jpg'
+import mrame from '../images/visuals/mrame.jpg'
 import poster2 from '../images/visuals/poster2.jpg'
 import radio1 from '../images/visuals/radio1.jpg'
 import radio2 from '../images/visuals/radio2.jpg'
 import radio3 from '../images/visuals/radio3.jpg'
-import recepturka from '../images/visuals/recepturka.jpg'
+import jkaim from '../images/visuals/jkaim.jpg'
 import women from '../images/visuals/women.jpg'
 import dailylogo from '../images/visuals/dailylogo.webp'
 import coffeestation from '../images/visuals/coffeestation-mockup.png'
@@ -35,6 +35,11 @@ import snowman from '../images/visuals/snowman.gif'
 import ugoda from '../images/visuals/policzugode.png'
 import codereduced from '../images/visuals/codereduced.png'
 import invariant from '../images/visuals/invariant.png'
+/*posters*/
+import balwan from '../images/visuals/balwan.jpg'
+import bubbletea from '../images/visuals/bubbletea.jpg'
+import cat from '../images/visuals/cat.jpg'
+import smok from '../images/visuals/smok.jpg'
 
 const Visuals = () => {
   const [theme, toggleTheme] = useDarkMode();
@@ -80,7 +85,7 @@ const Visuals = () => {
   <Layout theme={theme} setTheme={toggleTheme}>
     <Seo title="Visuals | Ewa Hechsman Portfolio" />
     <h1 className='visuals-h1'>Visuals</h1>
-    <h2 className='visuals-h2'>Digital sketchbook</h2>
+    <p className=''>Digital sketchbook; smaller, fun, ongoing projects, and just design I feel proud of</p>
     <div className={theme==='dark'?'visuals-chips':'visuals-chips darkmode'}>
       <button className="visual-chip" id="ui" onClick={onChipClick}>UI Design</button>
       <button className="visual-chip" id="brand" onClick={onChipClick}>Branding</button>
@@ -91,15 +96,19 @@ const Visuals = () => {
     <div className='visuals-gallery'>
       <Visual src={coffeestation} tags={'ui'} alt={'Coffee station mockup mobile app mid-fidelity design'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={aurona} tags={'ui'} alt={'Aurona extension screens'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={mrame} tags={'brand'} alt={'Branding for 3D medical modelling university society'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={jkaim} tags={'brand'} alt={'Branding for a real estate advisor'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={archdesk1} tags={'sm'} alt={'Archdesk illustration article banners'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={archdesk2} tags={'sm'} alt={'Archdesk social media posts'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={balwan} tags={'ill'} alt={'Personal Project for Xmas Cards: Snowman'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={smok} tags={'ill'} alt={'Personal Project for Xmas Cards: Cracow Dragon in Kazimierz'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={bubbletea} tags={'ill'} alt={'Commercial Bubble Tea Recipe Menu Poster for Zatoka Smaków'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={cat} tags={'ill'} alt={'Personal Project: Mountain Cat Poster'} theme={theme} orient={'vertical'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={ugoda} tags={'ui'} alt={'UI landing page design with a agreement calculator'} theme={theme} orient={'vertical'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={dailylogo} tags={'brand'} alt={'Best logos from Daily Logo Challenge'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
-      <Visual src={poster1} tags={'ill'} alt={'Poster for Krakow concert'} theme={theme} orient={'vertical'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={fotowolt1} tags={'sm'} alt={'Photovoltaic social media graphic'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={fotowolt2} tags={'sm'} alt={'Social media graphics for Ekogmina'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={poster2} tags={'ill'} alt={'Posters for local orchestra'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
-      <Visual src={recepturka} tags={'brand'} alt={'Packaging design for granola Recepturka'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={archdeskapp} tags={'ui'} alt={'Archdesk mobile app redesign'} theme={theme} orient={'vertical'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={archdeskems} tags={'ui'} alt={'Archdesk landing page with case study'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={arlogo} tags={'brand'} alt={'Logo for ARPortal'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>

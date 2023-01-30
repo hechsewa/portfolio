@@ -8,10 +8,13 @@ import lineartlight from '../images/lineart_white.svg'
 import lineartdark from '../images/lineart_black.svg'
 import '../components/index.css'
 import ProjectTab from '../components/ProjectTab/projecttab.js'
-import women from '../images/women.png'
+import TestimonialTab from "../components/TestimonialTab/TestimonialTab"
 import synth from '../images/synth.png'
 import inhub from '../images/inhub.png'
 import zatoka from '../images/zatoka.png'
+import kocwa from '../images/testimonials/kocwa.jpg'
+import anda from '../images/testimonials/anda.jpg'
+import coffee from '../images/mobile.png'
 
 const IndexPage = () =>{
   const [theme, toggleTheme] = useDarkMode();
@@ -38,17 +41,36 @@ return (
       </div>
       <div className='head-text'>
         <div className='head-hello'>
-          <h1>UI & Graphic</h1>
-          <h1 className='marker'>Designer</h1>
+          <h1>UI &</h1>
+          <h1 className='marker'>Graphic Designer</h1>
         </div>
         <div className='head-desc'>
-          <p>I'm Ewa, Digital Designer with a programming background. I believe that great design is a gateway to information and connecting with users. </p>
+          <p>Based in Cracow, Poland. Passionate about making products and visuals look great.</p>
         </div>
       </div>
     </div>
     <div className='projects'>
-      <h2>Selected <mark>Projects</mark></h2>
+      <h2>Selected Projects</h2>
+      <p>you can find more of my work in <a href={'/portfolio/visuals'}>visuals</a></p>
       <div className='projects-gallery'>
+        <ProjectTab 
+          theme={theme}
+          img={inhub}
+          title={'Inhub Innovations LP'}
+          ux={true}
+          brand={false}
+          ill={false}
+          linker={'/portfolio/inhub'}
+        />
+        <ProjectTab 
+          theme={theme}
+          img={coffee}
+          title={'Coffee Station Mobile App'}
+          ux={true}
+          brand={false}
+          ill={false}
+          linker={'/portfolio/coffeemobile'}
+        />
         <ProjectTab 
           theme={theme}
           img={zatoka}
@@ -60,31 +82,50 @@ return (
         />
         <ProjectTab 
           theme={theme}
-          img={inhub}
-          title={'Inhub Innovations'}
-          ux={true}
-          brand={false}
-          ill={false}
-          linker={'/portfolio/inhub'}
-        />
-        <ProjectTab 
-          theme={theme}
-          img={women}
-          title={'Empower by example'}
-          ux={true}
-          brand={true}
-          ill={false}
-          linker={'/portfolio/empower'}
-        />
-        <ProjectTab 
-          theme={theme}
           img={synth}
-          title={'Synthetify'}
+          title={'Synthetify Web App'}
           ux={true}
           brand={true}
           ill={false}
           linker={'/portfolio/synthetify'}
         />
+      </div>
+    </div>
+    <div className='testimonials'>
+      <div className='testimonials-content'>
+        <div className='testimonial-text'>
+          <h3>What people say 💬</h3>
+          <p className='testimonial-text-p'>Here are some opinions from people who worked with me on different projects.
+          </p>
+        </div>
+      <div className='testimonial-gallery'>
+        <TestimonialTab 
+          theme={theme}
+          avatar={kocwa}
+          name={'Paweł Kocwa'}
+          function={'Founder @ Codenauts'}
+          quote={'I had an opportunity to work with Ewa during a process of creating logos for a few projects.\
+        Ewa was always very well prepared, her ideas on point and very well corelated\
+        to our needs at the given stage of work. Working with Ewa is a pleasure.'}
+        />
+        <TestimonialTab 
+          theme={theme}
+          avatar={anda}
+          name={'Anda Alexandra Rosiek'}
+          function={'Project Manager Team Lead @ Archdesk'}
+          quote={'Ewa is a remarkable human being. She\'s open and communicative and kind and always gets involved in projects both with the head and with her heart. She\'s \
+          a great person to work with - she listens and delivers above and beyond, of course in time. She\'s\
+          very creative and each piece she does is amazing. Ewa will be a great addition to any creative team!'}
+        />
+      </div>
+      </div>
+    </div>
+    <div className='contact-me'>
+      <h3>Let's work together!</h3>
+      <p>Feel free to email me about freelance projects, or full time jobs.</p>
+      <div className='contact-btns'>
+        <a href="mailto:ewahechsman@gmail.com"><button>Send me an e-mail</button></a>
+        <button>Download Resume</button>
       </div>
     </div>
   </Layout>
