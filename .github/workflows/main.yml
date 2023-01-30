@@ -17,4 +17,3 @@ jobs:
         with:
           access-token: ${{ secrets.portfolio_secret }}
           deploy-branch: gh-pages
-          gatsby-args: --prefix-
