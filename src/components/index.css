@@ -218,6 +218,10 @@ body.darkmode .testimonials {
     margin-bottom: 50px;
   }
 
+  .testimonials {
+    padding: 20px 5vw 20px 15vw;
+  }
+
   .testimonial-gallery {
     flex-wrap: wrap;
     row-gap: 16px;

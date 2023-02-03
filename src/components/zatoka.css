@@ -57,4 +57,10 @@
   .project_in img  {
     width: 100%;
   }
+
+  .project_sec {
+    margin-left: -25vw;
+    padding-left: 25vw;
+    padding-right: 5vw;
+  }
 }

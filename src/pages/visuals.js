@@ -55,6 +55,12 @@ const Visuals = () => {
   });
 
   function onChipClick(e) {
+    //google analytics
+    if (typeof window !== 'undefined') {
+      window.gtag('event', 'click', {
+        'click_place': e.target.id,
+      });
+    };
     var allVisuals = document.getElementsByClassName("visual-div");
     //disable all other chips
     var allChips = document.getElementsByClassName("visual-chip");
