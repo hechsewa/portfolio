@@ -96,6 +96,14 @@ p {
   flex-wrap: wrap;
   row-gap: 0px;
 }
+.project-head-img {
+  margin: 50px -5vw;
+  height: auto;
+}
+.project-head-img img {
+  object-fit: contain;
+  height: auto;
+}
 .project-head-columns {
   width: 100%;
 }

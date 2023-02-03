@@ -132,6 +132,11 @@ button:hover {
   html {
     font-size: 100%;
   }
+
+  body {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
 }
 
 mark {

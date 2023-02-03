@@ -96,7 +96,7 @@ nav ul li a.darkmode {
   .nav-icon {
     display: block;
     float: right;
-    margin-right: 25vw;
+    margin-right: 10vw;
   }
 
   #closeic:hover, #menuic:hover {
@@ -150,6 +150,14 @@ nav ul li a.darkmode {
     text-align: center;
   }
 
+  nav {
+    margin-left: -15vw;
+    padding-right: 15vw;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  }
+
   .nav-links-mobile a:hover {
     opacity: 0.5;
   }
@@ -158,7 +166,11 @@ nav ul li a.darkmode {
     color: white;
   }
 
+  .nav-logo {
+    width: 100%;
+  }
+
   .nav-logo img {
-    width: 280px;
+    margin: 0;
   }
 }

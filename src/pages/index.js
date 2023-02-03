@@ -15,9 +15,18 @@ import zatoka from '../images/zatoka.png'
 import kocwa from '../images/testimonials/kocwa.jpg'
 import anda from '../images/testimonials/anda.jpg'
 import coffee from '../images/mobile.png'
+import resume from '../images/hechsman_resume_eng.pdf'
 
 const IndexPage = () =>{
   const [theme, toggleTheme] = useDarkMode();
+
+  const handleClick = (e) => {
+    if (typeof window !== 'undefined') {
+      window.gtag('event', 'click', {
+        'click_place': e.target.id,
+      });
+    }
+  };
 
   useEffect(() => {
     var bdy = document.getElementsByTagName('body')[0];
@@ -51,7 +60,7 @@ return (
     </div>
     <div className='projects'>
       <h2>Selected Projects</h2>
-      <p>you can find more of my work in <a href={'/portfolio/visuals'}>visuals</a></p>
+      <p>you can find more of my work in <a onClick={handleClick} id='home_visuals' href={'/portfolio/visuals'}>visuals</a></p>
       <div className='projects-gallery'>
         <ProjectTab 
           theme={theme}
@@ -124,8 +133,8 @@ return (
       <h3>Let's work together!</h3>
       <p>Feel free to email me about freelance projects, or full time jobs.</p>
       <div className='contact-btns'>
-        <a href="mailto:ewahechsman@gmail.com"><button>Send me an e-mail</button></a>
-        <button>Download Resume</button>
+        <a href="mailto:ewahechsman@gmail.com" id='home_send_email' onClick={handleClick}><button>Send me an e-mail</button></a>
+        <a href={resume} id='home_resume' download="EwaHechsman_Resume.pdf" onClick={handleClick}><button>Download Resume</button></a>
       </div>
     </div>
   </Layout>
