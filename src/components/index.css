@@ -1,99 +1,51 @@
-.head-img img {
-  max-width: 100%;
-  height: auto;
-  margin-left: -20px;
-  z-index: 100;
-}
-
-.head-img p {
-  width: 100px;
-  line-height: 150%;
-}
-
-.head-img {
-  position: relative;
-  width: 400px;
-  display: none; /*comment out to show the graphic*/ 
-}
-
-.head-img-logo {
-  position: absolute;
-  left: 190px;
-  top: 50px;
-  width: 250px;
-  height: 150px;
-  padding-top: 40px;
-  margin-top: -40px;
-  margin-left: -150px;
-  opacity: 0;
-  transition: all 300ms ease-in-out;
-}
-
-.head-img-logo p {
-  float: right;
-}
-
-.head-img-ux {
-  position:absolute;
-  right: 0px;
-  top: 120px;
-  height: 280px;
-  width: 200px;
-  opacity: 0;
-  transition: all 300ms ease-in-out;
-}
-
-.head-img-ux p {
-  float: right;
-}
-
-.head-img-sm {
-  position:absolute;
-  left: -20px;
-  top: 220px;
-  height: 220px;
-  width: 180px;
-  padding-left: 20px;
-  opacity: 0;
-  transition: all 300ms ease-in-out;
-}
-
 h3 {
   font-size: 32px;
 }
 
-.head-img-logo:hover, .head-img-ux:hover, .head-img-sm:hover {
-  opacity: 1;
-  transition: all 300ms ease-in-out;
+.head-main {
+  /*cursor: url('../images/cursor.png'), auto;*/
+  width: 100%;
 }
 
-.head-main {
-  cursor: url('../images/cursor.png'), auto;
+.head-main .head-text {
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
 }
 
 .head-main {
   display: flex;
-  align-items: center;
-  justify-self: center;
-  justify-content: center;
+  align-items: left;
+  justify-self: left;
+  justify-content: left;
   column-gap: 80px;
-  margin-top: 120px;
+  margin-top: 180px;
   flex-wrap: wrap;
   row-gap: 50px;
+  padding-bottom: 80px;
+  width: 100%;
+  margin-left: -10vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
 .head-hello {
   display: flex;
-  column-gap: 15px;
-  max-width: 500px;
-  margin-bottom: -50px;
+  column-gap: 8px;
+  max-width: 100%;
+  margin-bottom: -60px;
   flex-wrap: wrap;
-  text-align: center;
-  justify-content: center;
+  text-align: left;
+  justify-content: left;
 }
 
 .head-hello h1 {
-  font-size: 40px;
+  font-size: 32px;
+  font-family: 'Inter';
+  /*color: var(--mustard);*/
   line-height: 150%;
   margin-bottom: 50px;
 }
@@ -109,17 +61,27 @@ h1.outline.darkmode {
 }
 
 h1.marker {
-  color: #F1AC2B;
+  color: var(--mustard);
 
 }
 
 .head-desc {
-  max-width: 500px;
-  text-align: center;
+  max-width: 75%;
+  text-align: left;
 }
 
 .head-desc p {
-  line-height: 180%;
+  line-height: 150%;
+  text-align: left !important;
+}
+
+.head-desc h2 {
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  text-align: left !important;
+  font-weight: 500;
+  opacity: 0.6;
+  line-height: 160%;
 }
 
 /*selected projects*/
@@ -128,10 +90,11 @@ h1.marker {
 }
 
 .projects p {
-  text-align: center;
-  margin-top: -15px;
-  font-size: 14px;
+  text-align: left;
+  margin-top: -16px;
+  font-size: 16px;
 }
+
 .projects p a {
   text-decoration: none;
   color: var(--mustard);
@@ -144,7 +107,7 @@ h1.marker {
 
 .projects h2 {
   font-size: 24px;
-  text-align: center;
+  text-align: left;
   font-family: 'Inter';
 }
 
@@ -153,8 +116,8 @@ h1.marker {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
-  column-gap: 40px;
-  row-gap: 40px;
+  column-gap: 4%;
+  row-gap: 48px;
   margin-top: 50px;
   margin-bottom: 100px;
   width: 100%;
@@ -164,8 +127,8 @@ h1.marker {
 .testimonials {
   background-color: var(--lightbase);
   width: 100%;
-  padding: 20px 15vw;
-  margin-left: -15vw;
+  padding: 20px 10vw;
+  margin-left: -10vw;
 }
 
 body.darkmode .testimonials {
@@ -180,18 +143,19 @@ body.darkmode .testimonials {
 .testimonial-text h3 {
   line-height: 100%;
   margin: 0;
-  text-align: center;
+  text-align: left;
 }
 
 .testimonial-text-p {
-  text-align: center !important;
+  text-align: left !important;
 }
 
 .testimonial-gallery {
   margin-top: 60px;
   display: flex;
-  flex-wrap:nowrap;
-  column-gap: 24px;
+  flex-wrap:wrap;
+  column-gap: 4%;
+  row-gap: 32px;
   width: 100%;
 }
 
@@ -206,12 +170,21 @@ body.darkmode .testimonials {
 
 
 @media screen and (max-width: 975px) {
-  .head-img {
-    display: none;
-  }
 
   .head-hello h1 {
-    margin-bottom: -40px;
+    margin-bottom: 50px;
+  }
+
+  .head-main {
+    margin-top: 80px;
+  }
+
+  .projects {
+    margin-top: 0px;
+  }
+
+  .head-desc {
+    max-width: 100%;
   }
 
   .head-hello .marker {
@@ -219,7 +192,7 @@ body.darkmode .testimonials {
   }
 
   .testimonials {
-    padding: 20px 5vw 20px 15vw;
+    padding: 20px 5vw 20px 10vw;
   }
 
   .testimonial-gallery {

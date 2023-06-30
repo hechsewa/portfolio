@@ -12,22 +12,5 @@
   max-width: 100% !important;
 }
 
-.project_sec h4 {
-  margin-top: 48px;
-}
-
-.project_sec li p {
-  margin: 0px;
-  max-width: 100%;
-}
 
 
-@media only screen and (max-width: 800px) {
-  .project_in_txt {
-    flex-wrap: wrap;
-  }
-
-  .project_in_txt .project_text {
-    width: 100%;
-  }
-}

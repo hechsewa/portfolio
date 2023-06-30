@@ -46,22 +46,20 @@ const About = () => {
     <div className='about-main'>
       <div className='about-pic'>
         <img src={about} alt="ewa hechsman in a cafe" />
-        <div className={theme==='dark'? 'about-frame' : 'about-frame darkmode'}></div>
       </div>
       <div className='about-txt'>
         <h1>Hi, I'm Ewa</h1>
-        <h2><mark>UI & Graphic Designer</mark> with a programming background</h2>
-        <p>I’ve started as a programmer, but while exploring the world of front-end,
-          I’ve stumbled upon interface design and fell in love with UI Design.
-          This way, I’ve based my master’s thesis on UX in website design from a programmer’s
-          point of view and continued to study Visual Design in my own time.
-          Right now, I’m working as a <b>ui & graphic designer @ Archdesk.</b>
-          <br/><br/>
-          I'm based in Cracow, Poland. In the little free time I get, I enjoy musical theater, bullet journaling, good coffee and watercolors.
+        <h2><mark>UI/UX & Graphic Designer</mark></h2>
+        <p>I'm a passionate UI/UX and graphic designer. I live in
+Cracow and I get an extra serotonin boost from hiking and talking
+to my plants. I have a programming background, but I noticed I
+particularly liked the designing part of coding challenges, so I
+decided to get into UI/UX and based my thesis on that topic.
+          Right now, I’m working as a <b>UI/UX designer @ Archdesk.</b>
           </p>
         <div className={theme==='dark'?'resume-btns':'resume-btns darkmode'}>
-          <a onClick={handleClick} id='about_resume_eng' target='_blank' rel='noreferrer' href='https://drive.google.com/file/d/1hOSoDZiPMs5jfZEzX4rdiwfKFkNBvKx3/view?usp=sharing'><button>resume eng</button></a>
-          <a onClick={handleClick} id='about_resume_pl' target='_blank' rel='noreferrer' href='https://drive.google.com/file/d/1ykg-frEW5FgYuJf-9XLzZGvYZb0U0Txc/view?usp=sharing'><button>resume pl</button></a>
+          <a onClick={handleClick} id='about_resume_eng' target='_blank' rel='noreferrer' href='https://drive.google.com/file/d/1hOSoDZiPMs5jfZEzX4rdiwfKFkNBvKx3/view?usp=sharing'>Open Resume EN🇬🇧 ↗</a>
+          <a onClick={handleClick} id='about_resume_pl' target='_blank' rel='noreferrer' href='https://drive.google.com/file/d/1ykg-frEW5FgYuJf-9XLzZGvYZb0U0Txc/view?usp=sharing'>Open Resume PL🇵🇱 ↗</a>
         </div>
         <div className='contact-info'>
           <div className='sm-icons'>

@@ -1,13 +1,15 @@
 nav {
-  height: 50px;
-  padding-top: 20px;
+  height: 48px;
+  min-height: 48px;
   top: 0;
-  margin-left: -16vw;
+  padding-top: 8px;
+  padding-bottom: 8px;
   /*padding-left: 10vw;*/
-  background-color: #fefefe;
+  background-color: #ffffff;
+  opacity: 90%;
   position: fixed;
   z-index: 100;
-  width: 100vw;
+  width: 100%;
 }
 
 nav.darkmode {
@@ -21,8 +23,9 @@ nav ul {
   overflow: hidden;
   display: flex;
   align-items: center;
-  width: 100%;
-  margin: 0 15vw;
+  width: 81vw;
+  margin-left: 9vw;
+  max-height: 48px;
 }
 
 nav ul li {
@@ -35,8 +38,9 @@ nav ul li::marker {
 
 .nav-right {
   float: right;
-  width: 52%;
-
+  display: flex;
+  align-items: center;
+  max-height: 48px;
 }
 
 .nav-icon {
@@ -54,30 +58,60 @@ nav ul li a {
   font-weight: 600;
 }
 
+nav ul li:last-child a{
+  padding-right: 0px;
+}
+
 nav ul li a.darkmode {
   color: #fefefe;
 }
 
+.nav-name{
+  width: 100%;
+  padding-bottom: 22px;
+}
+
+.nav-name p {
+  font-size: 22px;
+  font-weight: 800 !important;
+  color:#0b0b0b;
+  opacity: 1;
+  font-family: 'Inter';
+}
+
+nav.darkmode .nav-name a {
+  color: white;
+}
+
+.nav-name a {
+  float: left;
+  font-weight: 700;
+  letter-spacing: normal;
+}
+
+
 .nav-logo {
-  width: 50%;
+  width: 100%;
+  display: none;
 }
 
 .nav-logo img {
   height: 18px;
+  max-height: 48px;
   width: auto;
   float: left;
-  margin-top: -28px;
 }
 
 .nav-btn button {
   background: none;
   border: none;
-  margin-top:-6px;
-  margin-left: 10px;
+  padding: 0;
+  margin: 0;
+  padding: 16px;
 }
 
 .nav-item {
-  margin-top: 5px;
+  
 }
 
 .nav-item:hover {
@@ -85,7 +119,8 @@ nav ul li a.darkmode {
 }
 
 .nav-item.active a {
-  color: #F1AC2B;
+  color:var(--mustard);
+  text-decoration: underline;
 }
 
 .nav-mobile {
@@ -96,7 +131,11 @@ nav ul li a.darkmode {
   .nav-icon {
     display: block;
     float: right;
-    margin-right: 10vw;
+    margin-right: 4vw;
+  }
+
+  nav ul {
+    width: 100%;
   }
 
   #closeic:hover, #menuic:hover {
@@ -112,17 +151,17 @@ nav ul li a.darkmode {
   }
 
   .nav-mobile.invisible {
-    transform: translateX(50vw);
+    transform: translateX(100vw);
     transition: all 0.3s ease-in-out;
   }
 
   .nav-mobile {
-    width: 50vw;
+    width: 100vw;
     height: 100vh;
     position: fixed;
     top: 0;
     right: 0;
-    background-color: rgba(241, 172, 43, 0.7);
+    background-color: rgba(255, 255, 255, 0.9);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -151,8 +190,8 @@ nav ul li a.darkmode {
   }
 
   nav {
-    margin-left: -15vw;
-    padding-right: 15vw;
+    margin-left: -10vw;
+    padding-right: 10vw;
     position: fixed;
     top: 0;
     z-index: 1000;

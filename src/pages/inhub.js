@@ -96,7 +96,7 @@ const Inhub = () => {
         </div>
     </div>
     <div className={theme==='dark'? 'go-back dark' : 'go-back'}>
-        <a href="/portfolio"><p>{"<"} Go back to projects</p></a>
+        <a href="/portfolio"><p>{"←"} Go back to projects</p></a>
     </div>
   </Layout>
 )};

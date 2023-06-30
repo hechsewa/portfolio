@@ -4,8 +4,6 @@ import {useEffect} from 'react'
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import useDarkMode from '../components/useDarkMode'
-import lineartlight from '../images/lineart_white.svg'
-import lineartdark from '../images/lineart_black.svg'
 import '../components/index.css'
 import ProjectTab from '../components/ProjectTab/projecttab.js'
 import TestimonialTab from "../components/TestimonialTab/TestimonialTab"
@@ -14,6 +12,7 @@ import inhub from '../images/inhub.png'
 import zatoka from '../images/zatoka.png'
 import kocwa from '../images/testimonials/kocwa.jpg'
 import anda from '../images/testimonials/anda.jpg'
+import doma from '../images/testimonials/doma.jpg'
 import coffee from '../images/mobile.png'
 import resume from '../images/hechsman_resume_eng.pdf'
 
@@ -42,19 +41,14 @@ return (
   <Layout theme={theme} setTheme={toggleTheme}>
     <Seo title="Projects | Ewa Hechsman Portfolio" />
     <div className='head-main'>
-      <div className='head-img'>
-        <div className='head-img-logo'><p>branding + logo design</p></div>
-        <div className='head-img-ux'><p>ui design</p></div>
-        <div className='head-img-sm'><p>graphic design</p></div>
-        <img alt="lineart drawing of skills: illustration, ui and social media" src={theme==='dark' ? lineartdark : lineartlight}/>
-      </div>
       <div className='head-text'>
         <div className='head-hello'>
-          <h1>UI &</h1>
-          <h1 className='marker'>Graphic Designer</h1>
+          <h1>I'm Ewa, a UI • UX • Graphic Designer</h1>
         </div>
         <div className='head-desc'>
-          <p>Based in Cracow, Poland. Passionate about making products and visuals look great.</p>
+          <h2>While designing, I put a strong focus on visuals, making pixel-perfect designs. Coming from
+            a programming background, I work closely with developers to deliver end products that provide best
+           user satisfaction 💚</h2>
         </div>
       </div>
     </div>
@@ -66,15 +60,18 @@ return (
           theme={theme}
           img={inhub}
           title={'Inhub Innovations LP'}
-          ux={true}
+          ui={true}
+          ux={false}
           brand={false}
           ill={false}
           linker={'/portfolio/inhub'}
+          desc={'This is a cool project that I will describe in two sentences. And this would be the second one.'}
         />
         <ProjectTab 
           theme={theme}
           img={coffee}
           title={'Coffee Station Mobile App'}
+          ui={true}
           ux={true}
           brand={false}
           ill={false}
@@ -84,6 +81,7 @@ return (
           theme={theme}
           img={zatoka}
           title={'Food Truck Branding'}
+          ui={false}
           ux={false}
           brand={true}
           ill={true}
@@ -93,6 +91,7 @@ return (
           theme={theme}
           img={synth}
           title={'Synthetify Web App'}
+          ui={true}
           ux={true}
           brand={true}
           ill={false}
@@ -112,7 +111,7 @@ return (
           theme={theme}
           avatar={kocwa}
           name={'Paweł Kocwa'}
-          function={'Founder @ Codenauts'}
+          function={'Chief Technology Officer @ play.air'}
           quote={'I had an opportunity to work with Ewa during a process of creating logos for a few projects.\
         Ewa was always very well prepared, her ideas on point and very well corelated\
         to our needs at the given stage of work. Working with Ewa is a pleasure.'}
@@ -125,6 +124,16 @@ return (
           quote={'Ewa is a remarkable human being. She\'s open and communicative and kind and always gets involved in projects both with the head and with her heart. She\'s \
           a great person to work with - she listens and delivers above and beyond, of course in time. She\'s\
           very creative and each piece she does is amazing. Ewa will be a great addition to any creative team!'}
+        />
+        <TestimonialTab 
+          theme={theme}
+          avatar={doma}
+          name={'Dominika Kwiatkowska'}
+          function={'Art Director @ Archdesk'}
+          quote={'Working with Ewa was a blast. She was a quick learner, creative soul with a technical background \
+          - what better combination could you expect? We worked together on web design projects mostly, but we brought\
+           a lot of creative design ideas to live - for example illustrations to our Blog section, creative campaigns \
+           (Women in construction). I highly recommend Ewa as an excellent worker in the field of design!'}
         />
       </div>
       </div>

@@ -8,9 +8,6 @@ const ProjectHead = (props) => {
       <div className='project-head-img'>
         <img src={props.headimg} alt='Project Header Image' />
       </div>
-      <div className='project-head-logo'>
-        <img className={props.theme==='dark'?'dark-logo':'light-logo'} src={props.logo} alt={props.logoalt}/>
-      </div>
       <h1>{props.title}</h1>
       <div className="project-head-wrapper">
       <div className='project-head-text'>

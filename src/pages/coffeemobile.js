@@ -1,5 +1,6 @@
 import * as React from "react"
 import {useEffect} from 'react'
+import {useState} from 'react'
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -77,7 +78,7 @@ const CoffeeMobile = () => {
           <div className='project_img_big'><img src={personas} alt={'User Personas'} /></div>
         <h4>User Flow</h4>
         <p>The state diagram below shows user flows in the application and the main actions the user can take in the app.</p>
-        <div className='project_img_big'><img src={flow} alt={'User Flow Diagram'} /></div>
+        <div className='project_img_full'><img src={flow} alt={'User Flow Diagram'} /></div>
       </div>
       <div className='project_sec project_sec_alt'>
         <h3>Designing the Application</h3>
@@ -99,9 +100,9 @@ const CoffeeMobile = () => {
             <li><p><b>Confirmation Dialog</b>  - confirm you want to sign out, extends the user's stay in the app.</p></li>
           </ul>
         </p>
-        <div className='project_img_big'><img src={screens} alt={'Application screens'} /></div>
-        <div className='project_img_big'><img src={uiboost} alt={'Application screens'} /></div>
-        <div className='project_img_big'><img src={uiexp} alt={'Application screens'} /></div>
+        <div className='project_img_full'><img src={screens} alt={'Application screens'} /></div>
+        <div className='project_img_full'><img src={uiboost} alt={'Application screens'} /></div>
+        <div className='project_img_full'><img src={uiexp} alt={'Application screens'} /></div>
         <p></p>
       </div>
       <div className='project_sec'>
@@ -128,10 +129,10 @@ const CoffeeMobile = () => {
         <p>Research and designing a better way of displaying the filtering tags in the products list, to make sure the users won’t miss them. 
 <br/><br/>
 Additionally, providing filtering by coffee place in the Favorites screen, to help the user navigate to their favorite coffee product faster.</p>
-        <div className='project_img_big'><img src={uimain3} alt={'Application screens'} /></div>
+        <div className='project_img_full'><img src={uimain3} alt={'Application screens'} /></div>
       </div>
       <div className={theme==='dark'? 'go-back dark' : 'go-back'}>
-        <a href="/portfolio/"><p>{"<"} Go back to projects</p></a>
+        <a href="/portfolio/"><p>{"←"} Go back to projects</p></a>
       </div>
   </Layout>
 )};

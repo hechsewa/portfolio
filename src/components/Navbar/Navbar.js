@@ -69,6 +69,9 @@ const Navbar = (props) => {
           <li className='nav-logo'>
             <a href="/portfolio/">
               <img src={props.theme === 'dark' ? logolight : logodark} alt="ewa hechsman logo"/></a></li>
+          <li className={props.theme==='dark'? 'nav-name' : 'nav-name darkmode'}>
+            <p><a href="/portfolio/">Ewa Hechsman</a></p>
+          </li>
           <div className='nav-right'>
             <li id='projects' className='nav-item active'><a className={props.theme==='dark'? '' : 'darkmode'} href="/portfolio/">Projects</a></li>
             <li id='visuals' className='nav-item'><a className={props.theme==='dark'? '' : 'darkmode'} href="/portfolio/visuals">Visuals</a></li>

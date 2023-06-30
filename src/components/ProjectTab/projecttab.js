@@ -6,23 +6,23 @@ const ProjectTab = (props) => {
   return (
     <div className={props.theme==='dark' ? 'project-tab' : 'project-tab darkmode'}>
       <div className='project-tab-front'>
-        <img src={props.img} alt="project cover"/>
+        <a href={props.linker}><img src={props.img} alt="project cover"/></a>
         <div className='mobile-link'>
           <p>{props.title}</p>
-          <div className='mobile-btn'><a className='linker' href={props.linker}><p>View project →</p></a></div>
+          <div className='mobile-btn'><a className='linker' href={props.linker}><p>Read Case Study ↗</p></a></div>
           </div>
       </div>
-      <a href={props.linker}>
       <div className='project-tab-back'>
-        <h1>{props.title}</h1>
         <div className='chips'>
-          <p className={props.ux ? 'vis' : 'invis'}>UI design</p>
-          <p className={props.brand ? 'vis' : 'invis'}>branding</p>
-          <p className={props.ill ? 'vis' : 'invis'}>illustration</p>
+          <p className={props.ui ? 'vis' : 'invis'}>UI Design</p>
+          <p className={props.ux ? 'vis' : 'invis'}>UX Design</p>
+          <p className={props.brand ? 'vis' : 'invis'}>Branding</p>
+          <p className={props.ill ? 'vis' : 'invis'}>Illustration</p>
         </div>
-        <a href={props.linker} className='linker'>VIEW PROJECT →</a>
+        <h1>{props.title}</h1>
+        <p className='project-desc'>{props.desc}</p>
+        <a href={props.linker} className='linker'><p>Read Case Study ↗</p></a>
       </div>
-      </a>
     </div>
 )};
 

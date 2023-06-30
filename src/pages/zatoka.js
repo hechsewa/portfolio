@@ -127,7 +127,7 @@ const Zatoka = () => {
       <div className='project_img_big'><img src={slide_truck_2} alt={'Food Truck Design Front and Back'}/></div>
     </div>
     <div className={theme==='dark'? 'go-back dark' : 'go-back'}>
-        <a href="/portfolio"><p>{"<"} Go back to projects</p></a>
+        <a href="/portfolio"><p>{"←"} Go back to projects</p></a>
     </div>
   </Layout>
 )};
