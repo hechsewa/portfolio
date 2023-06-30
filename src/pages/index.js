@@ -65,7 +65,7 @@ return (
           brand={false}
           ill={false}
           linker={'/portfolio/inhub'}
-          desc={'This is a cool project that I will describe in two sentences. And this would be the second one.'}
+          desc={'Web page design focused on simplifying UX. The website is target at young adults wanting to create a startup, so it needs quick and visually interesting access to information.'}
         />
         <ProjectTab 
           theme={theme}
@@ -76,6 +76,7 @@ return (
           brand={false}
           ill={false}
           linker={'/portfolio/coffeemobile'}
+          desc={'Mobile app to order coffee online, project created during a course. Focused on providing students and middle-age people from bigger cities a faster and more convenient way to order a coffee.'}
         />
         <ProjectTab 
           theme={theme}
@@ -86,6 +87,7 @@ return (
           brand={true}
           ill={true}
           linker={'/portfolio/zatoka'}
+          desc={'Full visual identity for a summer food truck located in Trzebinia. The brand wanted to convey the feeling of a cool summer break near the lake.'}
         />
         <ProjectTab 
           theme={theme}
@@ -96,6 +98,7 @@ return (
           brand={true}
           ill={false}
           linker={'/portfolio/synthetify'}
+          desc={'Landing Page, logo and web app project for a crypto start up. Targeted at young and middle-aged adults, the designs needed to be dark, neon and follow the current trends in crypto society.'}
         />
       </div>
     </div>

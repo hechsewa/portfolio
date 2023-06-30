@@ -202,7 +202,7 @@ nav.darkmode .nav-name a {
   }
 
   .nav-links-mobile a.active {
-    color: white;
+    color: var(--mustard);
   }
 
   .nav-logo {
