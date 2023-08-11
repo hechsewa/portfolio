@@ -1,0 +1,32 @@
+.project_in_txt {
+  width: 100%;
+  display: flex;
+  column-gap: 100px;
+}
+
+.project_in_txt .project_text{
+  width: 100%;
+}
+
+.project_text h3, .project_text p {
+  max-width: 100% !important;
+}
+
+.project_sec_blue {
+  background-color: #0D3B8B;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.project_sec_blue h3 {
+  color: white !important;
+  font-size: 48px;
+}
+
+.project_sec_inner {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+
+

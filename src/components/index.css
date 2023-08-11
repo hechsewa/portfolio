@@ -153,9 +153,9 @@ body.darkmode .testimonials {
 .testimonial-gallery {
   margin-top: 60px;
   display: flex;
-  flex-wrap:wrap;
-  column-gap: 4%;
-  row-gap: 32px;
+  flex-wrap:nowrap;
+  column-gap: 16px;
+  row-gap: 24px;
   width: 100%;
 }
 

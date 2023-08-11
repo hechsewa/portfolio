@@ -8,6 +8,7 @@ import '../components/index.css'
 import ProjectTab from '../components/ProjectTab/projecttab.js'
 import TestimonialTab from "../components/TestimonialTab/TestimonialTab"
 import synth from '../images/synth.png'
+import playair from '../images/playair.jpg'
 import inhub from '../images/inhub.png'
 import zatoka from '../images/zatoka.png'
 import kocwa from '../images/testimonials/kocwa.jpg'
@@ -58,14 +59,14 @@ return (
       <div className='projects-gallery'>
         <ProjectTab 
           theme={theme}
-          img={inhub}
-          title={'Inhub Innovations LP'}
+          img={playair}
+          title={'Play.air Mobile app & Website'}
           ui={true}
-          ux={false}
+          ux={true}
           brand={false}
           ill={false}
-          linker={'/portfolio/inhub'}
-          desc={'Web page design focused on simplifying UX. The website is target at young adults wanting to create a startup, so it needs quick and visually interesting access to information.'}
+          linker={'/portfolio/playair'}
+          desc={'Responsive mobile app and website design for speech therapy exercises for children, parents and speech therapists.'}
         />
         <ProjectTab 
           theme={theme}
@@ -80,6 +81,17 @@ return (
         />
         <ProjectTab 
           theme={theme}
+          img={inhub}
+          title={'Inhub Innovations LP'}
+          ui={true}
+          ux={false}
+          brand={false}
+          ill={false}
+          linker={'/portfolio/inhub'}
+          desc={'Web page design focused on simplifying UX. The website is target at young adults wanting to create a startup, so it needs quick and visually interesting access to information.'}
+        />
+        <ProjectTab 
+          theme={theme}
           img={zatoka}
           title={'Food Truck Branding'}
           ui={false}
@@ -88,17 +100,6 @@ return (
           ill={true}
           linker={'/portfolio/zatoka'}
           desc={'Full visual identity for a summer food truck located in Trzebinia. The brand wanted to convey the feeling of a cool summer break near the lake.'}
-        />
-        <ProjectTab 
-          theme={theme}
-          img={synth}
-          title={'Synthetify Web App'}
-          ui={true}
-          ux={true}
-          brand={true}
-          ill={false}
-          linker={'/portfolio/synthetify'}
-          desc={'Landing Page, logo and web app project for a crypto start up. Targeted at young and middle-aged adults, the designs needed to be dark, neon and follow the current trends in crypto society.'}
         />
       </div>
     </div>

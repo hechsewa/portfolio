@@ -1,7 +1,6 @@
 .testimonial-tab {
   background-color: white;
-  width: 33vw;
-  height: auto;
+  width: 100%;
   padding: 16px 32px 32px 32px;
   border-radius: 8px;
   display: flex;
