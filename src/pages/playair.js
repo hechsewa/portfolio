@@ -86,22 +86,19 @@ const Playair = () => {
         <div className='project_img_big'><img src={moodboard} alt={'Moodboard of kids app screens and bright colors'} /></div>
       </div>
    
-      <div className='project_img_full'><img src={mobiles} alt={'Application screens'} /></div>
+      <div className='project_img_full'><img src={mobiles} alt={'Mobile application banner with app screens on the right side'} /></div>
 
       <div className='project_sec project_sec_inner'>
         <h3>Wireframes</h3>
-        <p>Wireframes were created with two main ideas in mind, based on the market research.
-          Firstly, there was a need for a fresh three column layout, most of the news portals
-          were outdated and based on old newspaper layout that was not working online. Second,
-          looking at the world portal leaders - New York Times and BBC - there is a tendency
-          to place “big picture” article up front with a full width graphic that draws the user’s
-          attention. <br/><br/>
-          Generally, the portal should have simple navigation to meet target group’s needs and
-          minimalistic layout to help speed up reading.</p>
+        <p>Wireframes were created to solve multiple challenges we encountered while designing the app flow. The main problem to solve was that the app was to be used by parents,
+          speech therapists and children, and we faced issued with access rights. 
+          The other issue was connected to data sensitivity regarding kids’ profiles.<br/>
+          However, all problems managed to be resolved and the app flow was enriched with onboarding screens,
+          game instructions and mini-games.</p>
         <div className='project_img_big'><img src={wf_mobile} alt={'Wireframes of mobile app with problem solution schema'} /></div>
       </div>
 
-      <div className='project_img_full'><img src={wf_overview} alt={'Application screens'} /></div>
+      <div className='project_img_full'><img src={wf_overview} alt={'Wireframes of the mobile app of a bright background'} /></div>
 
       <div className='project_sec project_sec_inner'>
         <h3>UI Design</h3>
@@ -112,10 +109,10 @@ const Playair = () => {
           Next, the typography scale was created and used in components of the application.
           After talking to developers and confirming it was possible, several reusable components such as buttons,
           inputs, headers, toast messages were created.</p>
-        <div className='project_img_big'><img src={ui_mobile} alt={'Wireframes of mobile app with problem solution schema'} /></div>
+        <div className='project_img_big'><img src={ui_mobile} alt={'Colors, typography and chosen components of design system'} /></div>
       </div>
 
-      <div className='project_img_full'><img src={ui_overview} alt={'Application screens'} /></div>
+      <div className='project_img_full'><img src={ui_overview} alt={'Overview with chosen mobile app screens'} /></div>
 
       <div className='project_img_big'>
         <video autoplay muted loop id="video">
@@ -124,9 +121,9 @@ const Playair = () => {
         </video> 
         </div>
       
-      <div className='project_img_full'><img src={ui_prev} alt={'Application screens'} /></div>
+      <div className='project_img_full'><img src={ui_prev} alt={'Two mobile app screens on phone mockup'} /></div>
 
-      <div className='project_img_full'><img src={website} alt={'Application screens'} /></div>
+      <div className='project_img_full'><img src={website} alt={'Website banner with a laptop on the right side'} /></div>
 
       <div className='project_sec project_sec_inner'>
         <div className='project_in_txt'>
@@ -144,7 +141,7 @@ const Playair = () => {
             <li><p>For investor - used to store all the relevant information for investors.</p></li>
           </ul>
           </div>
-          <div className='project_img_big'><img src={sitemap} alt={'Speech Therapist with a kid doing'} /></div>
+          <div className='project_img_big'><img src={sitemap} alt={'Site map of the website'} /></div>
         </div>
       </div>
 
@@ -153,10 +150,10 @@ const Playair = () => {
         <p>After confirming the structure, wireframes were created.
           Then we met up with play.air’s members to align our views
           and tweak wireframes, than then became the final version before the UI.</p>
-        <div className='project_img_big'><img src={wf_web} alt={'Wireframes of mobile app with problem solution schema'} /></div>
+        <div className='project_img_big'><img src={wf_web} alt={'Wireframes of website page'} /></div>
       </div>
 
-      <div className='project_img_full'><img src={web_prev} alt={'Application screens'} /></div>
+      <div className='project_img_full'><img src={web_prev} alt={'UI Design of website on laptop screen and mobile screen'} /></div>
 
       <div className='project_sec project_sec_inner'>
         <h3>UI Design</h3>
@@ -165,16 +162,16 @@ const Playair = () => {
           layouts that could be easily rearranged for mobile. Developers helped along the process
           to make sure the layout were easy to implement and functional. There was two sets of components
           prepared - one for desktop, one for mobile.</p>
-        <div className='project_img_big'><img src={designsys_web} alt={'Wireframes of mobile app with problem solution schema'} /></div>
+        <div className='project_img_big'><img src={designsys_web} alt={'Design system, typography scale, chosen components of website design'} /></div>
       </div>
 
-      <div className='project_img_full'><img src={web_overview} alt={'Application screens'} /></div>
+      <div className='project_img_full'><img src={web_overview} alt={'Website screens of subpages'} /></div>
 
       <div className='project_img_big'>
       <iframe src="https://player.vimeo.com/video/853377063?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="100%" height="500vw" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="play.air website walkthrough"></iframe>
       </div>
 
-      <div className='project_img_full'><img src={project_overview} alt={'Application screens'} /></div>
+      <div className='project_img_full'><img src={project_overview} alt={'Responsive screens of application on tablet and mobile and website design on laptop screen'} /></div>
 
       <div className={theme==='dark'? 'go-back dark' : 'go-back'}>
         <a href="/portfolio/"><p>{"←"} Go back to projects</p></a>
