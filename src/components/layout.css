@@ -5,7 +5,7 @@
   --mustard: #0C705D;
   --mustard: #38bda5;
   --gray: #737373;
-  --lightbase: #f2f4f8;
+  --lightbase: #F5FAF9;
 }
 html {
   -ms-text-size-adjust: 100%;
@@ -36,8 +36,8 @@ body {
 }
 
 main {
-  margin-left: 10vw;
-  margin-right: 10vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
 }
 
 p {
@@ -166,9 +166,9 @@ button:hover {
 .project_sec {
   margin-top: 64px;
   width: 100%;
-  margin-left: -10vw;
+  margin-left: -15vw;
  /* margin: 20px -15vw;*/
-  padding: 40px 10vw 40px 10vw;
+  padding: 40px 15vw 40px 15vw;
 }
 
 .project_sec h3 {
@@ -193,9 +193,9 @@ button:hover {
   margin-bottom: 16px;
 }
 
-.project_img_full img{
+.project_img_full img, .project_img_full iframe{
   width: 100vw;
-  margin-left: -10vw;
+  margin-left: -15vw;
 }
 
 .project_in {
@@ -210,6 +210,7 @@ button:hover {
 .project_in img {
   width: 100%;
 }
+
 
 .project_img_big img, .project_img_big video {
   width: 100%;
@@ -258,7 +259,7 @@ button:hover {
     padding: 40px 4vw 40px 4vw;
   }
 
-  .project_img_full img {
+  .project_img_full img, .project_img_full iframe {
     margin-left: -4vw;
   }
 

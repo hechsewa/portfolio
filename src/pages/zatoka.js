@@ -7,24 +7,22 @@ import useDarkMode from '../components/useDarkMode.js'
 import '../components/zatoka.css'
 import ProjectHead from '../components/ProjectHead/projecthead.js'
 /* images */
-import zatoka_white from '../images/projects/logos/zatoka_white.png'
-import zatoka_dark from '../images/projects/logos/zatoka_dark.png'
-import zatoka_logos from '../images/projects/zatoka/slide_logo.png'
-import zatoka_brandbook from '../images/projects/zatoka/brandbook.png'
-import slide1 from '../images/projects/zatoka/slide_2_b.png'
-import slide2 from '../images/projects/zatoka/slide_3.png'
-import slide3 from '../images/projects/zatoka/slide_5_b.png'
-import slide4 from '../images/projects/zatoka/slide_6_b.png'
-import slide5 from '../images/projects/zatoka/slide_7b.png'
-import slide6 from '../images/projects/zatoka/slide_9.png'
-import slide7 from '../images/projects/zatoka/zatoka_behance_9.png'
-import slide8 from '../images/projects/zatoka/zatoka_behance_9b.png'
-import slide_truck from '../images/projects/zatoka/slide_10.png'
-import slide_truck_a from '../images/projects/zatoka/slide_11.png'
-import slide_truck_b from '../images/projects/zatoka/slide_12.png'
-import slide_truck_2 from '../images/projects/zatoka/slide_14.png'
+import zatoka_logos from '../images/projects/zatoka/slide_logo.webp'
+import zatoka_brandbook from '../images/projects/zatoka/brandbook.webp'
+import slide1 from '../images/projects/zatoka/slide_2_b.webp'
+import slide2 from '../images/projects/zatoka/slide_3.webp'
+import slide3 from '../images/projects/zatoka/slide_5_b.webp'
+import slide4 from '../images/projects/zatoka/slide_6_b.webp'
+import slide5 from '../images/projects/zatoka/slide_7b.webp'
+import slide6 from '../images/projects/zatoka/slide_9.webp'
+import slide7 from '../images/projects/zatoka/zatoka_behance_9.webp'
+import slide8 from '../images/projects/zatoka/zatoka_behance_9b.webp'
+import slide_truck from '../images/projects/zatoka/slide_10.webp'
+import slide_truck_a from '../images/projects/zatoka/slide_11.webp'
+import slide_truck_b from '../images/projects/zatoka/slide_12.webp'
+import slide_truck_2 from '../images/projects/zatoka/slide_14.webp'
 import figma_video from '../images/projects/zatoka/zatoka-men.webm'
-import zatoka_headimg from '../images/projects/zatoka/project-head-zatoka.png'
+import zatoka_headimg from '../images/projects/zatoka/project-head-zatoka.webp'
 
 
 const Zatoka = () => {
@@ -49,9 +47,7 @@ const Zatoka = () => {
     <ProjectHead 
       theme={theme}
       title={'Food Truck Branding for Zatoka Smaków'}
-      logo={theme==='dark'?zatoka_dark : zatoka_white}
       headimg={zatoka_headimg}
-      logoalt={'Zatoka Smaków logo'}
       ux={false}
       ill={true}
       brand={true}

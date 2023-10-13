@@ -26,9 +26,9 @@ h3 {
   row-gap: 50px;
   padding-bottom: 80px;
   width: 100%;
-  margin-left: -10vw;
-  padding-left: 10vw;
-  padding-right: 10vw;
+  margin-left: -15vw;
+  padding-left: 15vw;
+  padding-right: 15vw;
   border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
@@ -127,8 +127,8 @@ h1.marker {
 .testimonials {
   background-color: var(--lightbase);
   width: 100%;
-  padding: 20px 10vw;
-  margin-left: -10vw;
+  padding: 20px 15vw;
+  margin-left: -15vw;
 }
 
 body.darkmode .testimonials {
@@ -192,7 +192,7 @@ body.darkmode .testimonials {
   }
 
   .testimonials {
-    padding: 20px 5vw 20px 10vw;
+    padding: 20px 5vw 20px 15vw;
   }
 
   .testimonial-gallery {

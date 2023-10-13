@@ -7,14 +7,14 @@
   justify-content: center;
 }
 
-.visual-div-hor img {
+.visual-div-hor img, .visual-div-hor iframe {
   width: 100%;
   height: 100%;
   object-fit: contain;
   text-align: center;
 }
 
-.visual-div-vert img {
+.visual-div-vert img, .visual-div-ver iframe {
   height: 100%;
   width: 100%;
   object-fit: contain;
@@ -38,6 +38,8 @@
   transition: all 0.3s ease-in-out;
   z-index: 200;
 }
+
+
 
 /*.fullmode {
   background-color: rgba(254, 254, 254, 0.9);

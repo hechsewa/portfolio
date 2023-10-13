@@ -7,14 +7,13 @@ import useDarkMode from '../components/useDarkMode'
 import '../components/index.css'
 import ProjectTab from '../components/ProjectTab/projecttab.js'
 import TestimonialTab from "../components/TestimonialTab/TestimonialTab"
-import synth from '../images/synth.png'
-import playair from '../images/playair.jpg'
-import inhub from '../images/inhub.png'
-import zatoka from '../images/zatoka.png'
-import kocwa from '../images/testimonials/kocwa.jpg'
-import anda from '../images/testimonials/anda.jpg'
-import doma from '../images/testimonials/doma.jpg'
-import coffee from '../images/mobile.png'
+import gpw from '../images/gpw.webp'
+import playair from '../images/playair.webp'
+import zatoka from '../images/zatoka.webp'
+import kocwa from '../images/testimonials/kocwa.webp'
+import anda from '../images/testimonials/anda.webp'
+import doma from '../images/testimonials/doma.webp'
+import coffee from '../images/mobile.webp'
 import resume from '../images/hechsman_resume_eng.pdf'
 
 const IndexPage = () =>{
@@ -47,15 +46,15 @@ return (
           <h1>I'm Ewa, a UI • UX • Graphic Designer</h1>
         </div>
         <div className='head-desc'>
-          <h2>While designing, I put a strong focus on visuals, making pixel-perfect designs. Coming from
-            a programming background, I work closely with developers to deliver end products that provide best
+          <h2>Focused on making the visuals functional. Passionate about performance and sustainability. Coming from
+            a programming background, I work closely with developers to deliver end-products that provide best
            user satisfaction 💚</h2>
         </div>
       </div>
     </div>
     <div className='projects'>
       <h2>Selected Projects</h2>
-      <p>you can find more of my work in <a onClick={handleClick} id='home_visuals' href={'/portfolio/visuals'}>visuals</a></p>
+      <p>You can find more of my work in <a onClick={handleClick} id='home_visuals' href={'/portfolio/visuals'}>visuals</a></p>
       <div className='projects-gallery'>
         <ProjectTab 
           theme={theme}
@@ -68,6 +67,17 @@ return (
           linker={'/portfolio/playair'}
           desc={'Responsive mobile app and website design for speech therapy exercises for children, parents and speech therapists.'}
         />
+         <ProjectTab 
+          theme={theme}
+          img={gpw}
+          title={'Innovation Day Event Landing Page'}
+          ui={true}
+          ux={true}
+          brand={false}
+          ill={false}
+          linker={'/portfolio/gpw'}
+          desc={'Responsive website design for a stock exchange, investment event. Focused on minimal, yet brand-consistent design.'}
+        />
         <ProjectTab 
           theme={theme}
           img={coffee}
@@ -78,17 +88,6 @@ return (
           ill={false}
           linker={'/portfolio/coffeemobile'}
           desc={'Mobile app to order coffee online, project created during a course. Focused on providing students and middle-age people from bigger cities a faster and more convenient way to order a coffee.'}
-        />
-        <ProjectTab 
-          theme={theme}
-          img={inhub}
-          title={'Inhub Innovations LP'}
-          ui={true}
-          ux={false}
-          brand={false}
-          ill={false}
-          linker={'/portfolio/inhub'}
-          desc={'Web page design focused on simplifying UX. The website is target at young adults wanting to create a startup, so it needs quick and visually interesting access to information.'}
         />
         <ProjectTab 
           theme={theme}

@@ -1,6 +1,5 @@
 import * as React from "react"
 import {useEffect} from 'react'
-import {useState} from 'react'
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -8,20 +7,19 @@ import useDarkMode from '../components/useDarkMode.js'
 import '../components/coffeemobile.css'
 import ProjectHead from '../components/ProjectHead/projecthead.js'
 /* images */
-import coffee_head from '../images/projects/coffee_mobile/project_head_hype4.png'
-import designsystem from '../images/projects/coffee_mobile/design_system.jpg'
-import personas from '../images/projects/coffee_mobile/userpersonas.jpg'
-import screens from '../images/projects/coffee_mobile/screens.jpg'
-import uiboost from '../images/projects/coffee_mobile/ui-boost.jpg'
-import uiexp from '../images/projects/coffee_mobile/ui-exp.jpg'
-import uimain2 from '../images/projects/coffee_mobile/ui-main-2.jpg'
-import uimain from '../images/projects/coffee_mobile/ui-main.jpg'
-import uimain3 from '../images/projects/coffee_mobile/ui-main-3.jpg'
-import testing from '../images/projects/coffee_mobile/usability_testing.jpg'
-import flow from '../images/projects/coffee_mobile/user_flow.jpg'
-import goal from '../images/projects/coffee_mobile/goal.png'
-import logo_dark from '../images/projects/logos/coffee-logo-dark.png'
-import logo_light from '../images/projects/logos/coffe-logo-light.png'
+import coffee_head from '../images/projects/coffee_mobile/project_head_hype4.webp'
+import designsystem from '../images/projects/coffee_mobile/design_system.webp'
+import personas from '../images/projects/coffee_mobile/userpersonas.webp'
+import screens from '../images/projects/coffee_mobile/screens.webp'
+import uiboost from '../images/projects/coffee_mobile/ui-boost.webp'
+import uiexp from '../images/projects/coffee_mobile/ui-exp.webp'
+import uimain2 from '../images/projects/coffee_mobile/ui-main-2.webp'
+import uimain from '../images/projects/coffee_mobile/ui-main.webp'
+import uimain3 from '../images/projects/coffee_mobile/ui-main-3.webp'
+import testing from '../images/projects/coffee_mobile/usability_testing.webp'
+import flow from '../images/projects/coffee_mobile/user_flow.webp'
+import goal from '../images/projects/coffee_mobile/goal.webp'
+
 
 const CoffeeMobile = () => {
   const [theme, toggleTheme] = useDarkMode();
@@ -44,8 +42,6 @@ const CoffeeMobile = () => {
     <ProjectHead 
       theme={theme}
       title={'Mobile App for Ordering Coffee'}
-      logo={theme==='dark'? logo_dark : logo_light}
-      logoalt={'Coffee Time Logo'}
       headimg={coffee_head}
       ux={true}
       ill={false}

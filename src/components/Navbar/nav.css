@@ -190,8 +190,8 @@ nav.darkmode .nav-name a {
   }
 
   nav {
-    margin-left: -10vw;
-    padding-right: 10vw;
+    margin-left: -15vw;
+    padding-right: 15vw;
     position: fixed;
     top: 0;
     z-index: 1000;

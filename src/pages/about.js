@@ -4,7 +4,7 @@ import {useEffect} from 'react'
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import useDarkMode from '../components/useDarkMode.js'
-import about from '../images/about.jpg'
+import about from '../images/about.webp'
 import '../components/about.css'
 import ic_be from '../images/smicons/ic_be.svg'
 import ic_drib from '../images/smicons/ic_drib.svg'
@@ -50,12 +50,14 @@ const About = () => {
       <div className='about-txt'>
         <h1>Hi, I'm Ewa</h1>
         <h2><mark>UI/UX & Graphic Designer</mark></h2>
-        <p>I'm a passionate UI/UX and graphic designer. I live in
-Cracow and I get an extra serotonin boost from hiking and talking
-to my plants. I have a programming background, but I noticed I
-particularly liked the designing part of coding challenges, so I
-decided to get into UI/UX and based my thesis on that topic.
-          Right now, I’m working as a <b>UI/UX designer @ Archdesk.</b>
+        <p>I'm a passionate UI/UX and graphic designer, currently working as a <b>UI/UX designer at Archdesk</b>.  I majored in computer science at the AGH University of
+          Science and Technology, but I noticed I
+particularly liked the designing part of coding challenges. For that reason, I
+decided to get into UI/UX and based my thesis on that topic. Programming background helps me every day as a designer to better communicate with developers, and make designs faster to implement. <br/> <br/>
+As a designer, I focus on making the visuals pixel-perfect, as well as functional. Designing for sustainability has recently become my new passion, and I believe in upcoming years,
+with AI growing in power, we need to be mindful of data storage and speed of the execution. Making sure the designs are functional, sustainable and brand-aware is challenging, but
+rewarding 💪 <br/> <br/>
+In my free time, I enjoy hiking, watercolor painting, crotcheting and amusing my plants with dad jokes.
           </p>
         <div className={theme==='dark'?'resume-btns':'resume-btns darkmode'}>
           <a onClick={handleClick} id='about_resume_eng' target='_blank' rel='noreferrer' href='https://drive.google.com/file/d/1hOSoDZiPMs5jfZEzX4rdiwfKFkNBvKx3/view?usp=sharing'>Open Resume EN🇬🇧 ↗</a>

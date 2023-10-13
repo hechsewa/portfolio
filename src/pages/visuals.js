@@ -7,39 +7,31 @@ import useDarkMode from "../components/useDarkMode.js"
 import '../components/visuals.css'
 import Visual from '../components/Visual/visual.js'
 /*images*/
-import arlogo from '../images/visuals/arlogo.jpg'
-import spacex from '../images/visuals/spacex_poster.jpg'
-import archdesk1 from '../images/visuals/archdesk1.jpg'
-import archdesk2 from '../images/visuals/archdesk2.jpg'
-import archdeskapp from '../images/visuals/archdeskapp.jpg'
-import archdeskems from '../images/visuals/archdesksems.jpg'
-import aurona from '../images/visuals/aurona.jpg'
-import cats from '../images/visuals/cats.jpg'
-import crunch from '../images/visuals/crunch.jpg'
-import fotowolt1 from '../images/visuals/fotowolt1.jpg'
-import fotowolt2 from '../images/visuals/fotowolt2.jpg'
-import goodlood1 from '../images/visuals/goodlood1.jpg'
-import jellyfish from '../images/visuals/jellyfish.jpg'
-import juwenalia from '../images/visuals/juwenalia.jpg'
-import mrame from '../images/visuals/mrame.jpg'
-import poster2 from '../images/visuals/poster2.jpg'
-import radio1 from '../images/visuals/radio1.jpg'
-import radio2 from '../images/visuals/radio2.jpg'
-import radio3 from '../images/visuals/radio3.jpg'
-import jkaim from '../images/visuals/jkaim.jpg'
-import women from '../images/visuals/women.jpg'
+import spacex from '../images/visuals/spacex_poster.webp'
+import archdesk1 from '../images/visuals/archdesk1.webp'
+import archdesk2 from '../images/visuals/archdesk2.webp'
+import archdeskapp from '../images/visuals/archdeskapp.webp'
+import archdeskems from '../images/visuals/archdesksems.webp'
+import aurona from '../images/visuals/aurona.webp'
+import cats from '../images/visuals/cats.webp'
+import crunch from '../images/visuals/crunch.webp'
+import fotowolt1 from '../images/visuals/fotowolt1.webp'
+import fotowolt2 from '../images/visuals/fotowolt2.webp'
+import goodlood1 from '../images/visuals/goodlood1.webp'
+import jellyfish from '../images/visuals/jellyfish.webp'
+import juwenalia from '../images/visuals/juwenalia.webp'
+import mrame from '../images/visuals/mrame.webp'
+import radio2 from '../images/visuals/radio2.webp'
+import radio3 from '../images/visuals/radio3.webp'
+import jkaim from '../images/visuals/jkaim.webp'
 import dailylogo from '../images/visuals/dailylogo.webp'
-import coffeestation from '../images/visuals/coffeestation-mockup.png'
-import bday from '../images/visuals/bday-card.gif'
+import coffeestation from '../images/visuals/coffeestation-mockup.webp'
 import snowman from '../images/visuals/snowman.gif'
-import ugoda from '../images/visuals/policzugode.png'
-import codereduced from '../images/visuals/codereduced.png'
-import invariant from '../images/visuals/invariant.png'
+import codereduced from '../images/visuals/codereduced.webp'
 /*posters*/
-import balwan from '../images/visuals/balwan.jpg'
-import bubbletea from '../images/visuals/bubbletea.jpg'
-import cat from '../images/visuals/cat.jpg'
-import smok from '../images/visuals/smok.jpg'
+import bubbletea from '../images/visuals/bubbletea.webp'
+import cat from '../images/visuals/cat.webp'
+import smok from '../images/visuals/smok.webp'
 
 const Visuals = () => {
   const [theme, toggleTheme] = useDarkMode();
@@ -106,32 +98,31 @@ const Visuals = () => {
       <Visual src={jkaim} tags={'brand'} alt={'Branding for a real estate advisor'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={archdesk1} tags={'sm'} alt={'Archdesk illustration article banners'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={archdesk2} tags={'sm'} alt={'Archdesk social media posts'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
-      <Visual src={balwan} tags={'ill'} alt={'Personal Project for Xmas Cards: Snowman'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={smok} tags={'ill'} alt={'Personal Project for Xmas Cards: Cracow Dragon in Kazimierz'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={bubbletea} tags={'ill'} alt={'Commercial Bubble Tea Recipe Menu Poster for Zatoka Smaków'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={cat} tags={'ill'} alt={'Personal Project: Mountain Cat Poster'} theme={theme} orient={'vertical'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
-      <Visual src={ugoda} tags={'ui'} alt={'UI landing page design with a agreement calculator'} theme={theme} orient={'vertical'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={dailylogo} tags={'brand'} alt={'Best logos from Daily Logo Challenge'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={fotowolt1} tags={'sm'} alt={'Photovoltaic social media graphic'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={fotowolt2} tags={'sm'} alt={'Social media graphics for Ekogmina'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
-      <Visual src={poster2} tags={'ill'} alt={'Posters for local orchestra'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={archdeskapp} tags={'ui'} alt={'Archdesk mobile app redesign'} theme={theme} orient={'vertical'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={archdeskems} tags={'ui'} alt={'Archdesk landing page with case study'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
-      <Visual src={arlogo} tags={'brand'} alt={'Logo for ARPortal'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={crunch} tags={'brand'} alt={'Crunch logo and packaging design for #50dayslogochallenge'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={goodlood1} tags={'ill'} alt={'Good lood totebag design'} theme={theme} orient={'vertical'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={jellyfish} tags={'brand'} alt={'Jellyfish icecream logo design'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={juwenalia} tags={'ill'} alt={'Juwenalia 2019 T-shirt design'} theme={theme} orient={'vertical'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
-      <Visual src={radio1} tags={'sm'} alt={'Radio1.7 promotional social media graphics'} theme={theme} orient={'vertical'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={radio2} tags={'sm'} alt={'Radio1.7 social media posts'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={radio3} tags={'sm'} alt={'Radio1.7 promotional graphics for broadcasts'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
-      <Visual src={women} tags={'ill'} alt={'Drawing for womens day at Archdesk'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={cats} tags={'ill'} alt={'Drawing for cats day at Archdesk'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={spacex} tags={'ill'} alt={'SpaceX poster'} theme={theme} orient={'vertical'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
-      <Visual src={bday} tags={'anim'} alt={'Birthday card frame by frame animation for Archdesk'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={snowman} tags={'anim'} alt={'Christmas card snowman frame by frame animation for Archdesk'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={codereduced} tags={'brand'} alt={'Logo & branding for CodeReduced'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
-      <Visual src={invariant} tags={'ui'} alt={'UI design for cryptocurrency exchange webapp Invariant'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+    </div>
+    <h2 className='visual-h2'>Videos</h2>
+    <div className='visual-videos-group'>
+      <div className='visual-video'><iframe title="Play.air website walkthrough" src="https://player.vimeo.com/video/853377063?h=8704ebdd88" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+      <div className='visual-video'><iframe title="Radio1.7 Promo Animation" src="https://player.vimeo.com/video/824508919" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+      <div className='visual-video'><iframe title="Archdesk Valentines Video" src="https://player.vimeo.com/video/791906337" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+      <div className='visual-video'><iframe title="Synthetify Logo Animation" src="https://player.vimeo.com/video/544333885" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
     </div>
   </Layout>
 )};
