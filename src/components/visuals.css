@@ -25,6 +25,17 @@
   margin-top: 24px;
 }
 
+/*visual chip link correction */
+.visual-chip a {
+  text-decoration: none !important;
+}
+
+.visual-chip a:visited {
+  color: black;
+  text-decoration: none !important;
+}
+
+
 /*visuals videos*/
 .visual-video {
   width: 49%;
@@ -42,7 +53,7 @@
 
 .visuals-chips {
   display: flex;
-  column-gap: 16px;
+  column-gap: 8px;
   margin-left: 1px;
   flex-wrap: wrap;
   row-gap: 16px;
@@ -70,7 +81,7 @@
 
 .visuals-chips.darkmode button {
   outline: 1px solid #fefefe;
-  color: #fefefe;
+  color: #fefefe !important;
 }
 
 

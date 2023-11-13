@@ -28,6 +28,11 @@ import dailylogo from '../images/visuals/dailylogo.webp'
 import coffeestation from '../images/visuals/coffeestation-mockup.webp'
 import snowman from '../images/visuals/snowman.gif'
 import codereduced from '../images/visuals/codereduced.webp'
+import bruzda from '../images/visuals/bruzda.webp'
+import expand from '../images/visuals/inhub-expand.webp'
+import spatial from '../images/visuals/spatial.webp'
+import torii from '../images/visuals/torii.webp'
+import kimchi from '../images/visuals/kimchi.webp'
 /*posters*/
 import bubbletea from '../images/visuals/bubbletea.webp'
 import cat from '../images/visuals/cat.webp'
@@ -90,8 +95,14 @@ const Visuals = () => {
       <button className="visual-chip" id="sm" onClick={onChipClick}>SM graphics</button>
       <button className="visual-chip" id="anim" onClick={onChipClick}>Animation</button>
       <button className="visual-chip" id="ill" onClick={onChipClick}>Illustration</button>
+      <button className="visual-chip" id="videos"><a href="#visual-videos">scroll to videos ↓</a></button>
     </div>
     <div className='visuals-gallery'>
+      <Visual src={kimchi} tags={'ui'} alt={'Doktor Kimchi - German Kimchi manufacturer - Website+Shop UI/UX Design'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={torii} tags={'ui'} alt={'Torii - Crypto-security startup landing page UI/UX Design'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={spatial} tags={'ui'} alt={'Spatial Design Exploration - Food Ordering Service displayed in a VR Google Environment'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={expand} tags={'ui'} alt={'From Science to Startup - Landing Page for a incubator programme for Inhub Innovations'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={bruzda} tags={'ui'} alt={'Blog Website Design for Bruzda-Konopko Law Company'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={coffeestation} tags={'ui'} alt={'Coffee station mockup mobile app mid-fidelity design'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={aurona} tags={'ui'} alt={'Aurona extension screens'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={mrame} tags={'brand'} alt={'Branding for 3D medical modelling university society'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
@@ -118,7 +129,7 @@ const Visuals = () => {
       <Visual src={codereduced} tags={'brand'} alt={'Logo & branding for CodeReduced'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
     </div>
     <h2 className='visual-h2'>Videos</h2>
-    <div className='visual-videos-group'>
+    <div className='visual-videos-group' id="visual-videos">
       <div className='visual-video'><iframe title="Play.air website walkthrough" src="https://player.vimeo.com/video/853377063?h=8704ebdd88" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
       <div className='visual-video'><iframe title="Radio1.7 Promo Animation" src="https://player.vimeo.com/video/824508919" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
       <div className='visual-video'><iframe title="Archdesk Valentines Video" src="https://player.vimeo.com/video/791906337" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
