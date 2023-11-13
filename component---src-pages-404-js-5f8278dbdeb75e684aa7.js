@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkewa_hechsman_portfolio=self.webpackChunkewa_hechsman_portfolio||[]).push([[883],{429:function(e,a,o){o.r(a);var s=o(7294),c=o(7134),t=o(6464),n=o(8183);a.default=()=>{const[e,a]=(0,c.Z)();(0,s.useEffect)((()=>{var a=document.getElementsByTagName("body")[0];a.className="dark"===e?"":"darkmode",console.log(e)})),t.Z,n.Z}}}]);
+//# sourceMappingURL=component---src-pages-404-js-5f8278dbdeb75e684aa7.js.map
