@@ -22,7 +22,7 @@ import mobile from '../images/projects/logoplan/Mobile.webp'
 import mobile2 from '../images/projects/logoplan/Mobile 2.webp'
 import web from '../images/projects/logoplan/Desktop.webp'
 import landing from '../images/projects/logoplan/Landing.webp'
-import social from '../images/projects/logoplan/Social-Media.webp'
+import social from '../images/projects/logoplan/socialmedia.webp'
 import Button from "../components/Button/button.js"
 
 
