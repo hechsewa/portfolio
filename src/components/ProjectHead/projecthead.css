@@ -1,127 +1,112 @@
 .project-head {
-  width: 100%;
-  max-width: 100%;
-}
-
-.project-head h1{
-  font-size: 42px;
-  font-family: 'Inter';
-}
-
-.project-head-logo img {
-  max-height: 50px;
-}
-
-.project-desc {
-  line-height: 140%;
-  margin-bottom: 50px;
-  font-weight: 500; 
-}
-
-.project-chips {
+  width: 100vw;
+  margin-left: -15vw;
+  padding-left: 10vw;
   display: flex;
-  column-gap: 15px;
-  margin-left: 1px;
+  background: var(--linear-down-light);
+  gap: 40px;
+  min-height: 200px;
 }
 
-.project-chips p.vis {
-  /*outline: 1px solid #0b0b0b;*/
-  background-color: #CCFFF5;
-  color: #064e41;
-  padding: 4px 16px;
+.chips p {
+  color: var(--primary);
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 600;
-  border-radius: 24px;
 }
 
-.project-chips p.invis {
-  display: none;
+.project-left {
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 
-.project-head-wrapper {
-  display: flex;
-  justify-items: end;
-  align-items: top;
-  flex-wrap:wrap;
-  width: 100%;
+.project-right {
+  width: 200%;
+}
+
+.project-column {
   margin-top: 40px;
-  margin-bottom: 40px;
+  min-width: 120px;
 }
 
-.project-head-text {
-  width: 60%;
+.project-column p {
+  font-size: 14px;
+  font-weight: 400;
 }
 
-/*project columns*/
-.project-head-columns {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  column-gap: 15%;
-  flex-wrap: nowrap;
-}
-
-
-.project-col h2 {
-  font-size: 20px;
-  font-family: 'Inter', sans-serif;
-  letter-spacing: 0.1mm;
-  color: var(--mustard);
-  font-weight: 700;
-  margin-bottom: -10px;
-}
-
-.project-col p {
+.desc {
   font-size: 16px;
-  line-height: 150%;
+  font-weight: 400;
+  line-height: 140%;
 }
 
-p {
-  line-height: 200%; 
+.project-column h4 {
+  font-size: 18px;
+  font-weight: 500;
 }
 
-.project-head-img {
-  width: 100vw;
-  height: 300px;
-  margin: 0 -15vw;
-  margin-bottom: 50px;
+.project-left h2, .project-left p, .project-left h4 {
+  margin: 0;
 }
 
-.project-head-img img {
+.project-left h2 {
+  margin-bottom: 16px;
+}
+
+.project-right img {
   width: 100%;
-  height: 300px;
+  height: 100%;
   object-fit: cover;
+  left: 0;
+  object-position: left top;
+
+}
+
+.project-left .project-info {
+  display: flex;
+  gap: 32px;
+  padding: 0;
 }
 
 /*darkmode*/
-.project-head.darkmode .project-chips p.vis {
-  outline: 1px solid #fefefe;
+body.darkmode .project-head {
+  background: var(--linear-down-dark);
 }
 
-@media only screen and (max-width: 800px) {
-.project-head-wrapper {
-  flex-wrap: wrap;
-  row-gap: 0px;
-}
-.project-head-img {
-  margin: 50px -5vw;
-  height: auto;
+/*respo*/
+@media screen and (max-width: 480px) {
+  .project-head {
+    margin-left: -4vw;
+  }
 }
 
-.project-head-text {
-  width: 100%;
-}
+@media screen and (max-width: 840px) {
+  .project-head {
+    flex-direction: column;
+    padding: 0;
+    padding-top: 40px;
+  }
 
+  .project-right {
+    width: 100%;
+  }
 
-.project-head-img img {
-  object-fit: contain;
-  height: auto;
-}
-.project-head-columns {
-  width: 100%;
-  flex-direction: column;
-  margin-top: -40px;
-}
+  .project-left {
+    padding: 0 4vw;
+  }
 
+  .project-info {
+    flex-wrap: wrap;
+    row-gap: 16px !important;
+    margin-top: 24px;
+  }
+
+  .project-column {
+    margin: 0;
+  }
+
+  .project-right {
+    margin: 0;
+    width: 100%;
+  }
 }

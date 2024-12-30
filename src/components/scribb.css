@@ -1,0 +1,9 @@
+.text_scribb {
+    width: 250% !important;
+}
+
+.project_sec iframe {
+    width: 100%;
+    min-height: 600px;
+    margin-top: 40px;
+}

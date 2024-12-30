@@ -8,24 +8,22 @@ import useDarkMode from '../components/useDarkMode.js'
 import '../components/playair.css'
 import ProjectHead from '../components/ProjectHead/projecthead.js'
 /* images */
-import playair_head from '../images/projects/playair/header.webp'
-import overview from '../images/projects/playair/1_overview.webp'
-import moodboard from '../images/projects/playair/2_moodboard.webp'
-import wf_mobile from '../images/projects/playair/3_wireframes_mobile.webp'
-import wf_overview from '../images/projects/playair/4_wireframes_mobile_overview.webp'
-import ui_mobile from '../images/projects/playair/5_UI_mobile.webp'
-import ui_overview from '../images/projects/playair/6_UI_mobile_overview.webp'
-import ui_prev from '../images/projects/playair/7_UI_mobile_prev.webp'
-import website from '../images/projects/playair/8_website.webp'
-import mobiles from '../images/projects/playair/9_mobiles.webp'
-import sitemap from '../images/projects/playair/10_sitemap.webp'
-import wf_web from '../images/projects/playair/11_wireframes.webp'
-import web_prev from '../images/projects/playair/12_web_prev.webp'
-import designsys_web from '../images/projects/playair/13_designsys.webp'
-import web_overview from '../images/projects/playair/14_website.webp'
-import project_overview from '../images/projects/playair/15_overview.webp'
-import figma_video from '../images/projects/playair/instructions.webm'
-
+import logoplan_cover from '../images/projects/logoplan/cover.webp'
+import overview from '../images/projects/logoplan/Overview.webp'
+import process from '../images/projects/logoplan/DesignProcess.webp'
+import idis from '../images/projects/logoplan/Interviews.webp'
+import lofi from '../images/projects/logoplan/Lofi.webp'
+import affinity from '../images/projects/logoplan/Affinity.webp'
+import hifi from '../images/projects/logoplan/Hifi.webp'
+import mobilechange from '../images/projects/logoplan/ImproveMobile.webp'
+import desktopchange from '../images/projects/logoplan/ImproveDesktop.webp'
+import ds from '../images/projects/logoplan/DesignSystem.webp'
+import mobile from '../images/projects/logoplan/Mobile.webp'
+import mobile2 from '../images/projects/logoplan/Mobile 2.webp'
+import web from '../images/projects/logoplan/Desktop.webp'
+import landing from '../images/projects/logoplan/Landing.webp'
+import social from '../images/projects/logoplan/Social-Media.webp'
+import Button from "../components/Button/button.js"
 
 
 const Playair = () => {
@@ -44,137 +42,170 @@ const Playair = () => {
 
   return (
   <Layout theme={theme} setTheme={toggleTheme}>
-    <Seo title="Play.air mobile app & website | Ewa Hechsman Portfolio" />
+    <Seo title="Logoplan - management platform for speech therapists" />
     <div className='project-page'>
     <ProjectHead 
       theme={theme}
-      title={'Play.air Mobile App & Website'}
-      headimg={playair_head}
-      ux={true}
-      ill={false}
-      brand={false}
-      desc={'Responsive mobile app and website design for speech therapy exercises for children, parents and doctors.'}
+      title={'Logoplan - management platform for speech therapists'}
+      img={logoplan_cover}
+      chip1={'UI Design'}
+      chip2={'MedTech'}
+      chip3={'UX Design'}
+      chip4={'Research'}
+      desc={'Logoplan’s mission is to make speech therapy management easier for therapists. The aim was to create fun, interactive mini games for kids accessible on mobile, to help digitlize speech therapy.'}
       date={'may 2023'}
-      role={'UI/UX designer'}
-      deliverables={'mobile app, website'}
-      tools={'Figma, Affinity Designer'}
-      problem={''}
-      solution={''} />
+      role={'Product designer'}
+      deliverables={'UX Processes, Interview scripts, UI design, Prototypes, Landing Page, Social Graphics'}
+      tools={'Figma, Affinity Designer'}/>
     </div>
-    <div className='project_sec project_sec_alt'>
+    <div className='project_sec'>
         <div className='project_in_txt'>
           <div className='project_text'>
-          <h3>Project Overview</h3>
-          <p>Play.air is a company that aims to educate and bring speech therapy to children everywhere, making it accessible from their mobile phones.
-            <br/><br/>
-              The goal was to design a responsive mobile and tablet application that could be used by kids to complete logopaedic exercises,
-              that were being presented as fun, illustrative mini-games. The app was to be used with parents or doctors supervision. 
-            <br/><br/>
-            Alongside the application, play.air wanted to present their idea in an informative way, on a modern and responsive landing page.
-            The website would be designed to showcase the application, and the CTA would be to download the app from store.</p>
+          <h3>Problem</h3>
+          <p>Speech Therapists are <b>missing digital tools</b> to manage their practices. They use printable memo cards as exercises for kids, which today is <b>not stimulating enough</b> to keep the kids engaged. They keep notes and events in planners or Google Calendar and their needs are not supported enough.</p>
+          <h3>Solution</h3>
+          <p>Developed mobile application helps <b>keep kids engaged</b> in their exercises. Therapists have access to a web platform where they can track progress, take notes, schedule appointments, and communicate with parents. This project <b>centralizes therapists' workflows</b> and motivates kids to stay active in their speech therapy.</p>
           </div>
-          <div className='project_img_big'><img src={overview} alt={'Speech Therapist with a kid doing'} /></div>
+          <div className='project_img_big'><img src={overview} alt={'Mobile application for kids with video exercises'} /></div>
         </div>
+      </div>
+
+      <div className='project_sec project_sec_alt'>
+        <h3>Design process</h3>
+        <p>The project was quickly paced and was  developed with constant support and feedback from speech therapists. 
+          The web application was tested and created based on speech therapists processes, so the end product is very user-centered. We followed
+          an iterative Design Thinking process.</p>
+        <div className='project_img_big'><img src={process} alt={'Moodboard of kids app screens and bright colors'} /></div>
       </div>
 
       <div className='project_sec'>
-        <h3>Moodboard</h3>
-        <p>After the meeting with the founders, learning what the target group was and how the market and
-          competitors looked, the next step was to prepare a moodboard.
-          The moodboard goal was to present ideas for the application style to the company members,
-          to align our point of view and make sure we’re seeing eye to eye.</p>
-        <div className='project_img_big'><img src={moodboard} alt={'Moodboard of kids app screens and bright colors'} /></div>
-      </div>
-   
-      <div className='project_img_full'><img src={mobiles} alt={'Mobile application banner with app screens on the right side'} /></div>
-
-      <div className='project_sec project_sec_inner'>
-        <h3>Wireframes</h3>
-        <p>Wireframes were created to solve multiple challenges we encountered while designing the app flow. The main problem to solve was that the app was to be used by parents,
-          speech therapists and children, and we faced issued with access rights. 
-          The other issue was connected to data sensitivity regarding kids’ profiles.<br/>
-          However, all problems managed to be resolved and the app flow was enriched with onboarding screens,
-          game instructions and mini-games.</p>
-        <div className='project_img_big'><img src={wf_mobile} alt={'Wireframes of mobile app with problem solution schema'} /></div>
-      </div>
-
-      <div className='project_img_full'><img src={wf_overview} alt={'Wireframes of the mobile app of a bright background'} /></div>
-
-      <div className='project_sec project_sec_inner'>
-        <h3>UI Design</h3>
-        <p>To maintain consistency among the application, there was a several UI elements created.
-          Starting off with picking the colors. The challenge here was that the colors had to be
-          appealing for both adults and children, so they could not be too bright or too pastel.
-          There would also be many colors used for the mini games. <br/><br/>
-          Next, the typography scale was created and used in components of the application.
-          After talking to developers and confirming it was possible, several reusable components such as buttons,
-          inputs, headers, toast messages were created.</p>
-        <div className='project_img_big'><img src={ui_mobile} alt={'Colors, typography and chosen components of design system'} /></div>
-      </div>
-
-      <div className='project_img_full'><img src={ui_overview} alt={'Overview with chosen mobile app screens'} /></div>
-
-      <div className='project_img_big'>
-        <video autoplay muted loop id="video">
-          <source src={figma_video} type="video/webm"/>
-        Your browser does not support the video tag.
-        </video> 
-        </div>
-      
-      <div className='project_img_full'><img src={ui_prev} alt={'Two mobile app screens on phone mockup'} /></div>
-
-      <div className='project_img_full'><img src={website} alt={'Website banner with a laptop on the right side'} /></div>
-
-      <div className='project_sec project_sec_inner'>
         <div className='project_in_txt'>
           <div className='project_text'>
-          <h3>Sitemap</h3>
-          <p>The website structure is shown on the site map. Main page - homepage -
-            is used to be a summary of play.air and a place where you can read more about each section.
-            It directs to all other subpages.</p>
+          <p className='stage'>Empathize</p>
+          <h3>In-depth interviews with speech therapists</h3>
+          <p>3 speech therapists of different specializations were taking part in the IDI interviews. They brought into my attention specific needs for this area, deeply focused on speech exercises and the correct naming of speech impediments.</p>
+          <h4>Some quotes from IDIs</h4>
+          <p className='quote'>“It would be good to also see animations or videos of how the lips should be shaped when making the eo-eo noise”</p>
+          <p className='quote'>“We should mark if the exercise was done after the deadline, but we shouldn’t take away the possibility to do the exercise after the deadline. The kid should be allow to play with the app by themselves.”</p>
+          </div>
+          <div className='project_img_big'><img src={idis} alt={'Video screenshot of Ewa and the script of IDI'} /></div>
+        </div>
+      </div>
+
+      <div className='project_sec project_sec_alt'>
+        <p className='stage'>Define</p>
+        <h3>Define the problems & key features</h3>
+        <p>For the Logoplan project, we used <b>affinity mapping</b> to identify key challenges faced by speech therapists and explore features to address them. This process helped us group problems into areas like exercises, engagement, and scheduling. We then brainstormed targeted solutions, focusing on improving efficiency for therapists and making exercises engaging for kids.
+        By organizing insights visually, we prioritized features that directly address user needs, ensuring a more effective and user-friendly product.</p>
+        <div className='project_img_big'><img src={affinity} alt={'Affinity map for logoplan'} /></div>
+      </div>
+
+      <div className='project_sec'>
+        <p className='stage'>Ideate</p>
+        <h3>Lo-fi wireframes</h3>
+        <p>The most important part of the mobile app are interactive game mechanisms.
+          They need to keep kids engaged. I’ve come up with 5 mechanisms based on the
+          familiar exercises speech therapists are using now as printable paper sheets.
+          One game was redesigned for the mobile to take advantage of digitalization.
+          Gamification element was introduced and paired up with fun raccoon illustrations
+          does a good job at keeping kids entertained and focused.</p>
+        <div className='project_img_big'><img src={lofi} alt={'Lofi wireframes of game mechanisms'} /></div>
+      </div>
+
+      <div className='project_sec'>
+        <p className='stage'>Prototype</p>
+        <h3>Hi-fi wireframes</h3>
+        <p>During mobile app and web app wireframes design process, chosen speech therapists were consulted to verify proposed solutions. When creating hi-fi wireframes for mobile games, I noticed I overlooked some elements and I added few extra elements to make the games even more interactive. After consultation, I introduced video content to the games to help the kids visualise exercises.</p>
+        <div className='project_img_full'><img src={hifi} alt={'Hifi wireframes'} /></div>
+      </div>
+
+      <div className='project_sec project_sec_alt'>
+      <p className='stage'>Test</p>
+      <h3>Changes after interview</h3>
+      <p>Speech therapists were heavily consulted during all stages of the process, which allowed us to quickly introduce changes to wireframes, without the cost of implementation.</p>
+      <div className='project_in_txt'>
+          <div className='project_text'>
+          <h4>Mobile Application</h4>
+          <p>After interviews, I decided to introduce categorizations to the mini games. The application would be used by patients of different ages and speech developments. Some of the patients would not be able to read, so there was a need to differentiate mechanisms based on the fact if the user was able to read or not. Only pictures might not be challenging enough for the older users. </p>
+          <p><b>Most impactful changes:</b></p>
           <ul>
-            <li><p>News - used to display short descriptions of current events, awards, achievements. Sometimes can link to an outside source like youtube video or an article.</p></li>
-            <li><p>Our speech therapists - used to present therapists that are working with play.air, along with speech therapy companies and organizations. There is also a possibility to filter therapists by the voievodship.</p></li>
-            <li><p>About Us - used to present play.air’s members and their mission & vision. It clearly states their goals and presents their current achievements, awards.</p></li>
-            <li><p>Contact - has all the contact options, addresses, phone numbers and e-mails. It also has 3 forms, depending on the goal of the visit. Investors, parents, therapists and regular users can use the form to submit their ideas or request collaboration.</p></li>
-            <li><p>Download app - single page used to display links to Google Store and Apple store to download the mobile app.</p></li>
-            <li><p>For investor - used to store all the relevant information for investors.</p></li>
+            <li><p><b>Added categorization</b> to help make mini games impactful for more users</p></li>
+            <li><p><b>Enhanced the games mechanism</b> by using words and syllabes</p></li>
+            <li><p><b>Improved gamification</b> added encouragement screens after each exercise</p></li>
           </ul>
           </div>
-          <div className='project_img_big'><img src={sitemap} alt={'Site map of the website'} /></div>
+          <div className='project_img_big'><img src={mobilechange} alt={'Mobile application changes'} /></div>
+        </div>
+        <div className='project_in_txt'>
+          <div className='project_text'>
+          <h4>Web Application</h4>
+          <p>Interviews revealed that users needed contextual information, such as patient details and event notes, easily accessible. Therapists often verified a patient’s age or speech impediment when writing notes, scheduling appointments, or assigning exercises. Another key insight was the need for role-based access, as both practice owners and therapists required different levels of information. Sharing patient details among therapists, especially for substitutes, was also a common need.</p>
+          <p><b>Most impactful changes:</b></p>
+          <ul>
+            <li><p>Support for organizations - added roles and substitutions</p></li>
+            <li><p>Provided information context - moved notes and appointment details to modals</p></li>
+            <li><p>Improved exercises assignment - added assigning exercises for particular days</p></li>
+          </ul>
+          </div>
+          <div className='project_img_big'><img src={desktopchange} alt={'Web application changes'} /></div>
+        </div>
+        </div>
+
+        <div className='project_sec'>
+        <div className='project_in_txt'>
+          <div className='project_text'>
+          <h3>Design System</h3>
+          <p>Created extensive design system with components visually cohesive with the brand ID of Logoplan. The design system included cards, inputs, modals, icons, buttons, navigation and many more.</p>
+          </div>
+          <div className='project_img_big'><img src={ds} alt={'Design system'} /></div>
         </div>
       </div>
 
       <div className='project_sec'>
-        <h3>Wireframes</h3>
-        <p>After confirming the structure, wireframes were created.
-          Then we met up with play.air’s members to align our views
-          and tweak wireframes, than then became the final version before the UI.</p>
-        <div className='project_img_big'><img src={wf_web} alt={'Wireframes of website page'} /></div>
+      <h3>Mobile Application</h3>
+      <div className='project_img_full'><img src={mobile} alt={'Mobile app mockups'} /></div>
+    </div>
+
+    <div className='project_sec'>
+        <h3>Web Application</h3>
+        <div className='project_img_full'><img src={web} alt={'Web app mockups'} /></div>
+      </div>
+      <div className='project_sec'>
+        <h3>Landing Page</h3>
+        <div className='project_img_full'><img src={landing} alt={'Landing Page mockups'} /></div>
+      </div>
+      <div className='project_sec'>
+        <h3>Social Media</h3>
+        <div className='project_img_full'><img src={social} alt={'Social Media Posts mockups'} /></div>
       </div>
 
-      <div className='project_img_full'><img src={web_prev} alt={'UI Design of website on laptop screen and mobile screen'} /></div>
-
-      <div className='project_sec project_sec_inner'>
-        <h3>UI Design</h3>
-        <p>The biggest challenge was to design layouts that were responsive. We wanted the
-          website to work well on both desktop and mobile screens, that’s why we opted for
-          layouts that could be easily rearranged for mobile. Developers helped along the process
-          to make sure the layout were easy to implement and functional. There was two sets of components
-          prepared - one for desktop, one for mobile.</p>
-        <div className='project_img_big'><img src={designsys_web} alt={'Design system, typography scale, chosen components of website design'} /></div>
+      <div className='project_sec project_sec_alt'>
+        <div className='project_in_txt'>
+          <div className='project_text'>
+          <h3>Results & takeaways</h3>
+          <p>The Logoplan project was a user-centered design challenge that emphasized gamification, accessibility, and efficient workflows. By leveraging research insights and iterative testing, we delivered a solution that significantly improved both user engagement and operational efficiency.</p>
+          <div className='results'>
+            <div className='result-number'>
+              <h4>20min</h4>
+              <p>per patient, reduced session prep time for therapists</p>
+            </div>
+            <div className='result-number'>
+              <h4>-35%</h4>
+              <p>decresed time spent on administrative tasks</p>
+            </div>
+            <div className='result-number'>
+              <h4>90%</h4>
+              <p>of therapists reported increased patient engagement</p>
+            </div>
+          </div>
+          <h4>Quote from a speech therapist</h4>
+          <p className='quote'>“I'm very satisfied with Logoplan. I really appreciate the automatic SMS feature for clients and the ability to customize message templates. The automatic completion of details when adding sessions is also fantastic. Overall, Logoplan is incredibly helpful in my daily work.”</p>
+          </div>
+          <div className='project_img_big'><img src={mobile2} alt={'Mobile app mockup'} /></div>
+        </div>
       </div>
-
-      <div className='project_img_full'><img src={web_overview} alt={'Website screens of subpages'} /></div>
-
-      <div className='project_img_big'>
-      <iframe src="https://player.vimeo.com/video/853377063?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="100%" height="500vw" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="play.air website walkthrough"></iframe>
-      </div>
-
-      <div className='project_img_full'><img src={project_overview} alt={'Responsive screens of application on tablet and mobile and website design on laptop screen'} /></div>
-
-      <div className={theme==='dark'? 'go-back dark' : 'go-back'}>
-        <a href="/portfolio/"><p>{"←"} Go back to projects</p></a>
+      <div className='button-project-btm'>
+        <Button theme={theme} label={'Back to Projects'} href={'/portfolio/'} type={'secondary'} />
       </div>
   </Layout>
 )};

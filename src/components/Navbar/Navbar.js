@@ -1,10 +1,11 @@
 import * as React from 'react'
 import {useEffect, useState} from 'react'
+import Button from '../Button/button'
+import Navitem from './NavItem/navitem'
 import './nav.css'
 import modedark from '../../images/mode-dark.svg'
 import modelight from '../../images/mode-light.svg'
-import logolight from '../../images/logo-dark-hor.svg'
-import logodark from '../../images/logo-light-hor.svg'
+
 import menu_dark from '../../images/menu-dark.svg'
 import menu_light from '../../images/menu_light.svg'
 import close_dark from '../../images/close_dark.svg'
@@ -16,31 +17,6 @@ const Navbar = (props) => {
 
   useEffect(()=> {
     rollOutNav(); //check if mobile nav out
-    var loc = window.location.pathname;
-    var navitems = document.querySelectorAll(".nav-item.active");
-    var navitemsmobile = document.querySelectorAll(".nav-item-mobile.active");
-    navitems.forEach(it => {
-      it.className="nav-item";
-    });
-    navitemsmobile.forEach(itmobile => {
-      itmobile.className="nav-item-mobile";
-    });
-    switch (loc) {
-      case '/portfolio/':
-        document.getElementById('projects').className += " active";
-        document.getElementById('projects-mobile').className += " active";
-        return;
-      case '/portfolio/visuals/':
-        document.getElementById('visuals').className += " active";
-        document.getElementById('visuals-mobile').className += " active";
-        return;
-      case '/portfolio/about/':
-        document.getElementById('about').className += " active";
-        document.getElementById('about-mobile').className += " active";
-        return;
-      default:
-        return;
-    }
   });
 
   function rollOutNav() {
@@ -54,42 +30,40 @@ const Navbar = (props) => {
   }
 
   function changeNav(e) {
-    if(e.target.id==='menuic') {
+    if(e.currentTarget.id==='menuic') {
       setNavOut(true);
     } else {
       setNavOut(false);
     }
-    console.log(navOut);
   }
 
   return (
     <>
       <nav className={props.theme==='dark'? '' : 'darkmode'}>
-        <ul>
-          <li className='nav-logo'>
-            <a href="/portfolio/">
-              <img src={props.theme === 'dark' ? logolight : logodark} alt="ewa hechsman logo"/></a></li>
-          <li className={props.theme==='dark'? 'nav-name' : 'nav-name darkmode'}>
-            <p><a href="/portfolio/">Ewa Hechsman</a></p>
-          </li>
-          <div className='nav-right'>
-            <li id='projects' className='nav-item active'><a className={props.theme==='dark'? '' : 'darkmode'} href="/portfolio/">Projects</a></li>
-            <li id='visuals' className='nav-item'><a className={props.theme==='dark'? '' : 'darkmode'} href="/portfolio/visuals">Visuals</a></li>
-            <li id='about' className='nav-item'><a className={props.theme==='dark'? '' : 'darkmode'}href="/portfolio/about">About</a></li>
-            <li className='nav-item nav-btn'><button type='button' onClick={props.setTheme}><img alt="change contrast icon" src={props.theme === 'dark' ? modelight : modedark}/></button></li>
-          </div>
-          <div className='nav-icon'>
-            <img id='menuic' className={navOut ? 'invisible' : ''} src={props.theme==='dark'? menu_dark : menu_light} alt='menu icon' onClick={changeNav} />
-          </div>
-        </ul>
-        <div className='nav-mobile invisible'>
+        <div className='nav-left'>
+          <p><a href="/portfolio/">Ewa Hechsman</a></p>
+        </div>
+  
+        <div className='nav-right'>
+          <Navitem theme={props.theme} label='Projects' href='/'/>
+          <Navitem theme={props.theme} label='Visuals' href='/portfolio/visuals/'/>
+          <Navitem theme={props.theme} label='About' href='/portfolio/about/'/>
+          <Button click={props.setTheme} theme={props.theme} type='icon' icon={props.theme==='dark'?modelight:modedark}/>
+        </div>
+        <div className={navOut?'nav-mobile-menu invisible':'nav-mobile-menu'}>
+            <Button label='menuic' theme={props.theme} type='icon' icon={props.theme==='dark'? menu_dark : menu_light} click={changeNav} />
+        </div>
+
+        <div className={navOut?'nav-mobile invisible':'nav-mobile'}>
           <div className='nav-icon-mobile'>
-            <img id='closeic' src={props.theme==='dark'? close_dark : close_light} alt='close icon' onClick={changeNav} />
+            <Button label='closeic' type='icon' theme={props.theme} icon={props.theme==='dark'? close_dark : close_light} click={changeNav} />
           </div>
           <div className='nav-links-mobile'>
-            <a id='projects-mobile' className='nav-item-mobile active' href="/portfolio/">Projects</a>
-            <a id='visuals-mobile' className='nav-item-mobile' href="/portfolio/visuals">Visuals</a>
-            <a id='about-mobile' className='nav-item-mobile' href="/portfolio/about">About</a>
+            <div className='nav-items'>
+              <Navitem theme={props.theme} label='Projects' href='/'/>
+              <Navitem theme={props.theme} label='Visuals' href='/portfolio/visuals/'/>
+              <Navitem theme={props.theme} label='About' href='/portfolio/about/'/>
+            </div>
           </div>
         </div>
       </nav>

@@ -1,58 +1,49 @@
 .testimonial-tab {
-  background-color: white;
   width: 100%;
-  padding: 16px 32px 32px 32px;
+  padding: 16px;
   border-radius: 8px;
+  border: 1px solid var(--secondary-hover);
+  background: var(--white);
+  box-shadow: 4px 4px 15px 0px rgba(129,152,147,0.1);
+}
+
+.testimonial-tab .author {
   display: flex;
-  flex-direction: column;
+  align-items: center;
 }
 
-.testimonial-tab.darkmode {
-  background-color: var(--black);
-}
-
-.testimonial-text {
-  height: 100%;
-}
-
-.testimonial-text p {
-  line-height: 160%;
-  font-size: 16px;
-  width: 100%;
-  text-align: left;
-}
-
-.person-avatar img {
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-}
-
-.testimonial-person {
-  display: flex;
-  column-gap: 16px;
-  height: 64px;
-  margin-top: 4px;
-}
-.person-info {
-  max-height: 48px;
-  width: 100%;
-
-}
-.person-info h3 {
-  font-size: 16px;
+.testimonial-tab .author-info h4, .testimonial-tab .author-info p{
   margin: 0;
-  padding: 0;
-  line-height: 100%;
+  font-weight: 500;
 }
 
-.person-info p {
-  font-size: 12px;
-  line-height: 120%;
-  margin-top: 4px;
-  color: var(--mustard);
-  text-align: left;
+.testimonial-tab .quote p {
+  font-size: 18px;
+  line-height: 180%;
+  color: var(--black);
+  font-weight: 400;
+  margin: 0;
+  margin-top: 16px;
 }
+
+.testimonial-tab .author img {
+  width:52px;
+  height: 52px;
+  border-radius: 100px;
+  margin-right: 16px;
+}
+
+/*darkmode*/
+.testimonial-tab.darkmode {
+  background: var(--black);
+  border: 1px solid var(--secondary-dark);
+  box-shadow: none; 
+}
+
+.testimonial-tab.darkmode .quote p{
+  color: var(--white);
+}
+
 
 @media screen and (max-width: 530px) {
   .testimonial-tab {

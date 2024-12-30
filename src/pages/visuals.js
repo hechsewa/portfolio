@@ -6,6 +6,7 @@ import Seo from "../components/seo"
 import useDarkMode from "../components/useDarkMode.js"
 import '../components/visuals.css'
 import Visual from '../components/Visual/visual.js'
+import Button from "../components/Button/button.js"
 /*images*/
 import spacex from '../images/visuals/spacex_poster.webp'
 import archdesk1 from '../images/visuals/archdesk1.webp'
@@ -90,12 +91,14 @@ const Visuals = () => {
     <h1 className='visuals-h1'>Visuals</h1>
     <p className=''>Digital sketchbook; smaller, fun, ongoing projects, and just design I feel proud of</p>
     <div className={theme==='dark'?'visuals-chips':'visuals-chips darkmode'}>
+      <p>Filter:</p>
       <button className="visual-chip" id="ui" onClick={onChipClick}>UI Design</button>
       <button className="visual-chip" id="brand" onClick={onChipClick}>Branding</button>
       <button className="visual-chip" id="sm" onClick={onChipClick}>SM graphics</button>
       <button className="visual-chip" id="anim" onClick={onChipClick}>Animation</button>
       <button className="visual-chip" id="ill" onClick={onChipClick}>Illustration</button>
-      <button className="visual-chip" id="videos"><a href="#visual-videos">scroll to videos ↓</a></button>
+      <div className='visual-btn'>
+      <Button href='#visual-videos' label='Scroll to videos' theme={theme} type='secondary'/></div>
     </div>
     <div className='visuals-gallery'>
       <Visual src={kimchi} tags={'ui'} alt={'Doktor Kimchi - German Kimchi manufacturer - Website+Shop UI/UX Design'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>

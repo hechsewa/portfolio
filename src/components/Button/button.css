@@ -1,0 +1,114 @@
+button {
+    border-radius: 8px;
+    line-height: 100%;
+    padding: 0 16px;
+    height: 44px;
+    box-shadow: none;
+    border: none;
+}
+
+.button-icon {
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.button-icon img {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.button-primary {
+    background: var(--primary);
+    transition: all 150ms ease-in-out;
+}
+
+.button-primary a {
+    color: var(--white);
+}
+
+.button-secondary {
+    background: var(--secondary);
+    transition: all 150ms ease-in-out;
+}
+
+.button-secondary a {
+    color: var(--primary);
+}
+
+.button-icon {
+    background: var(--secondary);
+    transition: all 150ms ease-in-out;
+}
+
+/*hovers*/
+.button-primary:hover{
+    background: var(--primary-hover);
+    transition: all 150ms ease-in-out;
+}
+
+.button-primary:hover a {
+    color: var(--white);
+}
+
+.button-secondary:hover {
+    background: var(--secondary-hover);
+    color: var(--primary);
+    transition: all 150ms ease-in-out;
+}
+
+.button-secondary:hover a {
+    color: var(--primary);
+}
+
+.button-icon:hover {
+    background: var(--secondary-hover);
+    transition: all 150ms ease-in-out;
+}
+
+.button-primary a, .button-secondary a {
+    text-decoration: none;
+}
+
+/*darkmode*/
+.button-primary.darkmode {
+    background: var(--secondary);
+    transition: all 150ms ease-in-out;
+}
+
+.button-primary.darkmode a {
+    color: var(--primary);
+}
+
+.button-primary.darkmode:hover {
+    background: var(--secondary-hover);
+    transition: all 150ms ease-in-out;
+}
+
+.button-secondary.darkmode {
+    background: var(--secondary-dark);
+    transition: all 150ms ease-in-out;
+}
+
+.button-secondary.darkmode a {
+    color: var(--white);
+}
+
+.button-icon.darkmode {
+    background: var(--secondary-dark);
+    transition: all 150ms ease-in-out;
+}
+
+.button-icon.darkmode:hover{
+    background: var(--secondary-hover-dark);
+    transition: all 150ms ease-in-out;
+}
+
+.button-secondary.darkmode:hover{
+    background: var(--secondary-hover-dark);
+    transition: all 150ms ease-in-out;
+}

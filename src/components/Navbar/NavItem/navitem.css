@@ -1,0 +1,43 @@
+a mark {
+    display:none;
+}
+
+.active a {
+    color: var(--primary);
+}
+
+.active a mark {
+    display:inline;
+}
+
+a {
+    letter-spacing: 5%;
+    font-weight: 500 !important;
+    font-size: 16px;
+    color: var(--black);
+}
+
+a:hover {
+    color: var(--gray);
+}
+
+.active a {
+    color: var(--primary);
+}
+
+a::visited {
+    color: var(--black);
+}
+
+/*darkmode*/
+a.darkmode {
+    color: var(--white);
+}
+
+a.darkmode:hover {
+    color: var(--gray-darkmode);
+}
+
+.active a.darkmode {
+    color: var(--primary);
+}

@@ -8,6 +8,10 @@
   height: 100%;
 }
 
+.about-main h1 {
+  font-family: 'Homemade Apple', 'Poppins', sans-serif;
+}
+
 .about-pic {
   max-width: 400px;
   max-height: 550px;
@@ -34,7 +38,7 @@
 .about-txt h2 {
   font-weight: 600;
   font-size: 22px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 150%;
   margin-top: -15px;
   margin-bottom: 48px;
@@ -55,49 +59,12 @@
 }
 
 /*buttons*/
-.resume-btns button {
-  background: none;
-  border-radius: 24px;
-  border: 1px solid #0b0b0b;
-  padding: 8px 16px 8px 16px;
-  margin-right: 20px;
-  font-size: 14px;
-  color: #0b0b0b;
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  transition: all 150ms ease-in-out;
-  margin-bottom: 30px;
-}
 
 .resume-btns {
   margin-top: 50px;
   margin-bottom: 48px;
-}
-
-.resume-btns a {
-  text-decoration: none;
-  color: var(--mustard);
-  font-size: 18px;
-  transition: all 200ms ease-in-out;
-  margin-right: 32px;
-}
-
-.resume-btns a:hover {
-  opacity: 0.6;
-  transition: all 200ms ease-in-out;
-}
-
-.resume-btns.darkmode button {
-  border-color: #fefefe;
-  color: #fefefe;
-}
-
-.about-main button:hover {
-  color: white;
-  background-color: var(--mustard);
-  border: 1px solid var(--mustard);
-  transition: all 150ms ease-in-out;
-  cursor: pointer;
+  display: flex;
+  gap: 8px;
 }
 
 /*sm icons*/

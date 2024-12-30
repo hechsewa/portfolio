@@ -1,0 +1,19 @@
+.logo-card{
+    width: 175px;
+    height: 100px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--secondary-hover);
+    background: var(--white);
+}
+
+.logo-card img {
+    width: 100%;
+    filter:grayscale();
+    transition: all 150ms ease-in-out;
+}
+
+.logo-card:hover img {
+    filter: none;
+    transition: all 150ms ease-in-out;
+}

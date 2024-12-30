@@ -1,5 +1,6 @@
 import * as React from "react"
 import {useEffect} from 'react'
+import Button from "../components/Button/button.js"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -49,7 +50,7 @@ const About = () => {
       </div>
       <div className='about-txt'>
         <h1>Hi, I'm Ewa</h1>
-        <h2><mark>UI/UX & Graphic Designer</mark></h2>
+        <h2><mark>Product & Graphic Designer</mark></h2>
         <p>I'm a passionate UI/UX and graphic designer, currently working as a <b>UI/UX designer at Archdesk</b>.  I majored in computer science at the AGH University of
           Science and Technology, but I noticed I
 particularly liked the designing part of coding challenges. For that reason, I
@@ -60,8 +61,8 @@ rewarding 💪 <br/> <br/>
 In my free time, I enjoy hiking, watercolor painting, crotcheting and amusing my plants with dad jokes.
           </p>
         <div className={theme==='dark'?'resume-btns':'resume-btns darkmode'}>
-          <a onClick={handleClick} id='about_resume_eng' target='_blank' rel='noreferrer' href='https://drive.google.com/file/d/1hOSoDZiPMs5jfZEzX4rdiwfKFkNBvKx3/view?usp=sharing'>Open Resume EN🇬🇧 ↗</a>
-          <a onClick={handleClick} id='about_resume_pl' target='_blank' rel='noreferrer' href='https://drive.google.com/file/d/1ykg-frEW5FgYuJf-9XLzZGvYZb0U0Txc/view?usp=sharing'>Open Resume PL🇵🇱 ↗</a>
+          <Button href='' type='secondary' theme={theme} label='Open Resume EN🇬🇧'/>
+          <Button href='' type='secondary' theme={theme} label='Open Resume PL🇵🇱'/>
         </div>
         <div className='contact-info'>
           <div className='sm-icons'>

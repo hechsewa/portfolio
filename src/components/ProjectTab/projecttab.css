@@ -1,9 +1,65 @@
 .project-tab {
   /*width: 530px;*/
-  width: 48%;
+  width: 47.5%;
   height: auto;
   border-radius: 8px;
+  overflow: hidden;
   padding: 8x;
+  border: 1px solid var(--secondary-hover);
+  background: var(--white);
+  box-shadow: 4px 4px 15px 0px rgba(129,152,147,0.1);
+  transition: all 150ms ease-in-out;
+  position: relative;
+}
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 0;
+  gap: 8px;
+  color: var(--secondary-hover);
+  margin: 0;
+  padding: 0;
+  margin-bottom: 8px;
+}
+
+.chips p {
+  margin: 0;
+  padding: 0;
+  color: var(--gray-darkmode) !important;
+}
+
+.project-desc {
+  margin: 0 !important;
+  padding: 0;
+  height: 100%;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 150% !important;
+}
+
+.project-tab:hover{
+  background: var(--secondary);
+}
+
+.project-tab img {
+  transition: all 150ms ease-in-out;
+}
+
+.project-tab:hover img {
+  opacity: 0.8;
+  transition: all 150ms ease-in-out;
+}
+
+.project-link {
+  color: var(--primary);
+  margin: 0 !important;
+}
+
+.project-tab h3 {
+  line-height: 130%;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 16px;
 }
 
 .project-tab a {
@@ -11,138 +67,39 @@
   text-decoration: none;
 }
 
-.project-tab a:visited {
-  color: var(--black);
-}
-.project-tab.darkmode a:visited {
-  color: var(--white);
-}
-
-.project-tab img {
+.project-cover img {
   width: 100%;
-  object-fit: fill;
-  margin-bottom: -10px;
-  border-radius: 8px;
-  transition: all 200ms ease-in-out;
 }
 
-.project-tab-front {
-  transition: all 300ms ease-in-out;
-  padding: 2px 2px 0px 2px;
+.project-desc {
+  margin-bottom: 24px !important;
 }
 
-/* Old project tab back design */
-
-.project-tab img:hover{
-  opacity: 0.7;
-  transition: all 200ms ease-in-out;
-}
-/*
-
-.project-tab-back {
-  position: absolute;
-  top: 3.5%;
-  left: 2.5%;
-  background-color: rgba(255, 255, 255, 0.9);
-  width: 95%;
-  height: 95%;
-  display: flex;
-  opacity: 0;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: all 200ms ease-in-out;
-  border-radius: 8px;
-}*/
-
-/*New Design*/
-.project-tab-back {
-  margin-top: 24px;
-  text-align: left;
-  padding: 0px 8px 8px 8px;
-}
-
-.project-tab-back h1 {
-  font-size: 20px;
-  font-family: 'Inter', sans-serif;
-  margin-bottom: 8px;
-  margin-top: -4px;
-}
-
-.project-tab-back .linker {
-  transition: all 200ms ease-in-out;
-  float: left;
-  padding-bottom: 10px;
-}
-
-.project-tab-back .linker p {
-  color: var(--mustard);
-  font-size: 16px;
-  font-weight: 700;
-}
-
-.project-tab-back .linker:hover {
-  color:var(--mustard);
-  opacity: 0.6;
-  transition: all 200ms ease-in-out;
-}
-
-.project-tab-back .chips {
-  display: flex;
-  column-gap: 8px;
-  padding-top: 8px;
-}
-
-.chips p.vis {
-   /*background-color: #CCFFF5;
-   color: #064e41;
-   padding: 4px 16px;
-   text-transform: uppercase;
-   font-size: 12px;
-   font-weight: 600;
-   border-radius: 24px;*/
-   text-transform: uppercase;
-   letter-spacing: 10%;
-   font-size: 14px;
-   font-weight: 600;
-   opacity: 0.5;
-   padding-top: 4px;
-}
-
-.chips p.invis {
-  display: none;
-}
-
-/*project desc*/
-.project-desc{
-  margin-top: 4px !important;
-  line-height: 150% !important;
-  text-align: left !important;
-  margin-bottom: 32px !important;
-  opacity: 0.7 !important;
+.project-info {
+  padding: 16px;
+  margin: 0px;
+  line-height: 100%;
 }
 
 /*darkmode*/
-.project-tab.darkmode .linker {
-  color: #fefefe;
-  transition: all 200ms ease-in-out;
+.project-tab.darkmode {
+  background-color: var(--black);
+  border: 1px solid var(--secondary-dark);
+  box-shadow: none;
 }
 
-.project-tab.darkmode .linker:hover {
-  color: var(--mustard);
-  transition: all 200ms ease-in-out;
+.project-tab.darkmode .project-link {
+  color: var(--primary);
 }
 
-.project-tab.darkmode .frame, .project-tab.darkmode .chips p.vis {
+.project-tab.darkmode .project-desc, .project-tab.darkmode .chips p{
+  color: var(--gray-darkmode);
 }
 
-.project-tab.darkmode .project-tab-back{
-  background-color: rgba(11, 11, 11, 0.9);;
+.project-tab.darkmode:hover {
+  background: var(--linear-up-dark);
 }
 
-.mobile-link {
-  display: none;
-}
 
 @media screen and (max-width: 530px) {
   .project-tab {

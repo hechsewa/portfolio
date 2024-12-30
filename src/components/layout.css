@@ -1,12 +1,24 @@
 :root {
   --white: #fefefe;
-  --black: #0b0b0b;
-  --lightblack: hsl(0, 0%, 10%);
-  --mustard: #0C705D;
-  --mustard: #38bda5;
-  --gray: #737373;
-  --lightbase: #F5FAF9;
+  --black: #171C1B;
+  --light-black: #232A29;
+  --gray: #6A6A6A;
+  --gray-darkmode: #87928F;
+  --light-bg: #F7F8F8;
+
+  --primary: #0C705D;
+  --primary-hover: #084A3D;
+  --secondary: #F1F4F3;
+  --secondary-hover: #E2E9E8;
+  --secondary-dark: #24423C;
+  --secondary-hover-dark: #1B322D;
+  --light-green: #EDF7F5;
+  --linear-down-light: linear-gradient(#fefefe, #EDF7F5); 
+  --linear-up-light: linear-gradient(#edf7f5, #fefefe); 
+  --linear-down-dark:linear-gradient(#171C1B, #052E26);
+  --linear-up-dark:linear-gradient(#052E26, #171C1B);
 }
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -19,10 +31,10 @@ html {
 body {
   margin: 0;
   background-color: var(--white);
-  color: var(--lightblack);
+  color: var(--black);
   width: 100%;
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   overflow-x: hidden;
   /*gatsby defaults*/
   -webkit-font-smoothing: antialiased;
@@ -43,56 +55,47 @@ main {
 
 p {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 180%;
-  opacity: 0.8;
-  /*color: var(--lightblack);*/
+  color: var(--gray);
+}
+
+body.darkmode p {
+  color: var(--gray-darkmode);
 }
 
 h1 {
-  font-weight: 700;
-  font-size: 45px;
-  font-family: 'DM Serif Display';
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 140%;
   color: var(--black);
 }
 
 h2 {
-  font-weight: 700;
-  font-size: 42px;
-  font-family: 'DM Serif Display';
+  font-weight: 500;
+  font-size: 30px;
   color: var(--black);
 }
 
 h3 { /*subpage header*/
-  font-weight: 700;
-  font-size: 42px;
-  /*font-family: 'DM Serif Display';*/
-  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
   color: var(--black);
 }
 
 h4 {
-  font-size: 24px;
-  margin-bottom: 0px;
-  margin-top: 80px;
+  font-size: 18px;
   color: var(--black);
 }
 
 b {
   font-weight: 800;
-  color: var(--black);
+  /*color: var(--black);*/
 }
 
 body.darkmode b {
-  color: #ffffff;
+  /*olor: var(--white);*/
   opacity: 1 !important;
-}
-
-li::marker {
-  content: '→  ';
-  font-weight: 900;
-  color: var(--mustard);
-  font-size: 1.2em;
 }
 
 body.darkmode h1, body.darkmode h2, body.darkmode h3, body.darkmode h4 {
@@ -100,7 +103,7 @@ body.darkmode h1, body.darkmode h2, body.darkmode h3, body.darkmode h4 {
 }
 
 body.darkmode .project_sec_alt {
-  background-color: hsl(0, 0%, 10%);
+  background-color: var(--light-black);
 }
 
 body.darkmode {
@@ -109,29 +112,25 @@ body.darkmode {
 }
 
 button {
-  background: none;
-  border: 1px solid #0b0b0b;
-  border-radius: 24px;
+  background: var(--primary);
+  border-radius: 8px;
   padding: 8px 16px 8px 16px;
-  margin-right: 20px;
   font-size: 16px;
-  color: #0b0b0b;
-  font-family: 'Inter', sans-serif;
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
   text-transform:none;
-  font-weight: 600;
+  font-weight: 500;
   transition: all 150ms ease-in-out;
-  margin-bottom: 30px;
 }
 
 body.darkmode button {
-  color: white;
-  border-color: white;
+  color: var(--primary);
+  border-color: var(--white);
 }
 
 button:hover {
   color: white;
-  background-color: var(--mustard);
-  border: 1px solid var(--mustard);
+  background-color: var(--primary-hover);
   transition: all 150ms ease-in-out;
   cursor: pointer;
 }
@@ -158,22 +157,33 @@ button:hover {
 }
 
 .project_sec p {
-  line-height: 150%;
-  font-weight: 500;
+  line-height: 180%;
+  font-weight: 400;
   max-width: 60%;
   margin-bottom:50px;
 }
 
+.project_sec .stage {
+  margin: 0;
+  text-transform: uppercase;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+body.darkmode .project_sec .stage, body.darkmode .project_sec .quote {
+  color: var(--gray-darkmode);
+}
+
 .project_sec {
-  margin-top: 64px;
+  margin-top: 40px;
   width: 100%;
   margin-left: -15vw;
- /* margin: 20px -15vw;*/
   padding: 40px 15vw 40px 15vw;
 }
 
 .project_sec h3 {
-  font-size: 38px;
+  /*font-size: 38px;*/
+  margin: 0;
 }
 
 .project_sec h4 {
@@ -186,7 +196,7 @@ button:hover {
 }
 
 .project_sec_alt {
-  background-color: var(--lightbase);
+  background-color: var(--light-bg);
 }
 
 .project_img_big {
@@ -249,6 +259,22 @@ button:hover {
     font-size: 100%;
   }
 
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
   main {
     margin-left: 4vw;
     margin-right: 4vw;
@@ -267,6 +293,6 @@ button:hover {
 }
 
 mark {
-  color: var(--mustard);
+  color: var(--primary);
   background: none;
 }

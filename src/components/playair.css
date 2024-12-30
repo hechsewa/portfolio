@@ -5,7 +5,7 @@
 }
 
 .project_in_txt .project_text{
-  width: 100%;
+  width: 150%;
 }
 
 .project_text h3, .project_text p {
@@ -28,5 +28,59 @@
   padding-top: 0 !important;
 }
 
+.project_sec p {
+  margin: 0;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+
+.project_sec h4 {
+  margin: 0;
+  margin-top: 32px;
+  font-weight: 500;
+}
+
+.project_sec .quote {
+  color: var(--primary);
+  font-style:italic;
+}
+
+.results {
+  display: flex;
+  gap: 16px;
+}
+
+.result-number {
+  background: var(--secondary);
+  padding: 8px;
+  border-radius: 8px;
+}
+
+body.darkmode .result-number {
+  background: var(--secondary-dark);
+}
+
+.result-number h4 {
+  color: var(--primary);
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.result-number p {
+  margin: 0;
+  line-height: 140%;
+  font-size: 12px;
+}
+
+.button-project-btm {
+  margin-top: 24px;
+}
 
 
+@media screen and (max-width: 530px) {
+  .results {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

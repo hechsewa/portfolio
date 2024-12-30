@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer>
       <div className='foot-right'>
-        <p>© Ewa Hechsman, 2021 | ewahechsman@gmail.com</p>
+        <p>© Ewa Hechsman, 2024 | ewahechsman@gmail.com</p>
       </div>
       <div className='foot-left'>
         <a href='https://twitter.com/ewsdesigns' target='_blank' rel='noreferrer' ><img src={ic_tw} alt={'Twitter icon'} /></a>
