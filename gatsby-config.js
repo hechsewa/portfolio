@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Ewa Hechsman Portfolio`,
-    description: `Ewa Hechsman is a Visual and Graphic Designer from Poland, Cracow. She's worked with companies like Archdesk, Synthetify, Swerus Chris, Powrót z U, Ekogmina, and many more.`,
+    description: `Ewa Hechsman is a Product Designer from Poland, Cracow. She's worked with companies like Archdesk, Synthetify, Logoplan, Innovations Hub Foundation, and many more.`,
     author: `@hechsewa`,
   },
   plugins: [

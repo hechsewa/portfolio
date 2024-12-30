@@ -5,7 +5,7 @@ const Navitem = (props) => {
     if(typeof window !== 'undefined'){
       var currentPage = window.location.pathname;
     }
-    console.log(currentPage);
+    console.log(currentPage, props.href);
     return (
         <div className={currentPage===props.href?'active':''}>
             <a className={props.theme==='dark'? '' : 'darkmode'} href={props.href}><mark>•</mark>{props.label}</a>

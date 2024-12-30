@@ -45,7 +45,7 @@ const Navbar = (props) => {
         </div>
   
         <div className='nav-right'>
-          <Navitem theme={props.theme} label='Projects' href='/'/>
+          <Navitem theme={props.theme} label='Projects' href='/portfolio/'/>
           <Navitem theme={props.theme} label='Visuals' href='/portfolio/visuals/'/>
           <Navitem theme={props.theme} label='About' href='/portfolio/about/'/>
           <Button click={props.setTheme} theme={props.theme} type='icon' icon={props.theme==='dark'?modelight:modedark}/>
