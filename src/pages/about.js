@@ -61,8 +61,8 @@ rewarding 💪 <br/> <br/>
 In my free time, I enjoy hiking, watercolor painting, crotcheting and amusing my plants with dad jokes.
           </p>
         <div className={theme==='dark'?'resume-btns':'resume-btns darkmode'}>
-          <Button href='' type='secondary' theme={theme} label='Open Resume EN🇬🇧'/>
-          <Button href='' type='secondary' theme={theme} label='Open Resume PL🇵🇱'/>
+          <Button href='https://drive.google.com/file/d/12Ma-45ZjO0Wbc9DTMqX9hBKkndahJAKN/view?usp=sharing' type='secondary' theme={theme} label='Open Resume EN🇬🇧'/>
+          <Button href='https://drive.google.com/file/d/1k6MHyeozuh4-X-zmmmbyoajJYnxylNwo/view?usp=sharing' type='secondary' theme={theme} label='Open Resume PL🇵🇱'/>
         </div>
         <div className='contact-info'>
           <div className='sm-icons'>

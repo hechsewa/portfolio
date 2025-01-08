@@ -14,7 +14,7 @@ export default () => {
   }
 
   useEffect(() => {
-    const localTheme = window.localStorage.getItem('components/theme')
+    const localTheme = window.localStorage.getItem('theme')
     if (localTheme) {
       setTheme(localTheme)
     }

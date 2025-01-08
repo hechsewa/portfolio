@@ -34,10 +34,14 @@ import expand from '../images/visuals/inhub-expand.webp'
 import spatial from '../images/visuals/spatial.webp'
 import torii from '../images/visuals/torii.webp'
 import kimchi from '../images/visuals/kimchi.webp'
+import inhubweb from '../images/visuals/inhub-web.webp'
+import marina from '../images/visuals/zielona-marina.webp'
+import dokbaza from '../images/visuals/dokbaza.webp'
 /*posters*/
 import bubbletea from '../images/visuals/bubbletea.webp'
 import cat from '../images/visuals/cat.webp'
 import smok from '../images/visuals/smok.webp'
+import balwan from '../images/visuals/balwan.webp'
 
 const Visuals = () => {
   const [theme, toggleTheme] = useDarkMode();
@@ -101,6 +105,10 @@ const Visuals = () => {
       <Button href='#visual-videos' label='Scroll to videos' theme={theme} type='secondary'/></div>
     </div>
     <div className='visuals-gallery'>
+      <Visual src={dokbaza} tags={'ui'} alt={'Dokbaza AI Medicine Doctor Assistant - Web App UI/UX Design'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={marina} tags={'ui'} alt={'Zielona Marina Developer Apartments By the sea side - Website UI/UX Design'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={inhubweb} tags={'ui'} alt={'Innovations Hub Foundations Polish Startup Incubator - Website UI/UX Design'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
+      <Visual src={balwan} tags={'ill'} alt={'Snowman Poster & Christmas Card Design'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={kimchi} tags={'ui'} alt={'Doktor Kimchi - German Kimchi manufacturer - Website+Shop UI/UX Design'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={torii} tags={'ui'} alt={'Torii - Crypto-security startup landing page UI/UX Design'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
       <Visual src={spatial} tags={'ui'} alt={'Spatial Design Exploration - Food Ordering Service displayed in a VR Google Environment'} theme={theme} orient={'horizontal'} class={theme==='dark'?'fullmode-light' : 'fullmode'}/>
