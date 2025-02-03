@@ -61,11 +61,11 @@ const Archdesk = () => {
       tools={'Figma, Zoom, Adobe Photoshop'}/>
     </div>
     <div className='project_sec'>
+      <div className='project_in_txt'>
+        <div className='project_text text_arch'>
     <h2>Overview</h2>
     <p>When I joined the Archdesk team, the web platform did not have a design system and was composed of material design and IOS components styled by the developers. The system <b>lacked visual consistency, branding and looked outdated</b>. Archdesk formed a DUX (Design & User Experience Team) which consisted of the Design & UX Head - Ilona, and myself. Together we embarked on a journey close to improssible, to redesign the beast of the system that is Archdesk. Our main aim was to make Archdesk <b>more intuitive, faster and to listen to the clients.</b></p>
     <p>We redesigned several already existing modules, as well as introduced a few new features, requested by the users. In this case study, <b>2 redesigned modules and 1 new module</b> will be shown.</p>    
-        <div className='project_in_txt'>
-          <div className='project_text text_scribb'>
           <h3>Results</h3>
           <p>In the 4 years, we made a huge positive impact on how the system was perceived by the users. Most users declared the system is more intuitive and faster to use.</p>
           <div className='results'>
@@ -83,7 +83,7 @@ const Archdesk = () => {
             </div>
           </div>
           </div>
-          <div className='project_img_big'><img src={overview} alt={'Archdesk manager with Archdesk system, business man'} /></div>
+          <div className='project_img_big overview_img'><img src={overview} alt={'Archdesk manager with Archdesk system, business man'} /></div>
         </div>
       </div>
  

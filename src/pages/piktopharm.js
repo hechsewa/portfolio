@@ -16,12 +16,12 @@ import pharm from '../images/projects/piktopharm/research.webp'
 import mindmap from '../images/projects/piktopharm/mindmap.webp'
 import desktop_ux from '../images/projects/piktopharm/wireframes.webp'
 import web_ux from '../images/projects/piktopharm/web-wireframes.webp'
-import ds from '../images/projects/piktopharm/typography.webp'
 import lekolepki from '../images/projects/piktopharm/lekolepki.webp'
 import components from '../images/projects/piktopharm/components.webp'
 import desktop from '../images/projects/piktopharm/desktopapp.webp'
 import web from '../images/projects/piktopharm/webapp.webp'
 import lp from '../images/projects/piktopharm/landingpage.webp'
+import ds from '../images/projects/piktopharm/designsystem.webp'
 
 
 const Piktopharm = () => {
@@ -95,7 +95,7 @@ const Piktopharm = () => {
 
       <div className="project_sec project_sec_alt">
         <p className='stage'>Ideate</p>
-        <h2>User flows & mind map</h2>
+        <h2>Mind map</h2>
         <p>To generate ideas for the app's design and functionality, we conducted a <b>mind map exercise</b> during a Zoom call with the client and developers. This collaborative approach helped identify ways the app could best support pharmacists.
         </p>
         <div className='project_img_big'><img src={mindmap} alt={'Mind map for Piktopharm'} /></div>
@@ -119,16 +119,11 @@ const Piktopharm = () => {
       </div>
 
       <div className='project_sec project_sec_alt'>
-        <div className='project_in_txt'>
-            <div className='project_text'>
-                <p className='stage'>Prototype</p>
-                <h2>Design System</h2>
-                <p>We created multiple components design system to match Piktopharm brand and automate and speed up the design process. We focused on legibility, readability, so that the pharmacists could navigate the product fast and easily.
-                </p>
-            </div>
-        <div className='project_img_big'><img src={ds} alt={'Design system Typography'} /></div>
-        </div>
-        <div className='project_img_full'><img src={components} alt={'Design system Components'} /></div>
+          <p className='stage'>Prototype</p>
+          <h2>Design System</h2>
+          <p>We created multiple components design system to match Piktopharm brand and automate and speed up the design process. We focused on legibility, readability, so that the pharmacists could navigate the product fast and easily.
+          </p>
+        <div className='project_img_big'><img src={ds} alt={'Design system'} /></div>
         <div className='project_img_big'><img src={lekolepki} alt={'Lekolepki'} /></div>
       </div>
 
@@ -136,7 +131,7 @@ const Piktopharm = () => {
         <p className='stage'>Prototype</p>
         <h2>Final Designs</h2>
         <h4>Desktop application</h4>
-        <div className='project_img_full'><img src={desktop} alt={'UI Design of Desktop application'} /></div>
+        <div className='project_img_big'><img src={desktop} alt={'UI Design of Desktop application'} /></div>
         <h4>Web application</h4>
         <div className='project_img_full'><img src={web} alt={'UI Design of Web application'} /></div>
         <h4>Landing Page + Store</h4>

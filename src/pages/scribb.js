@@ -15,7 +15,7 @@ import userb from '../images/projects/scribb/persona-2.webp'
 import journey from '../images/projects/scribb/journey-map.webp'
 import userflow from '../images/projects/scribb/userflows.webp'
 import wireframes from '../images/projects/scribb/wireframes.webp'
-import ds from '../images/projects/scribb/design system.webp'
+import ds from '../images/projects/scribb/designsystem.webp'
 import core from '../images/projects/scribb/core-functions.webp'
 import screens1 from '../images/projects/scribb/ui.webp'
 import screens2 from '../images/projects/scribb/ui2.webp'
@@ -136,7 +136,7 @@ const Scribb = () => {
             <b>The typography</b> was especially important because the <b>book reading experience</b> needed to be comfortable for the users. The increased line height, big margins, serif font and no other UI elements made it
             a good reading experience.
         </p>
-        <div className='project_img_full'><img src={ds} alt={'Design System'} /></div>
+        <div className='project_img_big'><img src={ds} alt={'Design System'} /></div>
         <h4>Core functions</h4>
         <div className='project_img_big'><img src={core} alt={'Core screens of the mobile application'} /></div>
         <h4>Chosen screens</h4>

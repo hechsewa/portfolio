@@ -1,12 +1,15 @@
 .imgs_column_sec {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 40px;
 
 }
 
 .img_column {
-    width: 300px;
+    width: 30%;
+}
+.overview_img {
+    margin-top: auto;
 }
 
 .img_column img {
@@ -35,6 +38,10 @@ h2 {
 .arch_h3 {
     margin-top: 40px !important;
 }
+
+.text_arch {
+    width: 60%;
+  }
 
 @media screen and (max-width: 480px) {
     .img_column {

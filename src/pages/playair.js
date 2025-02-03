@@ -22,7 +22,9 @@ import mobile from '../images/projects/logoplan/Mobile.webp'
 import mobile2 from '../images/projects/logoplan/Mobile 2.webp'
 import web from '../images/projects/logoplan/Desktop.webp'
 import landing from '../images/projects/logoplan/Landing.webp'
-import social from '../images/projects/logoplan/socialmedia.webp'
+import igposts from '../images/projects/logoplan/igposts.webp'
+import igstory from '../images/projects/logoplan/igstory.webp'
+import interviewvid from '../images/projects/logoplan/interview.webm'
 import Button from "../components/Button/button.js"
 
 
@@ -66,7 +68,9 @@ const Playair = () => {
           <h3>Solution</h3>
           <p>Developed mobile application helps <b>keep kids engaged</b> in their exercises. Therapists have access to a web platform where they can track progress, take notes, schedule appointments, and communicate with parents. This project <b>centralizes therapists' workflows</b> and motivates kids to stay active in their speech therapy.</p>
           </div>
-          <div className='project_img_big'><img src={overview} alt={'Mobile application for kids with video exercises'} /></div>
+          <div className='project_img_big'>
+          <img src={overview} alt={'Logoplan Mobile App mockups'} />
+            </div>
         </div>
       </div>
 
@@ -79,17 +83,22 @@ const Playair = () => {
       </div>
 
       <div className='project_sec'>
-        <div className='project_in_txt'>
-          <div className='project_text'>
+        <div className='project_in'>
+          <div className='project_txt'>
           <p className='stage'>Empathize</p>
           <h3>In-depth interviews with speech therapists</h3>
           <p>3 speech therapists of different specializations were taking part in the IDI interviews. They brought into my attention specific needs for this area, deeply focused on speech exercises and the correct naming of speech impediments.</p>
           <h4>Some quotes from IDIs</h4>
           <p className='quote'>“It would be good to also see animations or videos of how the lips should be shaped when making the eo-eo noise”</p>
           <p className='quote'>“We should mark if the exercise was done after the deadline, but we shouldn’t take away the possibility to do the exercise after the deadline. The kid should be allow to play with the app by themselves.”</p>
-          </div>
-          <div className='project_img_big'><img src={idis} alt={'Video screenshot of Ewa and the script of IDI'} /></div>
         </div>
+        <div className='project_img_big'>
+            <video loop="true" autoplay="true">
+              <source src={interviewvid} type='video/webm' />
+              <track kind="captions" srcLang="en" src={"Video from IDIs of Lady talking"} />
+              </video>
+            </div>
+            </div>
       </div>
 
       <div className='project_sec project_sec_alt'>
@@ -152,18 +161,14 @@ const Playair = () => {
         </div>
 
         <div className='project_sec'>
-        <div className='project_in_txt'>
-          <div className='project_text'>
           <h3>Design System</h3>
           <p>Created extensive design system with components visually cohesive with the brand ID of Logoplan. The design system included cards, inputs, modals, icons, buttons, navigation and many more.</p>
-          </div>
           <div className='project_img_big'><img src={ds} alt={'Design system'} /></div>
-        </div>
       </div>
 
       <div className='project_sec'>
       <h3>Mobile Application</h3>
-      <div className='project_img_full'><img src={mobile} alt={'Mobile app mockups'} /></div>
+      <div className='project_img_big'><img src={mobile} alt={'Mobile app mockups'} /></div>
     </div>
 
     <div className='project_sec'>
@@ -171,12 +176,13 @@ const Playair = () => {
         <div className='project_img_full'><img src={web} alt={'Web app mockups'} /></div>
       </div>
       <div className='project_sec'>
-        <h3>Landing Page</h3>
-        <div className='project_img_full'><img src={landing} alt={'Landing Page mockups'} /></div>
+        <h3 id='lp'>Landing Page</h3>
+        <div className='project_img_big'><img src={landing} alt={'Landing Page mockups'} /></div>
       </div>
       <div className='project_sec'>
         <h3>Social Media</h3>
-        <div className='project_img_full'><img src={social} alt={'Social Media Posts mockups'} /></div>
+        <div className='project_img_big'><img src={igposts} alt={'Social Media Posts mockups'} /></div>
+        <div className='project_img_big'><img src={igstory} alt={'Social Media Stories mockups'} /></div>
       </div>
 
       <div className='project_sec project_sec_alt'>

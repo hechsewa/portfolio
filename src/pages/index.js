@@ -142,14 +142,14 @@ return (
     <div className='clients'>
       <h2>Worked with</h2>
       <div className='clients-gallery'>
-        <LogoCard theme={theme} img={logoplan} name='Logoplan' />
-        <LogoCard theme={theme} img={archdesk} name='Archdesk' />
-        <LogoCard theme={theme} img={diagly} name='Diagly' />
-        <LogoCard theme={theme} img={inhub} name='Innovations Hub Foundation' />
-        <LogoCard theme={theme} img={pikto} name='Piktopharm' />
-        <LogoCard theme={theme} img={drkimchi} name='Dr Kimchi' />
-        <LogoCard theme={theme} img={synth} name='Synthetify' />
-        <LogoCard theme={theme} img={codenauts} name='Codenauts' />
+        <LogoCard theme={theme} img={logoplan} name='Logoplan' desc='Play.air creates more engaging experiences for patients and specialists of speech therapy #MedTech'/>
+        <LogoCard theme={theme} img={archdesk} name='Archdesk' desc='Archdesk provides construction companies with SaaS project & business management platform #ConTech' />
+        <LogoCard theme={theme} img={diagly} name='Diagly' desc='sa startup focused on helping doctors generate better medical notes with the help of AI #MedTech' />
+        <LogoCard theme={theme} img={inhub} name='Innovations Hub Foundation' desc='Innovations Hub Foundation is an incubator and accelerator for European startups'/>
+        <LogoCard theme={theme} img={pikto} name='Piktopharm' desc='Pikopharm`s mission is to provide patients and pharmacists with fast and clear meds information #MedTech' />
+        <LogoCard theme={theme} img={drkimchi} name='Dr Kimchi' desc='Germany based company crafting their kimchi-based products for a better gut-heath'/>
+        <LogoCard theme={theme} img={synth} name='Synthetify' desc='Cryptocurrency startup allowing to trade, store and buy cryptocurrencies, offers crypto-wallets #FinTech' />
+        <LogoCard theme={theme} img={codenauts} name='Codenauts' desc='Software house providing clients with a variety of implementation services' />
         </div>
     </div>
     <div className='skills'>

@@ -1,14 +1,21 @@
 .logo-card{
-    width: 175px;
-    height: 100px;
+    width: 220px;
     padding: 8px;
     border-radius: 8px;
     border: 1px solid var(--secondary-hover);
     background: var(--white);
+    text-align: center;
+}
+
+.logo-card p {
+    font-size: 12px;
+    line-height: 140%;
+    text-align: center;
+    margin-top: -8px;
 }
 
 .logo-card img {
-    width: 100%;
+    width: 80%;
     filter:grayscale();
     transition: all 150ms ease-in-out;
 }

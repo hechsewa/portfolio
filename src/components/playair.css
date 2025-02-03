@@ -67,6 +67,10 @@ body.darkmode .result-number {
   margin: 0;
 }
 
+#lp {
+  margin-bottom: 40px;
+}
+
 .result-number p {
   margin: 0;
   line-height: 140%;
